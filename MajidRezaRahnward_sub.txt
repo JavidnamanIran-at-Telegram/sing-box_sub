@@ -65,11 +65,12 @@
   ],
   "outbounds": [
     {
-      "type": "ابول کور کور ایذه",
-      "tag": "Internet",
+      "type": "selector",
+      "tag": "ابول کور کور ایذه",
       "outbounds": [
         "جاوید نامان ایران",
-        "JNIR @JavidnamanIran"
+        "JNIR @JavidnamanIran",
+       "JNIR @JavidnamanIran 2🇪🇸"
       ]
     },
     {
