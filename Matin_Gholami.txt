@@ -69,16 +69,16 @@
       "tag": "ابول کور کور ایذه",
       "outbounds": [
         "جاوید نامان ایران",
-        "JNIR @JavidnamanIran 🇻🇳",
-       "JNIR @JavidnamanIran 2 🇻🇳"
+        "JNIR @JavidnamanIran 🇦🇪",
+       "JNIR @JavidnamanIran 2 🇦🇪"
       ]
     },
     {
       "type": "urltest",
       "tag": "جاوید نامان ایران",
       "outbounds": [
-        "JNIR @JavidnamanIran 🇻🇳",
-        "JNIR @JavidnamanIran 2 🇻🇳"
+        "JNIR @JavidnamanIran 🇦🇪",
+        "JNIR @JavidnamanIran 2 🇦🇪"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m0s",
@@ -93,10 +93,10 @@
       },
       "password": "i67s60ep",
       "path": "",
-      "server": "152.233.46.100",
+      "server": "135.136.7.94",
       "server_port": 10780,
       "domain_strategy": "",
-      "tag": "JNIR @JavidnamanIran 🇻🇳",
+      "tag": "JNIR @JavidnamanIran 🇦🇪",
       "tls": {
         "alpn": [
           "h2,http/1.1"
@@ -117,10 +117,10 @@
       },
       "password": "i67s60ep",
       "path": "",
-      "server": "152.233.46.102",
+      "server": "135.136.7.60",
       "server_port": 10780,
       "domain_strategy": "",
-      "tag": "JNIR @JavidnamanIran 2 🇻🇳",
+      "tag": "JNIR @JavidnamanIran 2 🇦🇪",
       "tls": {
         "alpn": [
           "h2,http/1.1"
