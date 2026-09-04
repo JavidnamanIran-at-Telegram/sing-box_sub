@@ -1,0 +1,177 @@
+{
+  "log": {
+    "disabled": true,
+    "level": "panic"
+  },
+  "dns": {
+    "servers": [
+      {
+        "type": "udp",
+        "tag": "Internet-dns",
+        "server": "1.1.1.2"
+      },
+      {
+        "type": "udp",
+        "tag": "direct-dns",
+        "server": "217.218.155.155"
+      },
+      {
+        "type": "fakeip",
+        "tag": "fake-dns",
+        "inet4_range": "198.18.0.0/15",
+        "inet6_range": "fc00::/18"
+      }
+    ],
+    "rules": [
+      {
+        "domain_suffix": "static.lotussec.com",
+        "server": "direct-dns"
+      },
+      {
+        "domain_suffix": [
+          ".ir",
+          ".xn--mgba3a4fra",
+          ".xn--mgba3a4f16a"
+        ],
+        "server": "direct-dns"
+      },
+      {
+        "inbound": "tun-in",
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "server": "fake-dns",
+        "disable_cache": true
+      }
+    ],
+    "strategy": "prefer_ipv4",
+    "independent_cache": true
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "interface_name": "jnir",
+      "mtu": 9000,
+      "address": [
+        "172.18.0.1/30",
+        "fdfe:dcba:9876::1/126"
+      ],
+      "auto_route": true,
+      "strict_route": true,
+      "stack": "system"
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "ابول کور کور ایذه",
+      "outbounds": [
+        "جاوید نامان ایران",
+        "JNIR @JavidnamanIran 🇻🇳",
+       "JNIR @JavidnamanIran 2 🇻🇳"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "جاوید نامان ایران",
+      "outbounds": [
+        "JNIR @JavidnamanIran 🇻🇳",
+        "JNIR @JavidnamanIran 2 🇻🇳"
+      ],
+      "url": "http://www.gstatic.com/generate_204",
+      "interval": "10m0s",
+      "tolerance": 1,
+      "idle_timeout": "15m0s"
+    },
+    {
+      "headers": {
+        "Host": [
+          "scholar.google.com"
+        ]
+      },
+      "password": "i67s60ep",
+      "path": "",
+      "server": "152.233.46.100",
+      "server_port": 10780,
+      "domain_strategy": "",
+      "tag": "JNIR @JavidnamanIran 🇻🇳",
+      "tls": {
+        "alpn": [
+          "h2,http/1.1"
+        ],
+        "disable_sni": false,
+        "enabled": false,
+        "server_name": "scholar.google.com"
+      },
+      "type": "http",
+      "username": "purevpn0s8732217"
+    },
+
+{
+      "headers": {
+        "Host": [
+          "scholar.google.com"
+        ]
+      },
+      "password": "i67s60ep",
+      "path": "",
+      "server": "152.233.46.102",
+      "server_port": 10780,
+      "domain_strategy": "",
+      "tag": "JNIR @JavidnamanIran 2 🇻🇳",
+      "tls": {
+        "alpn": [
+          "h2,http/1.1"
+        ],
+        "disable_sni": false,
+        "enabled": false,
+        "server_name": "scholar.google.com"
+      },
+      "type": "http",
+      "username": "purevpn0s8732217"
+    },
+
+    {
+      "type": "direct",
+      "tag": "direct",
+      "domain_resolver": "direct-dns"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "ip_cidr": [
+          "172.18.0.2",
+          "fdfe:dcba:9876::2"
+        ],
+        "action": "hijack-dns"
+      },
+      {
+        "action": "sniff"
+      },
+      {
+        "protocol": "dns",
+        "action": "hijack-dns"
+      },
+      {
+        "domain_suffix": [
+          ".ir",
+          ".xn--mgba3a4fra",
+          ".xn--mgba3a4f16a"
+        ],
+        "outbound": "direct"
+      }
+    ],
+    "auto_detect_interface": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "path": "cache.db",
+      "cache_id": "",
+      "store_fakeip": true
+    }
+  }
+}
