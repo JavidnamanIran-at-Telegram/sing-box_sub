@@ -1,0 +1,352 @@
+{
+  "log": {
+    "disabled": false,
+    "level": "info",
+    "output": "",
+    "timestamp": false
+  },
+
+  "experimental": {
+    "clash_api": {
+      "external_controller": "127.0.0.1:20123",
+      "external_ui": "",
+      "external_ui_download_url": "",
+      "external_ui_download_detour": "🎯 Direct",
+      "secret": "b49673122775a7b5ce5e24fb20bfcf49dcdf6b4de3eb35a5a0635524f65fd05d",
+      "default_mode": "rule",
+      "access_control_allow_origin": [
+        "*"
+      ],
+      "access_control_allow_private_network": false
+    },
+
+    "cache_file": {
+      "enabled": true,
+      "path": "cache.db",
+      "cache_id": "ID_l00ggamo",
+      "store_fakeip": true,
+      "rdrc_timeout": "7d"
+    }
+  },
+
+  "http_clients": [
+    {
+      "tag": "rule-set-client",
+      "detour": "جاوید شاه"
+    }
+  ],
+
+  "inbounds": [
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "127.0.0.1",
+      "listen_port": 20122,
+      "tcp_fast_open": false,
+      "tcp_multi_path": false,
+      "udp_fragment": false
+    },
+
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "interface_name": "",
+      "address": [
+        "172.18.0.1/30",
+        "fdfe:dcba:9876::1/126"
+      ],
+      "mtu": 0,
+      "auto_route": true,
+      "strict_route": true,
+      "endpoint_independent_nat": false,
+      "stack": "mixed"
+    }
+  ],
+
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "جاوید شاه",
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "ابول کور کور ایذه",
+        "@JavidnamanIran 🇹🇷",
+        "@JavidnamanIran 2 🇹🇷"
+      ]
+    },
+
+    {
+      "type": "urltest",
+      "tag": "ابول کور کور ایذه",
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "3m",
+      "tolerance": 150,
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "@JavidnamanIran 🇹🇷",
+        "@JavidnamanIran 2 🇹🇷"
+      ]
+    },
+
+    {
+      "type": "selector",
+      "tag": "🎯 Direct",
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "direct",
+        "block"
+      ]
+    },
+
+    {
+      "type": "selector",
+      "tag": "🛑 Block",
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "block",
+        "direct"
+      ]
+    },
+
+    {
+      "headers": {
+        "Host": [
+          "scholar.google.com"
+        ]
+      },
+      "password": "i67s60ep",
+      "path": "",
+      "server": "149.50.208.137",
+      "server_port": 10780,
+      "domain_strategy": "",
+      "tag": "@JavidnamanIran 🇹🇷",
+      "tls": {
+        "alpn": [
+          "h2,http/1.1"
+        ],
+        "disable_sni": false,
+        "enabled": false,
+        "server_name": "scholar.google.com"
+      },
+      "type": "http",
+      "username": "purevpn0s8732217"
+    },
+
+    {
+      "headers": {
+        "Host": [
+          "scholar.google.com"
+        ]
+      },
+      "password": "i67s60ep",
+      "path": "",
+      "server": "149.50.208.199",
+      "server_port": 10780,
+      "domain_strategy": "",
+      "tag": "@JavidnamanIran 2 🇹🇷",
+      "tls": {
+        "alpn": [
+          "h2,http/1.1"
+        ],
+        "disable_sni": false,
+        "enabled": false,
+        "server_name": "scholar.google.com"
+      },
+      "type": "http",
+      "username": "purevpn0s8732217"
+    },
+
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ],
+
+  "route": {
+    "rules": [
+      {
+        "action": "sniff"
+      },
+
+      {
+        "action": "hijack-dns",
+        "protocol": "dns"
+      },
+
+      {
+        "action": "route",
+        "clash_mode": "direct",
+        "outbound": "🎯 Direct"
+      },
+
+      {
+        "action": "route",
+        "network": "icmp",
+        "outbound": "🎯 Direct"
+      },
+
+      {
+        "action": "route",
+        "protocol": "quic",
+        "outbound": "🛑 Block"
+      },
+
+      {
+        "action": "route",
+        "rule_set": [
+          "Category-Ads"
+        ],
+        "outbound": "🛑 Block"
+      },
+
+      {
+        "action": "route",
+        "rule_set": [
+          "GeoSite-Private"
+        ],
+        "outbound": "🎯 Direct"
+      },
+
+      {
+        "action": "route",
+        "rule_set": [
+          "GeoSite-IR"
+        ],
+        "outbound": "🎯 Direct"
+      },
+
+      {
+        "action": "route",
+        "rule_set": [
+          "GeoIP-Private"
+        ],
+        "outbound": "🎯 Direct"
+      },
+
+      {
+        "action": "route",
+        "rule_set": [
+          "GeoIP-IR"
+        ],
+        "outbound": "🎯 Direct"
+      }
+    ],
+
+    "rule_set": [
+      {
+        "tag": "Category-Ads",
+        "type": "remote",
+        "url": "https://github.com/wearestand14-01/sing-box-Rule/raw/refs/heads/main/Category-Ads.srs",
+        "format": "binary"
+      },
+
+      {
+        "tag": "GeoIP-Private",
+        "type": "remote",
+        "url": "https://github.com/wearestand14-01/sing-box-Rule/raw/refs/heads/main/GeoIP-Private.srs",
+        "format": "binary"
+      },
+
+      {
+        "tag": "GeoSite-Private",
+        "type": "remote",
+        "url": "https://github.com/wearestand14-01/sing-box-Rule/raw/refs/heads/main/GeoSite-Private.srs",
+        "format": "binary"
+      },
+
+      {
+        "tag": "GeoIP-IR",
+        "type": "remote",
+        "url": "https://github.com/wearestand14-01/sing-box-Rule/raw/refs/heads/main/GeoIP-IR.srs",
+        "format": "binary"
+      },
+
+      {
+        "tag": "GeoSite-IR",
+        "type": "remote",
+        "url": "https://github.com/wearestand14-01/sing-box-Rule/raw/refs/heads/main/GeoSite-IR.srs",
+        "format": "binary"
+      }
+    ],
+
+    "auto_detect_interface": true,
+
+    "final": "جاوید شاه",
+
+    "default_http_client": "rule-set-client",
+
+    "default_domain_resolver": {
+      "server": "Local-DNS"
+    }
+  },
+
+  "dns": {
+    "servers": [
+      {
+        "tag": "Fake-IP",
+        "type": "fakeip",
+        "inet4_range": "198.18.0.0/15",
+        "inet6_range": "fc00::/18"
+      },
+
+      {
+        "tag": "Local-DNS",
+        "type": "tls",
+        "domain_resolver": "Local-DNS-Resolver",
+        "server_port": 443,
+        "server": "1.1.1.1"
+      },
+
+      {
+        "tag": "Local-DNS-Resolver",
+        "type": "tcp",
+        "server_port": 53,
+        "server": "64.6.64.6"
+      },
+
+      {
+        "tag": "Remote-DNS",
+        "type": "tls",
+        "detour": "جاوید شاه",
+        "domain_resolver": "Remote-DNS-Resolver",
+        "server_port": 853,
+        "server": "8.8.8.8"
+      },
+
+      {
+        "tag": "Remote-DNS-Resolver",
+        "type": "udp",
+        "detour": "جاوید شاه",
+        "server_port": 53,
+        "server": "8.8.8.8"
+      }
+    ],
+
+    "rules": [
+      {
+        "action": "route",
+        "clash_mode": "direct",
+        "server": "Local-DNS"
+      },
+
+      {
+        "action": "route",
+        "rule_set": [
+          "GeoSite-IR"
+        ],
+        "server": "Local-DNS"
+      }
+    ],
+
+    "disable_cache": false,
+    "disable_expire": false,
+    "independent_cache": false,
+    "final": "Remote-DNS",
+    "strategy": "prefer_ipv4"
+  }
+}
