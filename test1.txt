@@ -12,7 +12,7 @@
       "external_ui_download_url": "",
       "external_ui_download_detour": "🎯 Direct",
       "secret": "b49673122775a7b5ce5e24fb20bfcf49dcdf6b4de3eb35a5a0635524f65fd05d",
-      "default_mode": "rule",
+      "default_mode": "global",
       "access_control_allow_origin": [
         "*"
       ],
@@ -26,13 +26,6 @@
       "rdrc_timeout": "7d"
     }
   },
-	 "http_clients": [
-    {
-      "tag": "rule-set-client",
-      "detour": "کانال تلگرام @JavidnamanIran-@wearestand"
-    }
-  ],
-	
   "inbounds": [
     {
       "type": "mixed",
@@ -61,9 +54,9 @@
   "endpoints": [
     {
       "type": "openvpn-client",
-      "tag": "🇬🇷 ابوالفضل جهانی اشتلق",
+      "tag": "🇩🇪 جواد طباطبایی",
       "mode": "tls",
-      "server": "79.127.175.4",
+      "server": "158.173.154.29",
       "server_port": 443,
       "network": "tcp",
       "username": "B8EwbytrkP",
@@ -103,9 +96,9 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "🇬🇷 مصطفی شریفی شهریور",
+      "tag": "🇩🇪 ابوالفضل مرشد عباسی",
       "mode": "tls",
-      "server": "79.127.175.5",
+      "server": "158.173.154.45",
       "server_port": 443,
       "network": "tcp",
       "username": "B8EwbytrkP",
@@ -145,9 +138,9 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "🇬🇷 مسعود سعیدی اسکویی",
+      "tag": "🇩🇪 فرهاد صادقی",
       "mode": "tls",
-      "server": "79.127.175.6",
+      "server": "158.173.154.196",
       "server_port": 443,
       "network": "tcp",
       "username": "B8EwbytrkP",
@@ -187,9 +180,9 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "🇬🇷 ایوب شریفی قره میرشاملو",
+      "tag": "🇩🇪 مهران هدایی",
       "mode": "tls",
-      "server": "79.127.175.17",
+      "server": "158.173.154.204",
       "server_port": 443,
       "network": "tcp",
       "username": "B8EwbytrkP",
@@ -229,9 +222,9 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "🇬🇷 ایمان میرشکاری زاده",
+      "tag": "🇩🇪 علی هاشمی",
       "mode": "tls",
-      "server": "79.127.175.25",
+      "server": "158.173.155.180",
       "server_port": 443,
       "network": "tcp",
       "username": "B8EwbytrkP",
@@ -271,9 +264,9 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "🇬🇷 مهسا جلیلیان",
+      "tag": "🇩🇪 مجید آدینه",
       "mode": "tls",
-      "server": "79.127.175.26",
+      "server": "158.173.155.181",
       "server_port": 443,
       "network": "tcp",
       "username": "B8EwbytrkP",
@@ -313,9 +306,9 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "🇬🇷 مسعود کریم ۱۵ ساله",
+      "tag": "🇩🇪 قائم حسینی",
       "mode": "tls",
-      "server": "79.127.175.31",
+      "server": "158.173.155.231",
       "server_port": 443,
       "network": "tcp",
       "username": "B8EwbytrkP",
@@ -355,9 +348,9 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "🇬🇷 مهدی سلیمانی",
+      "tag": "🇩🇪 شهرام صادقی",
       "mode": "tls",
-      "server": "79.127.175.35",
+      "server": "158.173.155.237",
       "server_port": 443,
       "network": "tcp",
       "username": "B8EwbytrkP",
@@ -397,9 +390,9 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "🇬🇷 ابوالفضل طاووسی نیکآبادی",
+      "tag": "🇩🇪 محمد سلیمانی",
       "mode": "tls",
-      "server": "79.127.175.37",
+      "server": "158.173.155.246",
       "server_port": 443,
       "network": "tcp",
       "username": "B8EwbytrkP",
@@ -439,9 +432,9 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "🇬🇷 فرهاد فارسی",
+      "tag": "🇩🇪 احمد کوکبی",
       "mode": "tls",
-      "server": "79.127.175.38",
+      "server": "158.173.156.142",
       "server_port": 443,
       "network": "tcp",
       "username": "B8EwbytrkP",
@@ -481,9 +474,9 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "🇬🇷 امیرحسین ابراهیمی",
+      "tag": "🇩🇪 مهرداد سلطانی",
       "mode": "tls",
-      "server": "79.127.175.46",
+      "server": "158.173.156.161",
       "server_port": 443,
       "network": "tcp",
       "username": "B8EwbytrkP",
@@ -523,9 +516,9 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "🇬🇷 محمد پیرمرادیان",
+      "tag": "🇩🇪 پریسا زارعی",
       "mode": "tls",
-      "server": "79.127.175.49",
+      "server": "158.173.156.195",
       "server_port": 443,
       "network": "tcp",
       "username": "B8EwbytrkP",
@@ -565,9 +558,9 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "🇬🇷 مجید چترایی",
+      "tag": "🇩🇪 آرین مرادی",
       "mode": "tls",
-      "server": "79.127.175.56",
+      "server": "176.115.236.120",
       "server_port": 443,
       "network": "tcp",
       "username": "B8EwbytrkP",
@@ -607,9 +600,9 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "🇬🇷 علیرضا نوروزی",
+      "tag": "🇩🇪 اصغر رمضانپور گرجی",
       "mode": "tls",
-      "server": "79.127.175.65",
+      "server": "181.214.173.141",
       "server_port": 443,
       "network": "tcp",
       "username": "B8EwbytrkP",
@@ -649,9 +642,9 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "🇬🇷 سعید رضایی برازنی ۱۷ ساله",
+      "tag": "🇩🇪 بهرام رستمپور",
       "mode": "tls",
-      "server": "79.127.175.77",
+      "server": "181.214.173.211",
       "server_port": 443,
       "network": "tcp",
       "username": "B8EwbytrkP",
@@ -691,9 +684,9 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "🇬🇷 روحالله علیایی",
+      "tag": "🇩🇪 حجتالله ذاکری",
       "mode": "tls",
-      "server": "79.127.175.93",
+      "server": "185.179.67.112",
       "server_port": 443,
       "network": "tcp",
       "username": "B8EwbytrkP",
@@ -733,9 +726,9 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "🇬🇷 حامد حمیدیان",
+      "tag": "🇩🇪 سعید عیدگاه طرقبهی",
       "mode": "tls",
-      "server": "79.127.175.95",
+      "server": "185.179.67.135",
       "server_port": 443,
       "network": "tcp",
       "username": "B8EwbytrkP",
@@ -775,9 +768,9 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "🇬🇷 علیرضا سوری ۱۷ساله",
+      "tag": "🇩🇪 آروین خیرخواه",
       "mode": "tls",
-      "server": "79.127.175.113",
+      "server": "185.179.67.192",
       "server_port": 443,
       "network": "tcp",
       "username": "B8EwbytrkP",
@@ -817,9 +810,9 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "🇬🇷 مهدی چوقادی شهرضایی",
+      "tag": "🇩🇪 احمد نعمتی حسینحاجلو",
       "mode": "tls",
-      "server": "79.127.175.114",
+      "server": "185.179.67.245",
       "server_port": 443,
       "network": "tcp",
       "username": "B8EwbytrkP",
@@ -859,9 +852,9 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "🇬🇷 امیر عمرانی",
+      "tag": "🇩🇪 فردوس محمدزاده",
       "mode": "tls",
-      "server": "79.127.175.118",
+      "server": "194.36.108.85",
       "server_port": 443,
       "network": "tcp",
       "username": "B8EwbytrkP",
@@ -902,158 +895,33 @@
   ],
   "outbounds": [
     {
-      "type": "direct",
-      "tag": "direct"
-    },
-    {
-      "type": "block",
-      "tag": "block"
-    },
-    {
-      "type": "selector",
-      "tag": "🎯 Direct",
-      "interrupt_exist_connections": true,
-      "outbounds": [
-        "direct",
-        "block"
-      ]
-    },
-    {
-      "type": "selector",
-      "tag": "🛑 Block",
-      "interrupt_exist_connections": true,
-      "outbounds": [
-        "block",
-        "direct"
-      ]
-    },
-    {
       "type": "selector",
       "tag": "کانال تلگرام @JavidnamanIran-@wearestand",
       "interrupt_exist_connections": true,
       "outbounds": [
-        "🇬🇷 ابوالفضل جهانی اشتلق",
-        "🇬🇷 مصطفی شریفی شهریور",
-        "🇬🇷 مسعود سعیدی اسکویی",
-        "🇬🇷 ایوب شریفی قره میرشاملو",
-        "🇬🇷 ایمان میرشکاری زاده",
-        "🇬🇷 مهسا جلیلیان",
-        "🇬🇷 مسعود کریم ۱۵ ساله",
-        "🇬🇷 مهدی سلیمانی",
-        "🇬🇷 ابوالفضل طاووسی نیکآبادی",
-        "🇬🇷 فرهاد فارسی",
-        "🇬🇷 امیرحسین ابراهیمی",
-        "🇬🇷 محمد پیرمرادیان",
-        "🇬🇷 مجید چترایی",
-        "🇬🇷 علیرضا نوروزی",
-        "🇬🇷 سعید رضایی برازنی ۱۷ ساله",
-        "🇬🇷 روحالله علیایی",
-        "🇬🇷 حامد حمیدیان",
-        "🇬🇷 علیرضا سوری ۱۷ساله",
-        "🇬🇷 مهدی چوقادی شهرضایی",
-        "🇬🇷 امیر عمرانی"
+        "🇩🇪 جواد طباطبایی",
+        "🇩🇪 ابوالفضل مرشد عباسی",
+        "🇩🇪 فرهاد صادقی",
+        "🇩🇪 مهران هدایی",
+        "🇩🇪 علی هاشمی",
+        "🇩🇪 مجید آدینه",
+        "🇩🇪 قائم حسینی",
+        "🇩🇪 شهرام صادقی",
+        "🇩🇪 محمد سلیمانی",
+        "🇩🇪 احمد کوکبی",
+        "🇩🇪 مهرداد سلطانی",
+        "🇩🇪 پریسا زارعی",
+        "🇩🇪 آرین مرادی",
+        "🇩🇪 اصغر رمضانپور گرجی",
+        "🇩🇪 بهرام رستمپور",
+        "🇩🇪 حجتالله ذاکری",
+        "🇩🇪 سعید عیدگاه طرقبهی",
+        "🇩🇪 آروین خیرخواه",
+        "🇩🇪 احمد نعمتی حسینحاجلو",
+        "🇩🇪 فردوس محمدزاده"
       ]
     }
   ],
-  "route": {
-    "rules": [
-      {
-        "action": "sniff"
-      },
-      {
-        "action": "hijack-dns",
-        "protocol": "dns"
-      },
-      {
-        "action": "route",
-        "clash_mode": "direct",
-        "outbound": "🎯 Direct"
-      },
-      {
-        "action": "route",
-        "network": "icmp",
-        "outbound": "🎯 Direct"
-      },
-      {
-        "action": "route",
-        "protocol": "quic",
-        "outbound": "🛑 Block"
-      },
-      {
-        "action": "route",
-        "rule_set": [
-          "Category-Ads"
-        ],
-        "outbound": "🛑 Block"
-      },
-      {
-        "action": "route",
-        "rule_set": [
-          "GeoSite-Private"
-        ],
-        "outbound": "🎯 Direct"
-      },
-      {
-        "action": "route",
-        "rule_set": [
-          "GeoSite-IR"
-        ],
-        "outbound": "🎯 Direct"
-      },
-      {
-        "action": "route",
-        "rule_set": [
-          "GeoIP-Private"
-        ],
-        "outbound": "🎯 Direct"
-      },
-      {
-        "action": "route",
-        "rule_set": [
-          "GeoIP-IR"
-        ],
-        "outbound": "🎯 Direct"
-      }
-    ],
-    "rule_set": [
-      {
-        "tag": "Category-Ads",
-        "type": "remote",
-        "url": "https://github.com/wearestand14-01/sing-box-Rule/raw/refs/heads/main/Category-Ads.srs",
-        "format": "binary"
-      },
-      {
-        "tag": "GeoIP-Private",
-        "type": "remote",
-        "url": "https://github.com/wearestand14-01/sing-box-Rule/raw/refs/heads/main/GeoIP-Private.srs",
-        "format": "binary"
-      },
-      {
-        "tag": "GeoSite-Private",
-        "type": "remote",
-        "url": "https://github.com/wearestand14-01/sing-box-Rule/raw/refs/heads/main/GeoSite-Private.srs",
-        "format": "binary"
-      },
-      {
-        "tag": "GeoIP-IR",
-        "type": "remote",
-        "url": "https://github.com/wearestand14-01/sing-box-Rule/raw/refs/heads/main/GeoIP-IR.srs",
-        "format": "binary"
-      },
-      {
-        "tag": "GeoSite-IR",
-        "type": "remote",
-        "url": "https://github.com/wearestand14-01/sing-box-Rule/raw/refs/heads/main/GeoSite-IR.srs",
-        "format": "binary"
-      }
-    ],
-    "auto_detect_interface": true,
-    "final": "کانال تلگرام @JavidnamanIran-@wearestand",
-    "default_http_client": "rule-set-client",
-    "default_domain_resolver": {
-      "server": "Local-DNS"
-    }
-  },
   "dns": {
     "servers": [
       {
@@ -1078,23 +946,9 @@
       {
         "tag": "Remote-DNS",
         "type": "openvpn",
-        "endpoint": "🇬🇷 ابوالفضل جهانی اشتلق",
+        "endpoint": "🇩🇪 جواد طباطبایی",
         "accept_default_resolvers": true,
         "accept_search_domain": true
-      }
-    ],
-    "rules": [
-      {
-        "action": "route",
-        "clash_mode": "direct",
-        "server": "Local-DNS"
-      },
-      {
-        "action": "route",
-        "rule_set": [
-          "GeoSite-IR"
-        ],
-        "server": "Local-DNS"
       }
     ],
     "disable_cache": false,
@@ -1102,13 +956,9 @@
     "final": "Remote-DNS",
     "strategy": "prefer_ipv4"
   },
-  "http_clients": [
-    {
-      "tag": "rule-set-client",
-      "detour": "direct",
-      "domain_resolver": {
-        "server": "Local-DNS"
-      }
-    }
-  ]
+  "route": {
+    "auto_detect_interface": true,
+    "final": "کانال تلگرام @JavidnamanIran-@wearestand",
+    "default_domain_resolver": "Local-DNS-Resolver"
+  }
 }
