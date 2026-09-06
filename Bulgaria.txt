@@ -810,20 +810,6 @@
         "accept_search_domain": true
       }
     ],
-    "rules": [
-      {
-        "action": "route",
-        "clash_mode": "direct",
-        "server": "Local-DNS"
-      },
-      {
-        "action": "route",
-        "rule_set": [
-          "GeoSite-IR"
-        ],
-        "server": "Local-DNS"
-      }
-    ],
     "disable_cache": false,
     "disable_expire": false,
     "final": "Remote-DNS",
