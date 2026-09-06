@@ -3,474 +3,565 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>لیست اشتراک سرور کشورها (Sing-Box)</title>
+    <title>اشتراک‌های اختصاصی سینگ‌باکس</title>
     <style>
-        body {
-            font-family: Tahoma, sans-serif;
-            background-color: #0f172a;
-            color: #f8fafc;
-            margin: 0;
-            padding: 20px;
+        :root {
+            --bg-color: #090d16;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --card-border: rgba(255, 255, 255, 0.08);
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+            --accent-color: #38bdf8;
+            --accent-hover: #0ea5e9;
         }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, sans-serif;
+            background-color: var(--bg-color);
+            background-image: radial-gradient(circle at top, #1e1b4b 0%, var(--bg-color) 70%);
+            color: var(--text-main);
+            margin: 0;
+            padding: 30px 15px;
+            min-height: 100vh;
+        }
+
         .container {
-            max-width: 650px;
+            max-width: 600px;
             margin: 0 auto;
         }
-        h1 {
+
+        header {
             text-align: center;
-            font-size: 22px;
-            margin-bottom: 25px;
-            color: #38bdf8;
+            margin-bottom: 35px;
         }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 800;
+            margin: 0 0 10px 0;
+            background: linear-gradient(to left, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p.subtitle {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin: 0;
+        }
+
         .card {
-            background: #1e293b;
-            padding: 12px 18px;
-            margin-bottom: 10px;
-            border-radius: 10px;
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--card-border);
+            padding: 14px 20px;
+            margin-bottom: 12px;
+            border-radius: 14px;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease, border-color 0.2s ease;
         }
+
+        .card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(56, 189, 248, 0.3);
+        }
+
         .country-info {
             font-size: 15px;
-            font-weight: bold;
+            font-weight: 600;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
         }
+
+        .flag {
+            font-size: 22px;
+            line-height: 1;
+        }
+
         .btn-copy {
-            background: #0284c7;
-            padding: 8px 16px;
+            background: var(--accent-color);
+            color: #0f172a;
+            padding: 8px 18px;
             font-size: 13px;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 6px;
-            color: white;
+            font-weight: 700;
+            border-radius: 8px;
             border: none;
             cursor: pointer;
-            transition: opacity 0.2s;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 12px rgba(56, 189, 248, 0.2);
         }
-        .btn-copy:hover { opacity: 0.85; }
+
+        .btn-copy:hover {
+            background: var(--accent-hover);
+            transform: scale(1.03);
+        }
+
+        .btn-copy:active {
+            transform: scale(0.97);
+        }
+
+        /* Toast Notification */
+        #toast {
+            visibility: hidden;
+            background-color: #10b981;
+            color: white;
+            text-align: center;
+            border-radius: 8px;
+            padding: 12px 24px;
+            position: fixed;
+            z-index: 1000;
+            left: 50%;
+            bottom: 30px;
+            transform: translateX(-50%);
+            font-size: 14px;
+            font-weight: 600;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: visibility 0.2s, opacity 0.2s ease;
+            opacity: 0;
+        }
+
+        #toast.show {
+            visibility: visible;
+            opacity: 1;
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>اشتراک‌های اختصاصی کشورها - Sing-Box</h1>
+        <header>
+            <h1>لیست اشتراک‌های Sing-Box</h1>
+            <p class="subtitle">برای کپی کردن لینک کانفیگ کشور مورد نظر روی دکمه روبرو بزنید</p>
+        </header>
 
         <!-- USA -->
         <div class="card">
-            <div class="country-info"><span>🇺🇸</span> ایالات متحده (USA)</div>
+            <div class="country-info"><span class="flag">🇺🇸</span> ایالات متحده (USA)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/USA.txt')">کپی لینک</button>
         </div>
 
         <!-- Albania -->
         <div class="card">
-            <div class="country-info"><span>🇦🇱</span> آلبانی (Albania)</div>
+            <div class="country-info"><span class="flag">🇦🇱</span> آلبانی (Albania)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Albani.txt')">کپی لینک</button>
         </div>
 
         <!-- Algeria -->
         <div class="card">
-            <div class="country-info"><span>🇩🇿</span> الجزایر (Algeria)</div>
+            <div class="country-info"><span class="flag">🇩🇿</span> الجزایر (Algeria)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Algeria.txt')">کپی لینک</button>
         </div>
 
         <!-- Andorra -->
         <div class="card">
-            <div class="country-info"><span>🇦🇩</span> آندورا (Andorra)</div>
+            <div class="country-info"><span class="flag">🇦🇩</span> آندورا (Andorra)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Andorra.txt')">کپی لینک</button>
         </div>
 
         <!-- Armenia -->
         <div class="card">
-            <div class="country-info"><span>🇦🇲</span> ارمنستان (Armenia)</div>
+            <div class="country-info"><span class="flag">🇦🇲</span> ارمنستان (Armenia)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Armenia.txt')">کپی لینک</button>
         </div>
 
         <!-- Australia -->
         <div class="card">
-            <div class="country-info"><span>🇦🇺</span> استرالیا (Australia)</div>
+            <div class="country-info"><span class="flag">🇦🇺</span> استرالیا (Australia)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Australia.txt')">کپی لینک</button>
         </div>
 
         <!-- Austria -->
         <div class="card">
-            <div class="country-info"><span>🇦🇹</span> اتریش (Austria)</div>
+            <div class="country-info"><span class="flag">🇦🇹</span> اتریش (Austria)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Austria.txt')">کپی لینک</button>
         </div>
 
         <!-- Belarus -->
         <div class="card">
-            <div class="country-info"><span>🇧🇾</span> بلاروس (Belarus)</div>
+            <div class="country-info"><span class="flag">🇧🇾</span> بلاروس (Belarus)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Belarus.txt')">کپی لینک</button>
         </div>
 
         <!-- Belgium -->
         <div class="card">
-            <div class="country-info"><span>🇧🇪</span> بلژیک (Belgium)</div>
+            <div class="country-info"><span class="flag">🇧🇪</span> بلژیک (Belgium)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Belgium.txt')">کپی لینک</button>
         </div>
 
         <!-- Bolivia -->
         <div class="card">
-            <div class="country-info"><span>🇧🇴</span> بولیوی (Bolivia)</div>
+            <div class="country-info"><span class="flag">🇧🇴</span> بولیوی (Bolivia)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Bolivia.txt')">کپی لینک</button>
         </div>
 
         <!-- Bosnia -->
         <div class="card">
-            <div class="country-info"><span>🇧🇦</span> بوسنی و هرزگوین (Bosnia)</div>
+            <div class="country-info"><span class="flag">🇧🇦</span> بوسنی و هرزگوین (Bosnia)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Bosnia.txt')">کپی لینک</button>
         </div>
 
         <!-- Bulgaria -->
         <div class="card">
-            <div class="country-info"><span>🇧🇬</span> بلغارستان (Bulgaria)</div>
+            <div class="country-info"><span class="flag">🇧🇬</span> بلغارستان (Bulgaria)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Bulgaria.txt')">کپی لینک</button>
         </div>
 
         <!-- Cyprus -->
         <div class="card">
-            <div class="country-info"><span>🇨🇾</span> قبرس (Cyprus)</div>
+            <div class="country-info"><span class="flag">🇨🇾</span> قبرس (Cyprus)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Cyprus.txt')">کپی لینک</button>
         </div>
 
         <!-- Czech -->
         <div class="card">
-            <div class="country-info"><span>🇨🇿</span> جمهوری چک (Czech)</div>
+            <div class="country-info"><span class="flag">🇨🇿</span> جمهوری چک (Czech)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Czech.txt')">کپی لینک</button>
         </div>
 
         <!-- Denmark -->
         <div class="card">
-            <div class="country-info"><span>🇩🇰</span> دانمارک (Denmark)</div>
+            <div class="country-info"><span class="flag">🇩🇰</span> دانمارک (Denmark)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Denmark.txt')">کپی لینک</button>
         </div>
 
         <!-- Egypt -->
         <div class="card">
-            <div class="country-info"><span>🇪🇬</span> مصر (Egypt)</div>
+            <div class="country-info"><span class="flag">🇪🇬</span> مصر (Egypt)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Egypt.txt')">کپی لینک</button>
         </div>
 
         <!-- Estonia -->
         <div class="card">
-            <div class="country-info"><span>🇪🇪</span> استونی (Estonia)</div>
+            <div class="country-info"><span class="flag">🇪🇪</span> استونی (Estonia)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Estonia.txt')">کپی لینک</button>
         </div>
 
         <!-- Finland -->
         <div class="card">
-            <div class="country-info"><span>🇫🇮</span> فنلاند (Finland)</div>
+            <div class="country-info"><span class="flag">🇫🇮</span> فنلاند (Finland)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Finland.txt')">کپی لینک</button>
         </div>
 
         <!-- France -->
         <div class="card">
-            <div class="country-info"><span>🇫🇷</span> فرانسه (France)</div>
+            <div class="country-info"><span class="flag">🇫🇷</span> فرانسه (France)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/France.txt')">کپی لینک</button>
         </div>
 
         <!-- Georgia -->
         <div class="card">
-            <div class="country-info"><span>🇬🇪</span> گرجستان (Georgia)</div>
+            <div class="country-info"><span class="flag">🇬🇪</span> گرجستان (Georgia)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Georgia.txt')">کپی لینک</button>
         </div>
 
         <!-- Germany -->
         <div class="card">
-            <div class="country-info"><span>🇩🇪</span> آلمان (Germany)</div>
+            <div class="country-info"><span class="flag">🇩🇪</span> آلمان (Germany)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Germany.txt')">کپی لینک</button>
         </div>
 
         <!-- Greece -->
         <div class="card">
-            <div class="country-info"><span>🇬🇷</span> یونان (Greece)</div>
+            <div class="country-info"><span class="flag">🇬🇷</span> یونان (Greece)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Greece.txt')">کپی لینک</button>
         </div>
 
         <!-- Greenland -->
         <div class="card">
-            <div class="country-info"><span>🇬🇱</span> گرینلند (Greenland)</div>
+            <div class="country-info"><span class="flag">🇬🇱</span> گرینلند (Greenland)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Greenland.txt')">کپی لینک</button>
         </div>
 
         <!-- Hungary -->
         <div class="card">
-            <div class="country-info"><span>🇭🇺</span> مجارستان (Hungary)</div>
+            <div class="country-info"><span class="flag">🇭🇺</span> مجارستان (Hungary)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Hungary.txt')">کپی لینک</button>
         </div>
 
         <!-- Iceland -->
         <div class="card">
-            <div class="country-info"><span>🇮🇸</span> ایسلند (Iceland)</div>
+            <div class="country-info"><span class="flag">🇮🇸</span> ایسلند (Iceland)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Iceland.txt')">کپی لینک</button>
         </div>
 
         <!-- India -->
         <div class="card">
-            <div class="country-info"><span>🇮🇳</span> هند (India)</div>
+            <div class="country-info"><span class="flag">🇮🇳</span> هند (India)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/India.txt')">کپی لینک</button>
         </div>
 
         <!-- Iran -->
         <div class="card">
-            <div class="country-info"><span>🇮🇷</span> ایران (Iran)</div>
+            <div class="country-info"><span class="flag">🇮🇷</span> ایران (Iran)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Iran.txt')">کپی لینک</button>
         </div>
 
         <!-- Ireland -->
         <div class="card">
-            <div class="country-info"><span>🇮🇪</span> ایرلند (Ireland)</div>
+            <div class="country-info"><span class="flag">🇮🇪</span> ایرلند (Ireland)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Ireland.txt')">کپی لینک</button>
         </div>
 
         <!-- Isle of Man -->
         <div class="card">
-            <div class="country-info"><span>🇮🇲</span> جزیره من (Isle of Man)</div>
+            <div class="country-info"><span class="flag">🇮🇲</span> جزیره من (Isle of Man)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/isleofman.txt')">کپی لینک</button>
         </div>
 
         <!-- Israel -->
         <div class="card">
-            <div class="country-info"><span>🇮🇱</span> اسرائیل (Israel)</div>
+            <div class="country-info"><span class="flag">🇮🇱</span> اسرائیل (Israel)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Israel.txt')">کپی لینک</button>
         </div>
 
         <!-- Italy -->
         <div class="card">
-            <div class="country-info"><span>🇮🇹</span> ایتالیا (Italy)</div>
+            <div class="country-info"><span class="flag">🇮🇹</span> ایتالیا (Italy)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Italy.txt')">کپی لینک</button>
         </div>
 
         <!-- Kazakhstan -->
         <div class="card">
-            <div class="country-info"><span>🇰🇿</span> قزاقستان (Kazakhstan)</div>
+            <div class="country-info"><span class="flag">🇰🇿</span> قزاقستان (Kazakhstan)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Kazakhstan.txt')">کپی لینک</button>
         </div>
 
         <!-- Latvia -->
         <div class="card">
-            <div class="country-info"><span>🇱🇻</span> لتونی (Latvia)</div>
+            <div class="country-info"><span class="flag">🇱🇻</span> لتونی (Latvia)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Latvia.txt')">کپی لینک</button>
         </div>
 
         <!-- Liechtenstein -->
         <div class="card">
-            <div class="country-info"><span>🇱🇮</span> لیختن‌اشتاین (Liechtenstein)</div>
+            <div class="country-info"><span class="flag">🇱🇮</span> لیختن‌اشتاین (Liechtenstein)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/LIECHTENSTEIN.txt')">کپی لینک</button>
         </div>
 
         <!-- Lithuania -->
         <div class="card">
-            <div class="country-info"><span>🇱🇹</span> لیتوانی (Lithuania)</div>
+            <div class="country-info"><span class="flag">🇱🇹</span> لیتوانی (Lithuania)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/LITHUANIA.txt')">کپی لینک</button>
         </div>
 
         <!-- Luxembourg -->
         <div class="card">
-            <div class="country-info"><span>🇱🇺</span> لوکزامبورگ (Luxembourg)</div>
+            <div class="country-info"><span class="flag">🇱🇺</span> لوکزامبورگ (Luxembourg)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/LUXEMBOURG.txt')">کپی لینک</button>
         </div>
 
         <!-- Macedonia -->
         <div class="card">
-            <div class="country-info"><span>🇲🇰</span> مقدونیه (Macedonia)</div>
+            <div class="country-info"><span class="flag">🇲🇰</span> مقدونیه (Macedonia)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Macdonia.txt')">کپی لینک</button>
         </div>
 
         <!-- Malta -->
         <div class="card">
-            <div class="country-info"><span>🇲🇹</span> مالت (Malta)</div>
+            <div class="country-info"><span class="flag">🇲🇹</span> مالت (Malta)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Malta.txt')">کپی لینک</button>
         </div>
 
         <!-- Moldova -->
         <div class="card">
-            <div class="country-info"><span>🇲🇩</span> مولداوی (Moldova)</div>
+            <div class="country-info"><span class="flag">🇲🇩</span> مولداوی (Moldova)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Moldova.txt')">کپی لینک</button>
         </div>
 
         <!-- Monaco -->
         <div class="card">
-            <div class="country-info"><span>🇲🇨</span> موناکو (Monaco)</div>
+            <div class="country-info"><span class="flag">🇲🇨</span> موناکو (Monaco)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Monaco.txt')">کپی لینک</button>
         </div>
 
         <!-- Montenegro -->
         <div class="card">
-            <div class="country-info"><span>🇲🇪</span> مونته‌نگرو (Montenegro)</div>
+            <div class="country-info"><span class="flag">🇲🇪</span> مونته‌نگرو (Montenegro)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Montenegro.txt')">کپی لینک</button>
         </div>
 
         <!-- Morocco -->
         <div class="card">
-            <div class="country-info"><span>🇲🇦</span> مراکش (Morocco)</div>
+            <div class="country-info"><span class="flag">🇲🇦</span> مراکش (Morocco)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Morocco.txt')">کپی لینک</button>
         </div>
 
         <!-- Netherlands -->
         <div class="card">
-            <div class="country-info"><span>🇳🇱</span> هلند (Netherlands)</div>
+            <div class="country-info"><span class="flag">🇳🇱</span> هلند (Netherlands)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Netherlands.txt')">کپی لینک</button>
         </div>
 
         <!-- Nigeria -->
         <div class="card">
-            <div class="country-info"><span>🇳🇬</span> نیجریه (Nigeria)</div>
+            <div class="country-info"><span class="flag">🇳🇬</span> نیجریه (Nigeria)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Nigeria.txt')">کپی لینک</button>
         </div>
 
         <!-- Norway -->
         <div class="card">
-            <div class="country-info"><span>🇳🇴</span> نروژ (Norway)</div>
+            <div class="country-info"><span class="flag">🇳🇴</span> نروژ (Norway)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Norway.txt')">کپی لینک</button>
         </div>
 
         <!-- Pakistan -->
         <div class="card">
-            <div class="country-info"><span>🇵🇰</span> پاکستان (Pakistan)</div>
+            <div class="country-info"><span class="flag">🇵🇰</span> پاکستان (Pakistan)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Pakistan.txt')">کپی لینک</button>
         </div>
 
         <!-- Panama -->
         <div class="card">
-            <div class="country-info"><span>🇵🇦</span> پاناما (Panama)</div>
+            <div class="country-info"><span class="flag">🇵🇦</span> پاناما (Panama)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Panama.txt')">کپی لینک</button>
         </div>
 
         <!-- Peru -->
         <div class="card">
-            <div class="country-info"><span>🇵🇪</span> پرو (Peru)</div>
+            <div class="country-info"><span class="flag">🇵🇪</span> پرو (Peru)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Peru.txt')">کپی لینک</button>
         </div>
 
         <!-- Poland -->
         <div class="card">
-            <div class="country-info"><span>🇵🇱</span> لهستان (Poland)</div>
+            <div class="country-info"><span class="flag">🇵🇱</span> لهستان (Poland)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Poland.txt')">کپی لینک</button>
         </div>
 
         <!-- Portugal -->
         <div class="card">
-            <div class="country-info"><span>🇵🇹</span> پرتغال (Portugal)</div>
+            <div class="country-info"><span class="flag">🇵🇹</span> پرتغال (Portugal)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Portugal.txt')">کپی لینک</button>
         </div>
 
         <!-- Qatar -->
         <div class="card">
-            <div class="country-info"><span>🇶🇦</span> قطر (Qatar)</div>
+            <div class="country-info"><span class="flag">🇶🇦</span> قطر (Qatar)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Qatar.txt')">کپی لینک</button>
         </div>
 
         <!-- Romania -->
         <div class="card">
-            <div class="country-info"><span>🇷🇴</span> رومانی (Romania)</div>
+            <div class="country-info"><span class="flag">🇷🇴</span> رومانی (Romania)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Romania.txt')">کپی لینک</button>
         </div>
 
         <!-- Russia -->
         <div class="card">
-            <div class="country-info"><span>🇷🇺</span> روسیه (Russia)</div>
+            <div class="country-info"><span class="flag">🇷🇺</span> روسیه (Russia)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Russia.txt')">کپی لینک</button>
         </div>
 
         <!-- Saudi -->
         <div class="card">
-            <div class="country-info"><span>🇸🇦</span> عربستان سعودی (Saudi Arabia)</div>
+            <div class="country-info"><span class="flag">🇸🇦</span> عربستان سعودی (Saudi Arabia)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Saudi.txt')">کپی لینک</button>
         </div>
 
         <!-- Serbia -->
         <div class="card">
-            <div class="country-info"><span>🇷🇸</span> صربستان (Serbia)</div>
+            <div class="country-info"><span class="flag">🇷🇸</span> صربستان (Serbia)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Serbia.txt')">کپی لینک</button>
         </div>
 
         <!-- Slovakia -->
         <div class="card">
-            <div class="country-info"><span>🇸🇰</span> اسلواکی (Slovakia)</div>
+            <div class="country-info"><span class="flag">🇸🇰</span> اسلواکی (Slovakia)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Slovakia.txt')">کپی لینک</button>
         </div>
 
         <!-- Slovenia -->
         <div class="card">
-            <div class="country-info"><span>🇸🇮</span> اسلوونی (Slovenia)</div>
+            <div class="country-info"><span class="flag">🇸🇮</span> اسلوونی (Slovenia)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Slovenia.txt')">کپی لینک</button>
         </div>
 
         <!-- South Africa -->
         <div class="card">
-            <div class="country-info"><span>🇿🇦</span> آفریقای جنوبی (South Africa)</div>
+            <div class="country-info"><span class="flag">🇿🇦</span> آفریقای جنوبی (South Africa)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Southafrica.txt')">کپی لینک</button>
         </div>
 
         <!-- Spain -->
         <div class="card">
-            <div class="country-info"><span>🇪🇸</span> اسپانیا (Spain)</div>
+            <div class="country-info"><span class="flag">🇪🇸</span> اسپانیا (Spain)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Spain.txt')">کپی لینک</button>
         </div>
 
         <!-- Sri Lanka -->
         <div class="card">
-            <div class="country-info"><span>🇱🇰</span> سریلانکا (Sri Lanka)</div>
+            <div class="country-info"><span class="flag">🇱🇰</span> سریلانکا (Sri Lanka)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Srilanka.txt')">کپی لینک</button>
         </div>
 
         <!-- Sweden -->
         <div class="card">
-            <div class="country-info"><span>🇸🇪</span> سوئد (Sweden)</div>
+            <div class="country-info"><span class="flag">🇸🇪</span> سوئد (Sweden)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Sweden.txt')">کپی لینک</button>
         </div>
 
         <!-- Switzerland -->
         <div class="card">
-            <div class="country-info"><span>🇨🇭</span> سوئیس (Switzerland)</div>
+            <div class="country-info"><span class="flag">🇨🇭</span> سوئیس (Switzerland)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Sweitzerland.txt')">کپی لینک</button>
         </div>
 
         <!-- Turkey -->
         <div class="card">
-            <div class="country-info"><span>🇹🇷</span> ترکیه (Turkey)</div>
+            <div class="country-info"><span class="flag">🇹🇷</span> ترکیه (Turkey)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Turkey.txt')">کپی لینک</button>
         </div>
 
         <!-- UAE -->
         <div class="card">
-            <div class="country-info"><span>🇦🇪</span> امارات (UAE)</div>
+            <div class="country-info"><span class="flag">🇦🇪</span> امارات (UAE)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/UAE.txt')">کپی لینک</button>
         </div>
 
         <!-- UK -->
         <div class="card">
-            <div class="country-info"><span>🇬🇧</span> بریتانیا (UK)</div>
+            <div class="country-info"><span class="flag">🇬🇧</span> بریتانیا (UK)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/UK.txt')">کپی لینک</button>
         </div>
 
         <!-- Ukraine -->
         <div class="card">
-            <div class="country-info"><span>🇺🇦</span> اوکراین (Ukraine)</div>
+            <div class="country-info"><span class="flag">🇺🇦</span> اوکراین (Ukraine)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Ukraine.txt')">کپی لینک</button>
         </div>
 
         <!-- Venezuela -->
         <div class="card">
-            <div class="country-info"><span>🇻🇪</span> ونزوئلا (Venezuela)</div>
+            <div class="country-info"><span class="flag">🇻🇪</span> ونزوئلا (Venezuela)</div>
             <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Venezuela.txt')">کپی لینک</button>
         </div>
 
     </div>
 
+    <!-- Toast Notification Element -->
+    <div id="toast">لینک اشتراک با موفقیت کپی شد!</div>
+
     <script>
-        // Function to copy link to clipboard
+        // Function to copy link to clipboard with modern toast notification
         function copyUrl(url) {
             navigator.clipboard.writeText(url).then(() => {
-                alert("لینک اشتراک کپی شد!");
+                showToast();
             }).catch(err => {
                 console.error("Failed to copy: ", err);
             });
+        }
+
+        function showToast() {
+            const toast = document.getElementById("toast");
+            toast.className = "show";
+            setTimeout(() => {
+                toast.className = toast.className.replace("show", "");
+            }, 2500);
         }
     </script>
 
