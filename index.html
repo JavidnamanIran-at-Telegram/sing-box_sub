@@ -7,21 +7,25 @@
     <style>
         :root {
             --bg-color: #090d16;
-            --card-bg: rgba(30, 41, 59, 0.7);
-            --card-border: rgba(255, 255, 255, 0.08);
+            --card-bg: rgba(255, 255, 255, 0.03);
+            --card-border: rgba(255, 255, 255, 0.07);
             --text-main: #f1f5f9;
             --text-muted: #94a3b8;
             --accent-color: #38bdf8;
             --accent-hover: #0ea5e9;
+            --hover-orange: #f97316;
         }
 
         body {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, sans-serif;
             background-color: var(--bg-color);
-            background-image: radial-gradient(circle at top, #1e1b4b 0%, var(--bg-color) 70%);
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(249, 115, 22, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(56, 189, 248, 0.08) 0%, transparent 40%),
+                var(--bg-color);
             color: var(--text-main);
             margin: 0;
-            padding: 30px 15px;
+            padding: 35px 15px;
             min-height: 100vh;
         }
 
@@ -39,7 +43,7 @@
             font-size: 24px;
             font-weight: 800;
             margin: 0 0 10px 0;
-            background: linear-gradient(to left, #38bdf8, #818cf8);
+            background: linear-gradient(to left, #38bdf8, #f97316);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -52,22 +56,25 @@
 
         .card {
             background: var(--card-bg);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
             border: 1px solid var(--card-border);
             padding: 14px 20px;
             margin-bottom: 12px;
-            border-radius: 14px;
+            border-radius: 16px;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
-            transition: transform 0.2s ease, border-color 0.2s ease;
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
+        /* Hover Effect: Glass card shifts to warm orange theme */
         .card:hover {
-            transform: translateY(-2px);
-            border-color: rgba(56, 189, 248, 0.3);
+            transform: translateY(-3px) scale(1.01);
+            background: rgba(249, 115, 22, 0.07);
+            border-color: rgba(249, 115, 22, 0.4);
+            box-shadow: 0 15px 35px -10px rgba(249, 115, 22, 0.2);
         }
 
         .country-info {
@@ -76,6 +83,11 @@
             display: flex;
             align-items: center;
             gap: 12px;
+            transition: color 0.3s ease;
+        }
+
+        .card:hover .country-info {
+            color: #fdba74;
         }
 
         .flag {
@@ -84,34 +96,35 @@
         }
 
         .btn-copy {
-            background: var(--accent-color);
-            color: #0f172a;
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--text-main);
             padding: 8px 18px;
             font-size: 13px;
             font-weight: 700;
-            border-radius: 8px;
-            border: none;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
             cursor: pointer;
-            transition: all 0.2s ease;
-            box-shadow: 0 4px 12px rgba(56, 189, 248, 0.2);
+            transition: all 0.3s ease;
         }
 
-        .btn-copy:hover {
-            background: var(--accent-hover);
-            transform: scale(1.03);
+        .card:hover .btn-copy {
+            background: var(--hover-orange);
+            color: #ffffff;
+            border-color: var(--hover-orange);
+            box-shadow: 0 4px 15px rgba(249, 115, 22, 0.4);
         }
 
         .btn-copy:active {
-            transform: scale(0.97);
+            transform: scale(0.95);
         }
 
         /* Toast Notification */
         #toast {
             visibility: hidden;
-            background-color: #10b981;
+            background-color: #f97316;
             color: white;
             text-align: center;
-            border-radius: 8px;
+            border-radius: 10px;
             padding: 12px 24px;
             position: fixed;
             z-index: 1000;
@@ -120,7 +133,7 @@
             transform: translateX(-50%);
             font-size: 14px;
             font-weight: 600;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            box-shadow: 0 5px 20px rgba(249, 115, 22, 0.4);
             transition: visibility 0.2s, opacity 0.2s ease;
             opacity: 0;
         }
@@ -520,7 +533,7 @@
         <!-- UAE -->
         <div class="card">
             <div class="country-info"><span class="flag">🇦🇪</span> امارات (UAE)</div>
-            <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/UAE.txt')">کپی لینک</button>
+            <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Toast')">کپی لینک</button>
         </div>
 
         <!-- UK -->
