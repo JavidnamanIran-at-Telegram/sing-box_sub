@@ -1,7 +1,7 @@
 {
   "log": {
     "disabled": false,
-    "level": "info",
+    "level": "debug",
     "output": "",
     "timestamp": false
   },
@@ -23,7 +23,8 @@
       "path": "cache.db",
       "cache_id": "ID_l00ggamo",
       "store_fakeip": true,
-      "rdrc_timeout": "7d"
+      "rdrc_timeout": "7d",
+      "store_dns": true
     }
   },
   "inbounds": [
@@ -41,14 +42,17 @@
       "tag": "tun-in",
       "interface_name": "",
       "address": [
-        "172.18.0.1/30",
-        "fdfe:dcba:9876::1/126"
+        "172.19.0.1/30"
       ],
-      "mtu": 0,
+      "mtu": 9000,
       "auto_route": true,
-      "strict_route": true,
+      "strict_route": false,
       "endpoint_independent_nat": false,
-      "stack": "mixed"
+      "stack": "mixed",
+      "dns_address": [
+        "172.19.0.2"
+      ],
+      "dns_mode": "hijack"
     }
   ],
   "endpoints": [
@@ -521,49 +525,174 @@
   "route": {
     "auto_detect_interface": true,
     "final": "کانال تلگرام @JavidnamanIran-@wearestand",
-    "default_domain_resolver": "Local-DNS-Resolver"
+    "default_domain_resolver": "dns-direct",
+    "rules": [
+      {
+        "action": "sniff",
+        "inbound": [
+          "tun-in"
+        ]
+      },
+      {
+        "action": "resolve",
+        "inbound": [
+          "tun-in"
+        ],
+        "strategy": "ipv4_only"
+      },
+      {
+        "action": "hijack-dns",
+        "port": [
+          53
+        ]
+      },
+      {
+        "action": "hijack-dns",
+        "protocol": [
+          "dns"
+        ]
+      },
+      {
+        "inbound": [
+          "tun-in"
+        ],
+        "ip_cidr": [
+          "1.1.1.1/32"
+        ],
+        "network": [
+          "tcp"
+        ],
+        "outbound": "🎯 Direct",
+        "port": [
+          53
+        ]
+      },
+      {
+        "inbound": [
+          "tun-in"
+        ],
+        "ip_cidr": [
+          "1.1.1.1/32",
+          "1.0.0.1/32",
+          "8.8.8.8/32",
+          "8.8.4.4/32",
+          "9.9.9.9/32",
+          "149.112.112.112/32",
+          "94.140.14.14/32",
+          "94.140.15.15/32",
+          "1.12.12.12/32",
+          "120.53.53.53/32"
+        ],
+        "network": [
+          "udp"
+        ],
+        "outbound": "کانال تلگرام @JavidnamanIran-@wearestand",
+        "port": [
+          53
+        ]
+      },
+      {
+        "domain": [
+          "dns.google",
+          "dns.quad9.net",
+          "dns9.quad9.net",
+          "cloudflare-dns.com",
+          "security.cloudflare-dns.com",
+          "family.cloudflare-dns.com",
+          "doh.pub",
+          "dns.adguard-dns.com"
+        ],
+        "inbound": [
+          "tun-in"
+        ],
+        "network": [
+          "tcp",
+          "udp"
+        ],
+        "outbound": "کانال تلگرام @JavidnamanIran-@wearestand",
+        "port": [
+          443,
+          853
+        ],
+        "protocol": [
+          "tls",
+          "quic"
+        ]
+      },
+      {
+        "outbound": "🎯 Direct",
+        "protocol": [
+          "bittorrent"
+        ]
+      },
+      {
+        "ip_is_private": true,
+        "outbound": "🎯 Direct"
+      },
+      {
+        "action": "reject",
+        "ip_cidr": [
+          "224.0.0.0/3",
+          "ff00::/8"
+        ],
+        "source_ip_cidr": [
+          "224.0.0.0/3",
+          "ff00::/8"
+        ]
+      }
+    ],
+    "rule_set": []
   },
   "dns": {
     "servers": [
       {
-        "tag": "Fake-IP",
+        "tag": "dns-local",
+        "type": "local"
+      },
+      {
+        "tag": "dns-direct",
+        "type": "tcp",
+        "server": "1.1.1.1",
+        "server_port": 53
+      },
+      {
+        "tag": "dns-remote",
+        "type": "https",
+        "server": "1.1.1.1",
+        "server_port": 443,
+        "detour": "کانال تلگرام @JavidnamanIran-@wearestand"
+      },
+      {
+        "tag": "dns-fake",
         "type": "fakeip",
         "inet4_range": "198.18.0.0/15",
         "inet6_range": "fc00::/18"
-      },
-      {
-        "tag": "Local-DNS",
-        "type": "tls",
-        "domain_resolver": "Local-DNS-Resolver",
-        "server_port": 443,
-        "server": "1.1.1.1"
-      },
-      {
-        "tag": "Local-DNS-Resolver",
-        "type": "tcp",
-        "server_port": 53,
-        "server": "64.6.64.6"
-      },
-      {
-        "tag": "Remote-DNS",
-        "type": "openvpn",
-        "endpoint": "🇺🇾 علی کرمی",
-        "accept_default_resolvers": true,
-        "accept_search_domain": true
       }
     ],
-    "disable_cache": false,
-    "disable_expire": false,
-    "final": "Remote-DNS",
-    "strategy": "prefer_ipv4"
-  },
-  "http_clients": [
-    {
-      "tag": "rule-set-client",
-      "detour": "direct",
-      "domain_resolver": {
-        "server": "Local-DNS"
+    "rules": [
+      {
+        "domain": [
+          "api.ip2location.io"
+        ],
+        "inbound": [
+          "tun-in"
+        ],
+        "server": "dns-remote"
+      },
+      {
+        "disable_cache": true,
+        "inbound": [
+          "tun-in"
+        ],
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "server": "dns-fake"
       }
-    }
-  ]
+    ],
+    "final": "dns-remote",
+    "strategy": "ipv4_only",
+    "timeout": "10s"
+  }
 }
