@@ -427,6 +427,17 @@
             return `https://cdn.jsdelivr.net/gh/JavidnamanIran-at-Telegram/sing-box_sub@main/${fileName}`;
         }
 
+        // Build the sing-box app's own URL Scheme so a QR scan (or tapping the
+        // link) tells the app directly to import this as a remote profile,
+        // instead of just opening a plain link that the app doesn't recognize.
+        // Format defined by sing-box:
+        //   sing-box://import-remote-profile?url=<urlEncodedURL>#<urlEncodedName>
+        function getSingBoxImportUrl(fileName) {
+            const subUrl = getSubUrl(fileName);
+            const profileName = fileName.replace(/\.txt$/i, '').replace(/_/g, ' ');
+            return `sing-box://import-remote-profile?url=${encodeURIComponent(subUrl)}#${encodeURIComponent(profileName)}`;
+        }
+
         // Show a modern custom toast notification instead of messy alert
         function showToast() {
             let toast = document.getElementById("toast");
@@ -446,13 +457,14 @@
             });
         }
 
-        // Show QR Code modal pointing directly to the CDN subscription link
+        // Show QR Code modal pointing to the sing-box deep link, so scanning
+        // it opens the sing-box app and imports the profile automatically.
         function showQRCode(fileName) {
-            const fullUrl = getSubUrl(fileName);
-            const qrApi = `https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${encodeURIComponent(fullUrl)}`;
-            
+            const importUrl = getSingBoxImportUrl(fileName);
+            const qrApi = `https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${encodeURIComponent(importUrl)}`;
+
             document.getElementById('qrImage').src = qrApi;
-            document.getElementById('modalLinkText').innerText = fullUrl;
+            document.getElementById('modalLinkText').innerText = importUrl;
             document.getElementById('qrModal').style.display = 'flex';
         }
 
