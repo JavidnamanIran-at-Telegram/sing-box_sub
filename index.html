@@ -259,7 +259,7 @@
 
     <div class="container">
         <h1>سرویس‌های اتصال Sing-Box</h1>
-        <p class="subtitle"سابهای سینگ باکس دسته‌بندی‌شده بر اساس کشور</p>
+        <p class="subtitle">فایل‌های کانفیگ دسته‌بندی‌شده بر اساس کشور</p>
 
         <input type="text" id="search" class="search-box" placeholder="جستجوی کشور..." onkeyup="filterCountries()">
 
@@ -375,8 +375,8 @@
                                 <span class="name">${displayName}</span>
                             </div>
                             <div class="actions">
-                                <button class="btn" onclick="copyFileLink('${fileName}')" title="کپی لینک">کپی</button>
-                                <button class="btn" onclick="showQRCode('${fileName}')" title="QR کد">QR</button>
+                                <button class="btn" onclick="copyFileLink('${fileName}')" title="کپی لینک ساب‌سکریپشن">کپی</button>
+                                <button class="btn" onclick="showQRCode('${fileName}')" title="QR کد ساب‌سکریپشن">QR</button>
                             </div>
                         </div>
                     `;
@@ -389,14 +389,14 @@
     <div id="qrModal" class="modal">
         <div class="modal-content">
             <span class="close-btn" onclick="closeModal()">&times;</span>
-            <h3 style="margin:0 0 10px 0; font-size:1.1rem; color: var(--accent-color);">اسکن QR کد</h3>
+            <h3 style="margin:0 0 10px 0; font-size:1.1rem; color: var(--accent-color);">اسکن QR کد ساب‌سکریپشن</h3>
             <img id="qrImage" src="" alt="QR Code">
             <p id="modalLinkText"></p>
         </div>
     </div>
 
     <!-- Custom Toast Notification -->
-    <div id="toast">لینک با موفقیت کپی شد!</div>
+    <div id="toast">لینک ساب‌سکریپشن با موفقیت کپی شد!</div>
 
     <footer>
         به یاد تمامی جاویدنامان ایران<br>
@@ -422,10 +422,9 @@
             }
         }
 
-        // Always point to GitHub Pages URL for JavidnamanIran-at-Telegram/sing-box_sub
-        function getAbsoluteUrl(fileName) {
-            const GITHUB_BASE_URL = "https://javidnamaniran-at-telegram.github.io/sing-box_sub/";
-            return GITHUB_BASE_URL + fileName;
+        // Generate high-speed jsDelivr CDN link (Bypasses GitHub CORS restrictions completely)
+        function getSubUrl(fileName) {
+            return `https://cdn.jsdelivr.net/gh/JavidnamanIran-at-Telegram/sing-box_sub@main/${fileName}`;
         }
 
         // Show a modern custom toast notification instead of messy alert
@@ -437,9 +436,9 @@
             }, 2500);
         }
 
-        // Copy full absolute URL of the config file to clipboard
+        // Copy subscription link to clipboard
         function copyFileLink(fileName) {
-            const fullUrl = getAbsoluteUrl(fileName);
+            const fullUrl = getSubUrl(fileName);
             navigator.clipboard.writeText(fullUrl).then(() => {
                 showToast();
             }).catch(err => {
@@ -447,10 +446,10 @@
             });
         }
 
-        // Show QR Code modal for specific file
+        // Show QR Code modal pointing directly to the CDN subscription link
         function showQRCode(fileName) {
-            const fullUrl = getAbsoluteUrl(fileName);
-            const qrApi = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(fullUrl)}`;
+            const fullUrl = getSubUrl(fileName);
+            const qrApi = `https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${encodeURIComponent(fullUrl)}`;
             
             document.getElementById('qrImage').src = qrApi;
             document.getElementById('modalLinkText').innerText = fullUrl;
