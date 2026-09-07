@@ -217,6 +217,33 @@
             color: var(--text-muted);
             word-break: break-all;
             margin: 0;
+            direction: ltr;
+        }
+
+        /* Toast Notification */
+        #toast {
+            visibility: hidden;
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(15, 23, 42, 0.95);
+            color: var(--text-color);
+            border: 1px solid var(--accent-color);
+            padding: 12px 24px;
+            border-radius: 10px;
+            z-index: 2000;
+            font-size: 0.9rem;
+            box-shadow: 0 5px 20px rgba(249, 115, 22, 0.3);
+            backdrop-filter: blur(8px);
+            opacity: 0;
+            transition: opacity 0.3s ease, bottom 0.3s ease;
+        }
+
+        #toast.show {
+            visibility: visible;
+            opacity: 1;
+            bottom: 50px;
         }
 
         footer {
@@ -368,6 +395,9 @@
         </div>
     </div>
 
+    <!-- Custom Toast Notification -->
+    <div id="toast">لینک با موفقیت کپی شد!</div>
+
     <footer>
         به یاد تمامی جاویدنامان ایران<br>
         از کپی بدون ذکر منبع جدا خودداری فرمایید
@@ -392,17 +422,27 @@
             }
         }
 
-        // Fix URL generation for Cloudflare Pages and GitHub Pages
+        // Force GitHub base URL regardless of where the site is opened (e.g. Cloudflare Pages)
         function getAbsoluteUrl(fileName) {
-            let base = window.location.href.substring(0, window.location.href.lastIndexOf('/') + 1);
-            return base + fileName;
+            // TODO: Replace this placeholder with your actual GitHub Pages URL
+            const GITHUB_BASE_URL = "https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/";
+            return GITHUB_BASE_URL + fileName;
+        }
+
+        // Show a modern custom toast notification instead of messy alert
+        function showToast() {
+            let toast = document.getElementById("toast");
+            toast.className = "show";
+            setTimeout(function(){ 
+                toast.className = toast.className.replace("show", ""); 
+            }, 2500);
         }
 
         // Copy full absolute URL of the config file to clipboard
         function copyFileLink(fileName) {
             const fullUrl = getAbsoluteUrl(fileName);
             navigator.clipboard.writeText(fullUrl).then(() => {
-                alert("لینک کپی شد: " + fullUrl);
+                showToast();
             }).catch(err => {
                 console.error('Failed to copy: ', err);
             });
