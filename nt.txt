@@ -58,7 +58,7 @@
       "mode": "tls",
       "server": "149.40.51.12",
       "server_port": 1194,
-      "network": "tcp",
+      "network": "udp",
       "username": "purevpn0s8732217",
       "password": "i67s60ep",
       "auth_retry": "none",
@@ -82,9 +82,8 @@
         "version_min": "1.2"
       },
       "data_ciphers": [
-        "AES-256-GCM",
-        "AES-128-GCM",
-        "AES-256-CBC"
+        "AES-256-GCM"
+        
       ],
       "data_ciphers_fallback": "AES-256-GCM",
       "auth": "SHA256",
