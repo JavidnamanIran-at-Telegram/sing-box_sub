@@ -3,916 +3,425 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>اشتراک‌های اختصاصی سینگ‌باکس</title>
+    <title>Sing-Box Subscriptions - کانفیگ‌های سینگ باکس</title>
     <style>
         :root {
-            --bg-color: #090d16;
-            --card-bg: rgba(255, 255, 255, 0.03);
-            --card-border: rgba(255, 255, 255, 0.07);
-            --text-main: #f1f5f9;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --text-color: #f8fafc;
             --text-muted: #94a3b8;
-            --hover-orange: #f97316;
+            --accent-color: #f97316; /* نارنجی */
+            --accent-hover: #ea580c; /* نارنجی پررنگ‌تر */
+            --border-color: rgba(51, 65, 85, 0.6);
         }
 
+        /* Animated Dancing Background */
         body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, sans-serif;
-            background-color: var(--bg-color);
-            background-image: 
-                radial-gradient(circle at 10% 20%, rgba(249, 115, 22, 0.08) 0%, transparent 40%),
-                radial-gradient(circle at 90% 80%, rgba(56, 189, 248, 0.08) 0%, transparent 40%),
-                var(--bg-color);
-            color: var(--text-main);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e1b4b, #090d16);
+            background-size: 400% 400%;
+            animation: gradientDance 15s ease infinite;
+            color: var(--text-color);
             margin: 0;
-            padding: 35px 15px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        @keyframes gradientDance {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         .container {
-            max-width: 650px;
-            margin: 0 auto;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 35px;
+            width: 100%;
+            max-width: 900px;
+            background-color: rgba(30, 41, 59, 0.75);
+            backdrop-filter: blur(16px);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            box-sizing: border-box;
         }
 
         h1 {
-            font-size: 24px;
-            font-weight: 800;
-            margin: 0 0 10px 0;
-            background: linear-gradient(to left, #38bdf8, #f97316);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            font-size: 1.75rem;
+            margin-top: 0;
+            margin-bottom: 8px;
+            text-align: center;
+            color: var(--text-color);
         }
 
         p.subtitle {
+            text-align: center;
             color: var(--text-muted);
-            font-size: 14px;
-            margin: 0;
+            margin-bottom: 24px;
+            font-size: 0.95rem;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 12px 16px;
+            font-size: 1rem;
+            background-color: rgba(15, 23, 42, 0.8);
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .search-box:focus {
+            border-color: var(--accent-color);
+            box-shadow: 0 0 12px rgba(249, 115, 22, 0.3);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 12px;
+            max-height: 500px;
+            overflow-y: auto;
+            padding: 4px;
+        }
+
+        .grid::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .grid::-webkit-scrollbar-track {
+            background: rgba(15, 23, 42, 0.5);
+            border-radius: 3px;
+        }
+
+        .grid::-webkit-scrollbar-thumb {
+            background: var(--border-color);
+            border-radius: 3px;
         }
 
         .card {
-            background: var(--card-bg);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid var(--card-border);
-            padding: 14px 20px;
-            margin-bottom: 12px;
-            border-radius: 16px;
+            background-color: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(8px);
+            border: 1px solid var(--border-color);
+            padding: 12px 16px;
+            border-radius: 10px;
             display: flex;
-            align-items: center;
             justify-content: space-between;
-            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+            align-items: center;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .card:hover {
-            transform: translateY(-3px) scale(1.01);
-            background: rgba(249, 115, 22, 0.07);
-            border-color: rgba(249, 115, 22, 0.4);
-            box-shadow: 0 15px 35px -10px rgba(249, 115, 22, 0.2);
+            border-color: var(--accent-color);
+            background-color: rgba(30, 41, 59, 0.9);
+            box-shadow: 0 4px 15px rgba(249, 115, 22, 0.2);
+            transform: translateY(-2px);
         }
 
         .country-info {
-            font-size: 15px;
-            font-weight: 600;
             display: flex;
             align-items: center;
-            gap: 12px;
-            transition: color 0.3s ease;
-        }
-
-        .card:hover .country-info {
-            color: #fdba74;
+            gap: 10px;
         }
 
         .flag {
-            font-size: 22px;
+            font-size: 1.3rem;
             line-height: 1;
+        }
+
+        .card span.name {
+            font-weight: 500;
+            font-size: 0.95rem;
         }
 
         .actions {
             display: flex;
-            gap: 8px;
-            align-items: center;
+            gap: 6px;
         }
 
-        .btn-copy, .btn-qr {
-            background: rgba(255, 255, 255, 0.1);
-            color: var(--text-main);
-            padding: 8px 14px;
-            font-size: 13px;
-            font-weight: 700;
-            border-radius: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+        .btn {
+            background-color: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-muted);
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
             cursor: pointer;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 5px;
+            text-decoration: none;
+            transition: all 0.2s;
         }
 
-        .card:hover .btn-copy {
-            background: var(--hover-orange);
-            color: #ffffff;
-            border-color: var(--hover-orange);
-            box-shadow: 0 4px 15px rgba(249, 115, 22, 0.4);
+        .btn:hover {
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+            background-color: rgba(249, 115, 22, 0.15);
         }
 
-        .card:hover .btn-qr {
-            background: rgba(56, 189, 248, 0.15);
-            border-color: rgba(56, 189, 248, 0.4);
-            color: #38bdf8;
-        }
-
-        .btn-copy:active, .btn-qr:active {
-            transform: scale(0.95);
-        }
-
-        /* Modal Styles */
-        .modal-overlay {
+        /* Modal styling for QR Code */
+        .modal {
+            display: none;
             position: fixed;
-            top: 0;
+            z-index: 1000;
             left: 0;
+            top: 0;
             width: 100%;
             height: 100%;
-            background: rgba(9, 13, 22, 0.8);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-            display: flex;
+            background-color: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(6px);
             justify-content: center;
             align-items: center;
-            z-index: 2000;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-        }
-
-        .modal-overlay.active {
-            opacity: 1;
-            visibility: visible;
         }
 
         .modal-content {
-            background: #111827;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 25px;
-            border-radius: 20px;
+            background-color: rgba(30, 41, 59, 0.95);
+            border: 1px solid var(--accent-color);
+            padding: 24px;
+            border-radius: 14px;
             text-align: center;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
-            transform: scale(0.9);
-            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            max-width: 300px;
+            max-width: 320px;
             width: 90%;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(249, 115, 22, 0.3);
         }
 
-        .modal-overlay.active .modal-content {
-            transform: scale(1);
-        }
-
-        .modal-content h3 {
-            margin: 0 0 15px 0;
-            font-size: 16px;
-            color: var(--text-main);
-        }
-
-        .qr-box {
-            background: #ffffff;
-            padding: 12px;
-            border-radius: 12px;
-            display: inline-block;
-            margin-bottom: 15px;
-        }
-
-        .qr-box img {
-            display: block;
-            width: 180px;
-            height: 180px;
-        }
-
-        .btn-close {
-            background: rgba(255, 255, 255, 0.1);
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            font-size: 1.5rem;
             color: var(--text-muted);
-            border: none;
-            padding: 8px 20px;
-            border-radius: 8px;
-            font-weight: 600;
             cursor: pointer;
-            transition: background 0.2s;
         }
 
-        .btn-close:hover {
-            background: rgba(255, 255, 255, 0.2);
-            color: var(--text-main);
+        .close-btn:hover {
+            color: var(--accent-color);
         }
 
-        /* Toast Notification */
-        #toast {
-            visibility: hidden;
-            background-color: #f97316;
-            color: white;
+        .modal-content img {
+            margin: 15px 0;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            max-width: 200px;
+            height: auto;
+        }
+
+        .modal-content p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            word-break: break-all;
+            margin: 0;
+        }
+
+        footer {
+            margin-top: 20px;
             text-align: center;
-            border-radius: 10px;
-            padding: 12px 24px;
-            position: fixed;
-            z-index: 3000;
-            left: 50%;
-            bottom: 30px;
-            transform: translateX(-50%);
-            font-size: 14px;
-            font-weight: 600;
-            box-shadow: 0 5px 20px rgba(249, 115, 22, 0.4);
-            transition: visibility 0.2s, opacity 0.2s ease;
-            opacity: 0;
-        }
-
-        #toast.show {
-            visibility: visible;
-            opacity: 1;
+            font-size: 0.85rem;
+            color: var(--text-muted);
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <header>
-            <h1>Sing-Box Subscriptions</h1>
-            <p class="subtitle">Click to copy link or view QR code</p>
-        </header>
-
-        <!-- Albania -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇦🇱</span> Albania</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Albania', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Albani.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Albani.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Algeria -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇩🇿</span> Algeria</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Algeria', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Algeria.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Algeria.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Andorra -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇦🇩</span> Andorra</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Andorra', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Andorra.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Andorra.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Armenia -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇦🇲</span> Armenia</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Armenia', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Armenia.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Armenia.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Australia -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇦🇺</span> Australia</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Australia', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Australia.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Australia.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Austria -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇦🇹</span> Austria</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Austria', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Austria.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Austria.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Belarus -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇧🇾</span> Belarus</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Belarus', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Belarus.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Belarus.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Belgium -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇧🇪</span> Belgium</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Belgium', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Belgium.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Belgium.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Bolivia -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇧🇴</span> Bolivia</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Bolivia', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Bolivia.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Bolivia.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Bosnia -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇧🇦</span> Bosnia</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Bosnia', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Bosnia.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Bosnia.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Bulgaria -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇧🇬</span> Bulgaria</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Bulgaria', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Bulgaria.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Bulgaria.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Canada -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇨🇦</span> Canada</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Canada', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Canada.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Canada.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Cyprus -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇨🇾</span> Cyprus</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Cyprus', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Cyprus.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Cyprus.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Czech -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇨🇿</span> Czech</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Czech', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Czech.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Czech.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Denmark -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇩🇰</span> Denmark</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Denmark', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Denmark.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Denmark.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Egypt -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇪🇬</span> Egypt</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Egypt', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Egypt.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Egypt.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Estonia -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇪🇪</span> Estonia</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Estonia', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Estonia.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Estonia.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Finland -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇫🇮</span> Finland</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Finland', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Finland.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Finland.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- France -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇫🇷</span> France</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('France', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/France.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/France.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Georgia -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇬🇪</span> Georgia</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Georgia', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Georgia.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Georgia.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Germany -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇩🇪</span> Germany</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Germany', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Germany.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Germany.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Greece -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇬🇷</span> Greece</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Greece', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Greece.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Greece.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Greenland -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇬🇱</span> Greenland</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Greenland', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Greenland.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Greenland.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Hungary -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇭🇺</span> Hungary</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Hungary', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Hungary.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Hungary.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Iceland -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇮🇸</span> Iceland</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Iceland', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Iceland.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Iceland.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- India -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇮🇳</span> India</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('India', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/India.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/India.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Iran -->
-        <div class="card">
-            <div class="country-info"><span class="flag"> </span> Iran</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Iran', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Iran.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Iran.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Ireland -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇮🇪</span> Ireland</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Ireland', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Ireland.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Ireland.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Isle of Man -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇮🇲</span> Isle of Man</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Isle of Man', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/isleofman.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/isleofman.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Israel -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇮🇱</span> Israel</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Israel', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Israel.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Israel.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Italy -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇮🇹</span> Italy</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Italy', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Italy.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Italy.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Kazakhstan -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇰🇿</span> Kazakhstan</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Kazakhstan', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Kazakhstan.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Kazakhstan.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Latvia -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇱🇻</span> Latvia</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Latvia', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Latvia.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Latvia.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Liechtenstein -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇱🇮</span> Liechtenstein</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Liechtenstein', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/LIECHTENSTEIN.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/LIECHTENSTEIN.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Lithuania -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇱🇹</span> Lithuania</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Lithuania', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/LITHUANIA.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/LITHUANIA.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Luxembourg -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇱🇺</span> Luxembourg</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Luxembourg', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/LUXEMBOURG.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/LUXEMBOURG.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Macedonia -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇲🇰</span> Macedonia</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Macedonia', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Macdonia.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Macdonia.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Malta -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇲🇹</span> Malta</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Malta', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Malta.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Malta.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Moldova -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇲🇩</span> Moldova</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Moldova', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Moldova.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Moldova.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Monaco -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇲🇨</span> Monaco</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Monaco', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Monaco.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Monaco.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Montenegro -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇲🇪</span> Montenegro</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Montenegro', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Montenegro.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Montenegro.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Morocco -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇲🇦</span> Morocco</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Morocco', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Morocco.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Morocco.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Netherlands -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇳🇱</span> Netherlands</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Netherlands', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Netherlands.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Netherlands.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Nigeria -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇳🇬</span> Nigeria</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Nigeria', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Nigeria.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Nigeria.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Norway -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇳🇴</span> Norway</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Norway', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Norway.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Norway.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Pakistan -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇵🇰</span> Pakistan</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Pakistan', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Pakistan.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Pakistan.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Panama -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇵🇦</span> Panama</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Panama', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Panama.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Panama.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Peru -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇵🇪</span> Peru</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Peru', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Peru.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Peru.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Poland -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇵🇱</span> Poland</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Poland', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Poland.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Poland.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Portugal -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇵🇹</span> Portugal</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Portugal', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Portugal.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Portugal.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Qatar -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇶🇦</span> Qatar</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Qatar', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Qatar.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Qatar.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Romania -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇷🇴</span> Romania</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Romania', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Romania.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Romania.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Russia -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇷🇺</span> Russia</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Russia', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Russia.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Russia.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Saudi Arabia -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇸🇦</span> Saudi Arabia</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Saudi Arabia', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Saudi.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Saudi.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Serbia -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇷🇸</span> Serbia</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Serbia', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Serbia.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Serbia.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Slovakia -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇸🇰</span> Slovakia</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Slovakia', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Slovakia.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Slovakia.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Slovenia -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇸🇮</span> Slovenia</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Slovenia', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Slovenia.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Slovenia.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- South Africa -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇿🇦</span> South Africa</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('South Africa', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Southafrica.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Southafrica.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Spain -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇪🇸</span> Spain</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Spain', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Spain.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Spain.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Sri Lanka -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇱🇰</span> Sri Lanka</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Sri Lanka', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Srilanka.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Srilanka.txt')">Copy Link</button>
-            </div>
+        <h1>سرویس‌های اتصال Sing-Box</h1>
+        <p class="subtitle">فایل‌های کانفیگ دسته‌بندی‌شده بر اساس کشور</p>
+
+        <input type="text" id="search" class="search-box" placeholder="جستجوی کشور..." onkeyup="filterCountries()">
+
+        <div class="grid" id="countryGrid">
+            <!-- Country Cards Template with Flags & Glassmorphism -->
+            <script>
+                // List of countries paired with their emoji flags
+                const countries = [
+                    { name: "Australia", code: "AU", flag: "🇦🇺" },
+                    { name: "Austria", code: "AT", flag: "🇦🇹" },
+                    { name: "Bahamas", code: "BS", flag: "🇧🇸" },
+                    { name: "Bangladesh", code: "BD", flag: "🇧🇩" },
+                    { name: "Belarus", code: "BY", flag: "🇧🇾" },
+                    { name: "Belgium", code: "BE", flag: "🇧🇪" },
+                    { name: "Bolivia", code: "BO", flag: "🇧🇴" },
+                    { name: "Bosnia", code: "BA", flag: "🇧🇦" },
+                    { name: "Brazil", code: "BR", flag: "🇧🇷" },
+                    { name: "Bulgaria", code: "BG", flag: "🇧🇬" },
+                    { name: "Cambodia", code: "KH", flag: "🇰🇭" },
+                    { name: "Canada", code: "CA", flag: "🇨🇦" },
+                    { name: "Chile", code: "CL", flag: "🇨🇱" },
+                    { name: "China", code: "CN", flag: "🇨🇳" },
+                    { name: "Colombia", code: "CO", flag: "🇨🇴" },
+                    { name: "Costa_Rica", code: "CR", flag: "🇨🇷" },
+                    { name: "Croatia", code: "HR", flag: "🇭🇷" },
+                    { name: "Cyprus", code: "CY", flag: "🇨🇾" },
+                    { name: "Czech", code: "CZ", flag: "🇨🇿" },
+                    { name: "Denmark", code: "DK", flag: "🇩🇰" },
+                    { name: "Dominican_Republic", code: "DO", flag: "🇩🇴" },
+                    { name: "Ecuador", code: "EC", flag: "🇪🇨" },
+                    { name: "Egypt", code: "EG", flag: "🇪🇬" },
+                    { name: "Estonia", code: "EE", flag: "🇪🇪" },
+                    { name: "Finland", code: "FI", flag: "🇫🇮" },
+                    { name: "France", code: "FR", flag: "🇫🇷" },
+                    { name: "Georgia", code: "GE", flag: "🇬🇪" },
+                    { name: "Germany", code: "DE", flag: "🇩🇪" },
+                    { name: "Greece", code: "GR", flag: "🇬🇷" },
+                    { name: "Greenland", code: "GL", flag: "🇬🇱" },
+                    { name: "Guatemala", code: "GT", flag: "🇬🇹" },
+                    { name: "Hong_Kong", code: "HK", flag: "🇭🇰" },
+                    { name: "Hungary", code: "HU", flag: "🇭🇺" },
+                    { name: "Iceland", code: "IS", flag: "🇮🇸" },
+                    { name: "India", code: "IN", flag: "🇮🇳" },
+                    { name: "Indonesia", code: "ID", flag: "🇮🇩" },
+                    { name: "Iran", code: "IR", flag: "" },
+                    { name: "Ireland", code: "IE", flag: "🇮🇪" },
+                    { name: "isleofman", code: "IM", flag: "🇮🇲" },
+                    { name: "Israel", code: "IL", flag: "🇮🇱" },
+                    { name: "Italy", code: "IT", flag: "🇮🇹" },
+                    { name: "Japan", code: "JP", flag: "🇯🇵" },
+                    { name: "Kazakhstan", code: "KZ", flag: "🇰🇿" },
+                    { name: "Kenya", code: "KE", flag: "🇰🇪" },
+                    { name: "Laos", code: "LA", flag: "🇱🇦" },
+                    { name: "Latvia", code: "LV", flag: "🇱🇻" },
+                    { name: "LIECHTENSTEIN", code: "LI", flag: "🇱🇮" },
+                    { name: "LITHUANIA", code: "LT", flag: "🇱🇹" },
+                    { name: "LUXEMBOURG", code: "LU", flag: "🇱🇺" },
+                    { name: "Macau", code: "MO", flag: "🇲🇴" },
+                    { name: "Macdonia", code: "MK", flag: "🇲🇰" },
+                    { name: "Malaysia", code: "MY", flag: "🇲🇾" },
+                    { name: "Malta", code: "MT", flag: "🇲🇹" },
+                    { name: "Mexico", code: "MX", flag: "🇲🇽" },
+                    { name: "Moldova", code: "MD", flag: "🇲🇩" },
+                    { name: "Monaco", code: "MC", flag: "🇲🇨" },
+                    { name: "Mongolia", code: "MN", flag: "🇲🇳" },
+                    { name: "Montenegro", code: "ME", flag: "🇲🇪" },
+                    { name: "Morocco", code: "MA", flag: "🇲🇦" },
+                    { name: "Myanmar", code: "MM", flag: "🇲🇲" },
+                    { name: "Nepal", code: "NP", flag: "🇳🇵" },
+                    { name: "Netherlands", code: "NL", flag: "🇳🇱" },
+                    { name: "New_Zealand", code: "NZ", flag: "🇳🇿" },
+                    { name: "Nigeria", code: "NG", flag: "🇳🇬" },
+                    { name: "Norway", code: "NO", flag: "🇳🇴" },
+                    { name: "Pakistan", code: "PK", flag: "🇵🇰" },
+                    { name: "Panama", code: "PA", flag: "🇵🇦" },
+                    { name: "Peru", code: "PE", flag: "🇵🇪" },
+                    { name: "Poland", code: "PL", flag: "🇵🇱" },
+                    { name: "Portugal", code: "PT", flag: "🇵🇹" },
+                    { name: "Qatar", code: "QA", flag: "🇶🇦" },
+                    { name: "Romania", code: "RO", flag: "🇷🇴" },
+                    { name: "Russia", code: "RU", flag: "🇷🇺" },
+                    { name: "Saudi", code: "SA", flag: "🇸🇦" },
+                    { name: "Serbia", code: "RS", flag: "🇷🇸" },
+                    { name: "Singapore", code: "SG", flag: "🇸🇬" },
+                    { name: "Slovakia", code: "SK", flag: "🇸🇰" },
+                    { name: "Slovenia", code: "SI", flag: "🇸🇮" },
+                    { name: "South_Korea", code: "KR", flag: "🇰🇷" },
+                    { name: "Southafrica", code: "ZA", flag: "🇿🇦" },
+                    { name: "Spain", code: "ES", flag: "🇪🇸" },
+                    { name: "Srilanka", code: "LK", flag: "🇱🇰" },
+                    { name: "Sweden", code: "SE", flag: "🇸🇪" },
+                    { name: "Sweitzerland", code: "CH", flag: "🇨🇭" },
+                    { name: "Taiwan", code: "TW", flag: "🇹🇼" },
+                    { name: "Thailand", code: "TH", flag: "🇹🇭" },
+                    { name: "Turkey", code: "TR", flag: "🇹🇷" },
+                    { name: "UAE", code: "AE", flag: "🇦🇪" },
+                    { name: "UK", code: "GB", flag: "🇬🇧" },
+                    { name: "Ukraine", code: "UA", flag: "🇺🇦" },
+                    { name: "Uruguay", code: "UY", flag: "🇺🇾" },
+                    { name: "USA", code: "US", flag: "🇺🇸" },
+                    { name: "Venezuela", code: "VE", flag: "🇻🇪" },
+                    { name: "Vietnam", code: "VN", flag: "🇻🇳" }
+                ];
+
+                // Render cards dynamically with Clean Code / JavaScript
+                document.write(countries.map(item => {
+                    const fileName = item.name + ".txt";
+                    const displayName = item.name.replace(/_/g, ' ');
+                    return `
+                        <div class="card">
+                            <div class="country-info">
+                                <span class="flag">${item.flag}</span>
+                                <span class="name">${displayName}</span>
+                            </div>
+                            <div class="actions">
+                                <button class="btn" onclick="copyFileLink('${fileName}')" title="کپی لینک">کپی</button>
+                                <button class="btn" onclick="showQRCode('${fileName}')" title="QR کد">QR</button>
+                            </div>
+                        </div>
+                    `;
+                }).join(''));
+            </script>
         </div>
-
-        <!-- Sweden -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇸🇪</span> Sweden</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Sweden', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Sweden.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Sweden.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Switzerland -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇨🇭</span> Switzerland</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Switzerland', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Sweitzerland.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Sweitzerland.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Turkey -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇹🇷</span> Turkey</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Turkey', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Turkey.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Turkey.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- UAE -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇦🇪</span> UAE</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('UAE', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/UAE.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/UAE.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- UK -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇬🇧</span> UK</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('UK', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/UK.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/UK.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Ukraine -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇺🇦</span> Ukraine</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Ukraine', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Ukraine.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Ukraine.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- USA -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇺🇸</span> USA</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('USA', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/USA.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/USA.txt')">Copy Link</button>
-            </div>
-        </div>
-
-        <!-- Venezuela -->
-        <div class="card">
-            <div class="country-info"><span class="flag">🇻🇪</span> Venezuela</div>
-            <div class="actions">
-                <button class="btn-qr" onclick="showQRCode('Venezuela', 'https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Venezuela.txt')">QR</button>
-                <button class="btn-copy" onclick="copyUrl('https://raw.githubusercontent.com/JavidnamanIran-at-Telegram/sing-box_sub/refs/heads/main/Venezuela.txt')">Copy Link</button>
-            </div>
-        </div>
-
     </div>
 
-    <!-- QR Code Modal -->
-    <div id="qrModal" class="modal-overlay" onclick="closeModalOnOutside(event)">
+    <!-- QR Code Modal Box -->
+    <div id="qrModal" class="modal">
         <div class="modal-content">
-            <h3 id="modalTitle">QR Code</h3>
-            <div class="qr-box">
-                <img id="qrImage" src="" alt="QR Code">
-            </div>
-            <br>
-            <button class="btn-close" onclick="closeModal()">Close</button>
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h3 style="margin:0 0 10px 0; font-size:1.1rem; color: var(--accent-color);">اسکن QR کد</h3>
+            <img id="qrImage" src="" alt="QR Code">
+            <p id="modalLinkText"></p>
         </div>
     </div>
 
-    <!-- Toast Notification Element -->
-    <div id="toast">Subscription link copied successfully!</div>
+    <footer>
+        Sing-Box Subscription Manager &copy; 2026
+    </footer>
 
     <script>
-        // Function to copy link to clipboard with modern toast notification
-        function copyUrl(url) {
-            navigator.clipboard.writeText(url).then(() => {
-                showToast();
+        // Filter countries based on search input
+        function filterCountries() {
+            let input = document.getElementById('search');
+            let filter = input.value.toLowerCase();
+            let grid = document.getElementById('countryGrid');
+            let cards = grid.getElementsByClassName('card');
+
+            for (let i = 0; i < cards.length; i++) {
+                let nameSpan = cards[i].getElementsByClassName('name')[0];
+                let txtValue = nameSpan.textContent || nameSpan.innerText;
+                if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                    cards[i].style.display = "";
+                } else {
+                    cards[i].style.display = "none";
+                }
+            }
+        }
+
+        // Copy full absolute URL of the config file to clipboard
+        function copyFileLink(fileName) {
+            const fullUrl = window.location.origin + window.location.pathname.replace(/\/[^\/]*$/, '/') + fileName;
+            navigator.clipboard.writeText(fullUrl).then(() => {
+                alert("لینک کپی شد: " + fullUrl);
             }).catch(err => {
-                console.error("Failed to copy: ", err);
+                console.error('Failed to copy: ', err);
             });
         }
 
-        function showToast() {
-            const toast = document.getElementById("toast");
-            toast.className = "show";
-            setTimeout(() => {
-                toast.className = toast.className.replace("show", "");
-            }, 2500);
-        }
-
-        // QR Code Modal Functions
-        function showQRCode(countryName, url) {
-            const modal = document.getElementById("qrModal");
-            const title = document.getElementById("modalTitle");
-            const qrImg = document.getElementById("qrImage");
-
-            title.innerText = countryName + " Subscription";
-            // Using a reliable free QR generator API
-            qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${encodeURIComponent(url)}`;
+        // Show QR Code modal for specific file
+        function showQRCode(fileName) {
+            const fullUrl = window.location.origin + window.location.pathname.replace(/\/[^\/]*$/, '/') + fileName;
+            const qrApi = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(fullUrl)}`;
             
-            modal.classList.add("active");
+            document.getElementById('qrImage').src = qrApi;
+            document.getElementById('modalLinkText').innerText = fullUrl;
+            document.getElementById('qrModal').style.display = 'flex';
         }
 
+        // Close the modal popup
         function closeModal() {
-            const modal = document.getElementById("qrModal");
-            modal.classList.remove("active");
+            document.getElementById('qrModal').style.display = 'none';
         }
 
-        function closeModalOnOutside(event) {
-            const modal = document.getElementById("qrModal");
-            if (event.target === modal) {
-                closeModal();
+        // Close modal when clicking outside of content box
+        window.onclick = function(event) {
+            const modal = document.getElementById('qrModal');
+            if (event.target == modal) {
+                modal.style.display = "none";
             }
         }
     </script>
-
 </body>
 </html>
