@@ -82,34 +82,19 @@
         "version_min": "1.2"
       },
       "data_ciphers": [
-        "AES-256-GCM"
+        "AES-256-GCM",
+        "AES-128-GCM",
+        "AES-256-CBC"
         
       ],
-      "data_ciphers_fallback": "AES-256-GCM",
+      "data_ciphers_fallback": "AES-256-CBC",
       "auth": "SHA256",
-      "mss_fix": 0,
-      "mss_fix_disabled": false,
-      "mss_fix_mode": "",
-      "fragment": 0,
-      "replay_window": 0,
-      "compression": "",
-      "compression_lzo": "",
-      "allow_compression": "no",
-      "route_no_pull": false,
-      "routes": [
-        "0.0.0.0/1",
-        "128.0.0.0/1",
-        "::/1",
-        "8000::/1"
-      ],
       "redirect_gateway": true,
       "redirect_gateway_flags": [
         "def1"
       ],
-      "redirect_private": false,
       "block_ipv6": true,
       "ping_interval": "5s",
-      "renegotiate_disabled": false,
       "tls_timeout": "30s",
       "system": false,
       "mtu": 1500
