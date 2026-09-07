@@ -54,9 +54,9 @@
   "endpoints": [
     {
       "type": "openvpn-client",
-      "tag": "🇲🇳 اسماعیل عاقلیان",
+      "tag": "🇲🇽 شاهرخ همایونی ۱۳ساله",
       "mode": "tls",
-      "server": "173.244.58.7",
+      "server": "77.81.142.217",
       "server_port": 443,
       "network": "tcp",
       "username": "B8EwbytrkP",
@@ -96,9 +96,9 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "🇲🇳 امیرحسین فیضی",
+      "tag": "🇲🇽 آرلن سرکیسیان",
       "mode": "tls",
-      "server": "173.244.58.9",
+      "server": "77.81.142.212",
       "server_port": 443,
       "network": "tcp",
       "username": "B8EwbytrkP",
@@ -138,9 +138,9 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "🇲🇳 احمدرضا فیضی ۱۶ساله",
+      "tag": "🇲🇽 محمدرضا (مهرداد) عالمی",
       "mode": "tls",
-      "server": "173.244.58.5",
+      "server": "77.81.142.136",
       "server_port": 443,
       "network": "tcp",
       "username": "B8EwbytrkP",
@@ -180,9 +180,9 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "🇲🇳 نهال آهوقلندری",
+      "tag": "🇲🇽 سعید سیاوشی",
       "mode": "tls",
-      "server": "173.244.58.6",
+      "server": "77.81.142.227",
       "server_port": 443,
       "network": "tcp",
       "username": "B8EwbytrkP",
@@ -222,9 +222,9 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "🇲🇳 محمد فروغی",
+      "tag": "🇲🇽 فضائیل بالغ",
       "mode": "tls",
-      "server": "173.244.58.4",
+      "server": "77.81.142.143",
       "server_port": 443,
       "network": "tcp",
       "username": "B8EwbytrkP",
@@ -264,9 +264,9 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "🇲🇳 سید محمد موسوی",
+      "tag": "🇲🇽 اسماعیل (مجید) گردانی",
       "mode": "tls",
-      "server": "173.244.58.10",
+      "server": "77.81.142.228",
       "server_port": 443,
       "network": "tcp",
       "username": "B8EwbytrkP",
@@ -306,9 +306,9 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "🇲🇳 امیرحسین عبداللهی ۱۷ ساله",
+      "tag": "🇲🇽 سینا کبودانی",
       "mode": "tls",
-      "server": "173.244.58.8",
+      "server": "77.81.142.138",
       "server_port": 443,
       "network": "tcp",
       "username": "B8EwbytrkP",
@@ -348,9 +348,9 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "🇲🇳 سامان شفتی",
+      "tag": "🇲🇽 حسین کوهستانی",
       "mode": "tls",
-      "server": "173.244.58.3",
+      "server": "77.81.142.142",
       "server_port": 443,
       "network": "tcp",
       "username": "B8EwbytrkP",
@@ -390,9 +390,9 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "🇲🇳 یعقوب عبدی جمایران",
+      "tag": "🇲🇽 محمدامین سلطانی",
       "mode": "tls",
-      "server": "173.244.58.11",
+      "server": "77.81.142.213",
       "server_port": 443,
       "network": "tcp",
       "username": "B8EwbytrkP",
@@ -432,9 +432,9 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "🇲🇳 اصغر فتحی",
+      "tag": "🇲🇽 محمد خرمبکی",
       "mode": "tls",
-      "server": "173.244.58.2",
+      "server": "77.81.142.220",
       "server_port": 443,
       "network": "tcp",
       "username": "B8EwbytrkP",
@@ -505,16 +505,16 @@
       "tag": "کانال تلگرام @JavidnamanIran-@wearestand",
       "interrupt_exist_connections": true,
       "outbounds": [
-        "🇲🇳 اسماعیل عاقلیان",
-        "🇲🇳 امیرحسین فیضی",
-        "🇲🇳 احمدرضا فیضی ۱۶ساله",
-        "🇲🇳 نهال آهوقلندری",
-        "🇲🇳 محمد فروغی",
-        "🇲🇳 سید محمد موسوی",
-        "🇲🇳 امیرحسین عبداللهی ۱۷ ساله",
-        "🇲🇳 سامان شفتی",
-        "🇲🇳 یعقوب عبدی جمایران",
-        "🇲🇳 اصغر فتحی"
+        "🇲🇽 شاهرخ همایونی ۱۳ساله",
+        "🇲🇽 آرلن سرکیسیان",
+        "🇲🇽 محمدرضا (مهرداد) عالمی",
+        "🇲🇽 سعید سیاوشی",
+        "🇲🇽 فضائیل بالغ",
+        "🇲🇽 اسماعیل (مجید) گردانی",
+        "🇲🇽 سینا کبودانی",
+        "🇲🇽 حسین کوهستانی",
+        "🇲🇽 محمدامین سلطانی",
+        "🇲🇽 محمد خرمبکی"
       ]
     }
   ],
@@ -547,7 +547,7 @@
       {
         "tag": "Remote-DNS",
         "type": "openvpn",
-        "endpoint": "🇲🇳 اسماعیل عاقلیان",
+        "endpoint": "🇲🇽 شاهرخ همایونی ۱۳ساله",
         "accept_default_resolvers": true,
         "accept_search_domain": true
       }
