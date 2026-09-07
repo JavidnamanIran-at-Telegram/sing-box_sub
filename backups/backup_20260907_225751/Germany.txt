@@ -1,0 +1,999 @@
+{
+  "log": {
+    "disabled": false,
+    "level": "info",
+    "output": "",
+    "timestamp": false
+  },
+  "experimental": {
+    "clash_api": {
+      "external_controller": "127.0.0.1:20123",
+      "external_ui": "",
+      "external_ui_download_url": "",
+      "external_ui_download_detour": "🎯 Direct",
+      "secret": "b49673122775a7b5ce5e24fb20bfcf49dcdf6b4de3eb35a5a0635524f65fd05d",
+      "default_mode": "rule",
+      "access_control_allow_origin": [
+        "*"
+      ],
+      "access_control_allow_private_network": false
+    },
+    "cache_file": {
+      "enabled": true,
+      "path": "cache.db",
+      "cache_id": "ID_l00ggamo",
+      "store_fakeip": true,
+      "rdrc_timeout": "7d"
+    }
+  },
+  "inbounds": [
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "127.0.0.1",
+      "listen_port": 20122,
+      "tcp_fast_open": false,
+      "tcp_multi_path": false,
+      "udp_fragment": false
+    },
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "interface_name": "",
+      "address": [
+        "172.18.0.1/30",
+        "fdfe:dcba:9876::1/126"
+      ],
+      "mtu": 0,
+      "auto_route": true,
+      "strict_route": true,
+      "endpoint_independent_nat": false,
+      "stack": "mixed"
+    }
+  ],
+  "endpoints": [
+    {
+      "type": "openvpn-client",
+      "tag": "🇩🇪 جواد طباطبایی",
+      "mode": "tls",
+      "server": "158.173.154.29",
+      "server_port": 443,
+      "network": "tcp",
+      "username": "B8EwbytrkP",
+      "password": "ij24A4aqb8",
+      "auth_retry": "none",
+      "tls": {
+        "server_name": "",
+        "server_name_type": "name",
+        "certificate": [
+          "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+        ],
+        "client_certificate": [
+          ""
+        ],
+        "client_key": [
+          ""
+        ],
+        "remote_certificate_tls": "server",
+        "version_min": "1.2"
+      },
+      "data_ciphers": [
+        "AES-256-GCM",
+        "AES-128-GCM",
+        "AES-256-CBC"
+      ],
+      "data_ciphers_fallback": "AES-256-CBC",
+      "auth": "SHA256",
+      "redirect_gateway": true,
+      "redirect_gateway_flags": [
+        "def1"
+      ],
+      "block_ipv6": true,
+      "ping_interval": "5s",
+      "tls_timeout": "30s",
+      "system": false,
+      "mtu": 1500
+    },
+    {
+      "type": "openvpn-client",
+      "tag": "🇩🇪 ابوالفضل مرشد عباسی",
+      "mode": "tls",
+      "server": "158.173.154.45",
+      "server_port": 443,
+      "network": "tcp",
+      "username": "B8EwbytrkP",
+      "password": "ij24A4aqb8",
+      "auth_retry": "none",
+      "tls": {
+        "server_name": "",
+        "server_name_type": "name",
+        "certificate": [
+          "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+        ],
+        "client_certificate": [
+          ""
+        ],
+        "client_key": [
+          ""
+        ],
+        "remote_certificate_tls": "server",
+        "version_min": "1.2"
+      },
+      "data_ciphers": [
+        "AES-256-GCM",
+        "AES-128-GCM",
+        "AES-256-CBC"
+      ],
+      "data_ciphers_fallback": "AES-256-CBC",
+      "auth": "SHA256",
+      "redirect_gateway": true,
+      "redirect_gateway_flags": [
+        "def1"
+      ],
+      "block_ipv6": true,
+      "ping_interval": "5s",
+      "tls_timeout": "30s",
+      "system": false,
+      "mtu": 1500
+    },
+    {
+      "type": "openvpn-client",
+      "tag": "🇩🇪 فرهاد صادقی",
+      "mode": "tls",
+      "server": "158.173.154.196",
+      "server_port": 443,
+      "network": "tcp",
+      "username": "B8EwbytrkP",
+      "password": "ij24A4aqb8",
+      "auth_retry": "none",
+      "tls": {
+        "server_name": "",
+        "server_name_type": "name",
+        "certificate": [
+          "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+        ],
+        "client_certificate": [
+          ""
+        ],
+        "client_key": [
+          ""
+        ],
+        "remote_certificate_tls": "server",
+        "version_min": "1.2"
+      },
+      "data_ciphers": [
+        "AES-256-GCM",
+        "AES-128-GCM",
+        "AES-256-CBC"
+      ],
+      "data_ciphers_fallback": "AES-256-CBC",
+      "auth": "SHA256",
+      "redirect_gateway": true,
+      "redirect_gateway_flags": [
+        "def1"
+      ],
+      "block_ipv6": true,
+      "ping_interval": "5s",
+      "tls_timeout": "30s",
+      "system": false,
+      "mtu": 1500
+    },
+    {
+      "type": "openvpn-client",
+      "tag": "🇩🇪 مهران هدایی",
+      "mode": "tls",
+      "server": "158.173.154.204",
+      "server_port": 443,
+      "network": "tcp",
+      "username": "B8EwbytrkP",
+      "password": "ij24A4aqb8",
+      "auth_retry": "none",
+      "tls": {
+        "server_name": "",
+        "server_name_type": "name",
+        "certificate": [
+          "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+        ],
+        "client_certificate": [
+          ""
+        ],
+        "client_key": [
+          ""
+        ],
+        "remote_certificate_tls": "server",
+        "version_min": "1.2"
+      },
+      "data_ciphers": [
+        "AES-256-GCM",
+        "AES-128-GCM",
+        "AES-256-CBC"
+      ],
+      "data_ciphers_fallback": "AES-256-CBC",
+      "auth": "SHA256",
+      "redirect_gateway": true,
+      "redirect_gateway_flags": [
+        "def1"
+      ],
+      "block_ipv6": true,
+      "ping_interval": "5s",
+      "tls_timeout": "30s",
+      "system": false,
+      "mtu": 1500
+    },
+    {
+      "type": "openvpn-client",
+      "tag": "🇩🇪 علی هاشمی",
+      "mode": "tls",
+      "server": "158.173.155.180",
+      "server_port": 443,
+      "network": "tcp",
+      "username": "B8EwbytrkP",
+      "password": "ij24A4aqb8",
+      "auth_retry": "none",
+      "tls": {
+        "server_name": "",
+        "server_name_type": "name",
+        "certificate": [
+          "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+        ],
+        "client_certificate": [
+          ""
+        ],
+        "client_key": [
+          ""
+        ],
+        "remote_certificate_tls": "server",
+        "version_min": "1.2"
+      },
+      "data_ciphers": [
+        "AES-256-GCM",
+        "AES-128-GCM",
+        "AES-256-CBC"
+      ],
+      "data_ciphers_fallback": "AES-256-CBC",
+      "auth": "SHA256",
+      "redirect_gateway": true,
+      "redirect_gateway_flags": [
+        "def1"
+      ],
+      "block_ipv6": true,
+      "ping_interval": "5s",
+      "tls_timeout": "30s",
+      "system": false,
+      "mtu": 1500
+    },
+    {
+      "type": "openvpn-client",
+      "tag": "🇩🇪 مجید آدینه",
+      "mode": "tls",
+      "server": "158.173.155.181",
+      "server_port": 443,
+      "network": "tcp",
+      "username": "B8EwbytrkP",
+      "password": "ij24A4aqb8",
+      "auth_retry": "none",
+      "tls": {
+        "server_name": "",
+        "server_name_type": "name",
+        "certificate": [
+          "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+        ],
+        "client_certificate": [
+          ""
+        ],
+        "client_key": [
+          ""
+        ],
+        "remote_certificate_tls": "server",
+        "version_min": "1.2"
+      },
+      "data_ciphers": [
+        "AES-256-GCM",
+        "AES-128-GCM",
+        "AES-256-CBC"
+      ],
+      "data_ciphers_fallback": "AES-256-CBC",
+      "auth": "SHA256",
+      "redirect_gateway": true,
+      "redirect_gateway_flags": [
+        "def1"
+      ],
+      "block_ipv6": true,
+      "ping_interval": "5s",
+      "tls_timeout": "30s",
+      "system": false,
+      "mtu": 1500
+    },
+    {
+      "type": "openvpn-client",
+      "tag": "🇩🇪 قائم حسینی",
+      "mode": "tls",
+      "server": "158.173.155.231",
+      "server_port": 443,
+      "network": "tcp",
+      "username": "B8EwbytrkP",
+      "password": "ij24A4aqb8",
+      "auth_retry": "none",
+      "tls": {
+        "server_name": "",
+        "server_name_type": "name",
+        "certificate": [
+          "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+        ],
+        "client_certificate": [
+          ""
+        ],
+        "client_key": [
+          ""
+        ],
+        "remote_certificate_tls": "server",
+        "version_min": "1.2"
+      },
+      "data_ciphers": [
+        "AES-256-GCM",
+        "AES-128-GCM",
+        "AES-256-CBC"
+      ],
+      "data_ciphers_fallback": "AES-256-CBC",
+      "auth": "SHA256",
+      "redirect_gateway": true,
+      "redirect_gateway_flags": [
+        "def1"
+      ],
+      "block_ipv6": true,
+      "ping_interval": "5s",
+      "tls_timeout": "30s",
+      "system": false,
+      "mtu": 1500
+    },
+    {
+      "type": "openvpn-client",
+      "tag": "🇩🇪 شهرام صادقی",
+      "mode": "tls",
+      "server": "158.173.155.237",
+      "server_port": 443,
+      "network": "tcp",
+      "username": "B8EwbytrkP",
+      "password": "ij24A4aqb8",
+      "auth_retry": "none",
+      "tls": {
+        "server_name": "",
+        "server_name_type": "name",
+        "certificate": [
+          "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+        ],
+        "client_certificate": [
+          ""
+        ],
+        "client_key": [
+          ""
+        ],
+        "remote_certificate_tls": "server",
+        "version_min": "1.2"
+      },
+      "data_ciphers": [
+        "AES-256-GCM",
+        "AES-128-GCM",
+        "AES-256-CBC"
+      ],
+      "data_ciphers_fallback": "AES-256-CBC",
+      "auth": "SHA256",
+      "redirect_gateway": true,
+      "redirect_gateway_flags": [
+        "def1"
+      ],
+      "block_ipv6": true,
+      "ping_interval": "5s",
+      "tls_timeout": "30s",
+      "system": false,
+      "mtu": 1500
+    },
+    {
+      "type": "openvpn-client",
+      "tag": "🇩🇪 محمد سلیمانی",
+      "mode": "tls",
+      "server": "158.173.155.246",
+      "server_port": 443,
+      "network": "tcp",
+      "username": "B8EwbytrkP",
+      "password": "ij24A4aqb8",
+      "auth_retry": "none",
+      "tls": {
+        "server_name": "",
+        "server_name_type": "name",
+        "certificate": [
+          "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+        ],
+        "client_certificate": [
+          ""
+        ],
+        "client_key": [
+          ""
+        ],
+        "remote_certificate_tls": "server",
+        "version_min": "1.2"
+      },
+      "data_ciphers": [
+        "AES-256-GCM",
+        "AES-128-GCM",
+        "AES-256-CBC"
+      ],
+      "data_ciphers_fallback": "AES-256-CBC",
+      "auth": "SHA256",
+      "redirect_gateway": true,
+      "redirect_gateway_flags": [
+        "def1"
+      ],
+      "block_ipv6": true,
+      "ping_interval": "5s",
+      "tls_timeout": "30s",
+      "system": false,
+      "mtu": 1500
+    },
+    {
+      "type": "openvpn-client",
+      "tag": "🇩🇪 احمد کوکبی",
+      "mode": "tls",
+      "server": "158.173.156.142",
+      "server_port": 443,
+      "network": "tcp",
+      "username": "B8EwbytrkP",
+      "password": "ij24A4aqb8",
+      "auth_retry": "none",
+      "tls": {
+        "server_name": "",
+        "server_name_type": "name",
+        "certificate": [
+          "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+        ],
+        "client_certificate": [
+          ""
+        ],
+        "client_key": [
+          ""
+        ],
+        "remote_certificate_tls": "server",
+        "version_min": "1.2"
+      },
+      "data_ciphers": [
+        "AES-256-GCM",
+        "AES-128-GCM",
+        "AES-256-CBC"
+      ],
+      "data_ciphers_fallback": "AES-256-CBC",
+      "auth": "SHA256",
+      "redirect_gateway": true,
+      "redirect_gateway_flags": [
+        "def1"
+      ],
+      "block_ipv6": true,
+      "ping_interval": "5s",
+      "tls_timeout": "30s",
+      "system": false,
+      "mtu": 1500
+    },
+    {
+      "type": "openvpn-client",
+      "tag": "🇩🇪 مهرداد سلطانی",
+      "mode": "tls",
+      "server": "158.173.156.161",
+      "server_port": 443,
+      "network": "tcp",
+      "username": "B8EwbytrkP",
+      "password": "ij24A4aqb8",
+      "auth_retry": "none",
+      "tls": {
+        "server_name": "",
+        "server_name_type": "name",
+        "certificate": [
+          "-----BEGIN CERTIFICATE-----\nMIIGWjCCBEKgAwIBAgIJAJxUG61mxDS7MA0GCSqGSIb3DQEBDQUAMHsxCzAJBgNV\nBAYTAlJPMRIwEAYDVQQHEwlCdWNoYXJlc3QxGDAWBgNVBAoTD0N5YmVyR2hvc3Qg\nUy5BLjEbMBkGA1UEAxMSQ3liZXJHaG9zdCBSb290IENBMSEwHwYJKoZIhvcNAQkB\nFhJpbmZvQGN5YmVyZ2hvc3Qucm8wHhcNMTcwNjE5MDgxNzI1WhcNMzcwNjE0MDgx\nNzI1WjB7MQswCQYDVQQGEwJSTzESMBAGA1UEBxMJQnVjaGFyZXN0MRgwFgYDVQQK\nEw9DeWJlckdob3N0IFMuQS4xGzAZBgNVBAMTEkN5YmVyR2hvc3QgUm9vdCBDQTEh\nMB8GCSqGSIb3DQEJARYSaW5mb0BjeWJlcmdob3N0LnJvMIICIjANBgkqhkiG9w0B\nAQEFAAOCAg8AMIICCgKCAgEA7O8+mji2FlQhJXn/G4VLrKPjGtxgQBAdjo0dZEQz\nKX08q14dLkslmOLgShStWKrOiLXGAvB1rPvvk613jtA0KjQLpgyLy9lIWohQKYjj\n5jrJYXMZMkbSHBYI9L8L7iezBEFYrjYKdDo51nq99wRFhKdbyKKjDh3e2L2SVEZL\nT1ogkK5gWzjvH+mjjtjUUicK+YjGwWOz6I+KKaG4Ve/D/cE6nCLbhHIMMnargZEu\n7sqA6BFeS4kEP/ZdCZoTSX2n43XV1q63nJt/v0KDetbZDciFVW9h9SVPG4qT44p0\n550N+Mom7zTX7S/ID5T9dplgU8sRGtIMrG0cIMD9zmpFgUnMusCrR7jJFr0sMAve\nTbgZg95LmstV6R6WKZkSFdUrE0DHl4dHoZvTFX+1LhwhHgjgDLaosX0vhG/C/7Lp\noVWimd6RRQT3M9o4Fa1TuhfvBzQ20QHrmRV/yKvGNK0xckZ6EZ/QY7Z55ORU15Tg\nab4ebnblYPWoEmn0mIYP3LFFeoR5OS1EX7+j4kPv+bwPGsmpHjxmZyq2Y7sJBpbO\nCJgbkn52WZdPBIRDpPdIHQ8pAJC4T0iMK9xvAwWNl/V6EYYNpR97osyEDXn+BTdA\nHlhJ5fck9KlwI9mb1Kg1bhbvbmaIAiOLenSULYf3j6rI1ygo3R2cCyybtuAq8M7z\n0OECAwEAAaOB4DCB3TAdBgNVHQ4EFgQU6tdK1g/He5qzjeAoM5eHt4in9iUwga0G\nA1UdIwSBpTCBooAU6tdK1g/He5qzjeAoM5eHt4in9iWhf6R9MHsxCzAJBgNVBAYT\nAlJPMRIwEAYDVQQHEwlCdWNoYXJlc3QxGDAWBgNVBAoTD0N5YmVyR2hvc3QgUy5B\nLjEbMBkGA1UEAxMSQ3liZXJHaG9zdCBSb290IENBMSEwHwYJKoZIhvcNAQkBFhJp\nbmZvQGN5YmVyZ2hvc3Qucm+CCQCcVButZsQ0uzAMBgNVHRMEBTADAQH/MA0GCSqG\nSIb3DQEBDQUAA4ICAQDNyQ92kj4qiNjnHk99qvnFw9qGfwB9ofaPL74zh0G5hEe3\nWgb2o4fqUGnvUNgOu53gJksz3DcPQ8t40wfmm9I1Z8tiM9qrqvkuQ+nKcLgdooXt\nEsTybPIYDZ2cWR/5E0TKRvC7RFzKgQ4D77Vbi4TdaHiDV7ZNfU1iLCoBGcYm80hc\nUHEs5KIVLwUmcSOTmbZBySJxcSD0yUpS7nlZGwLY6VQrU+JFwDSisbXT4DXf3iSz\np7FzW0/u/SFvWsPHrjE0hkPoZPalYvouaJEHKAhip0ZwSmitlxbBnmm8+K/3c9mL\nA5/uXrirfpuhhs8V3lyV2mczVtSiTl6gpi88gc//JY80JeHdupjO25T3XEzY9cpx\necmkWaUEjLMx4wVoXQuUiPonfILM6OLwi+zUS8gQErdFeGvcQXbncPa4SdJuHkF8\nlgiX2i8S8fPGdXvU37E9bdAXwP5nZriYq1s0D59Qfvz+vLXVkmyZp6ztxjKjKole\nmPMak0Y5c1Q4RjNF6tmQoFuy/ACSkWy14Tzu2dFp7UiVbGg1FOvKhfs48zC2/IUQ\nv1arqmPT/9LVq3B2DVT9UKXRUXX/f/jSSsVjkz4uUe2jUyL+XHX1nSmROTPHSAJ+\noKf0BLnfqUxFkEUTwLnayssP2nwGgq35b7wEbTFIXdrjHGFUVQIDeERz8UThew==\n-----END CERTIFICATE-----"
+        ],
+        "client_certificate": [
+          ""
+        ],
+        "client_key": [
+          ""
+        ],
+        "remote_certificate_tls": "server",
+        "version_min": "1.2"
+      },
+      "data_ciphers": [
+        "AES-256-GCM",
+        "AES-128-GCM",
+        "AES-256-CBC"
+      ],
+      "data_ciphers_fallback": "AES-256-CBC",
+      "auth": "SHA256",
+      "redirect_gateway": true,
+      "redirect_gateway_flags": [
+        "def1"
+      ],
+      "block_ipv6": true,
+      "ping_interval": "5s",
+      "tls_timeout": "30s",
+      "system": false,
+      "mtu": 1500
+    },
+    {
+      "type": "openvpn-client",
+      "tag": "🇩🇪 پریسا زارعی",
+      "mode": "tls",
+      "server": "158.173.156.195",
+      "server_port": 443,
+      "network": "tcp",
+      "username": "B8EwbytrkP",
+      "password": "ij24A4aqb8",
+      "auth_retry": "none",
+      "tls": {
+        "server_name": "",
+        "server_name_type": "name",
+        "certificate": [
+          "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+        ],
+        "client_certificate": [
+          ""
+        ],
+        "client_key": [
+          ""
+        ],
+        "remote_certificate_tls": "server",
+        "version_min": "1.2"
+      },
+      "data_ciphers": [
+        "AES-256-GCM",
+        "AES-128-GCM",
+        "AES-256-CBC"
+      ],
+      "data_ciphers_fallback": "AES-256-CBC",
+      "auth": "SHA256",
+      "redirect_gateway": true,
+      "redirect_gateway_flags": [
+        "def1"
+      ],
+      "block_ipv6": true,
+      "ping_interval": "5s",
+      "tls_timeout": "30s",
+      "system": false,
+      "mtu": 1500
+    },
+    {
+      "type": "openvpn-client",
+      "tag": "🇩🇪 آرین مرادی",
+      "mode": "tls",
+      "server": "176.115.236.120",
+      "server_port": 443,
+      "network": "tcp",
+      "username": "B8EwbytrkP",
+      "password": "ij24A4aqb8",
+      "auth_retry": "none",
+      "tls": {
+        "server_name": "",
+        "server_name_type": "name",
+        "certificate": [
+          "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+        ],
+        "client_certificate": [
+          ""
+        ],
+        "client_key": [
+          ""
+        ],
+        "remote_certificate_tls": "server",
+        "version_min": "1.2"
+      },
+      "data_ciphers": [
+        "AES-256-GCM",
+        "AES-128-GCM",
+        "AES-256-CBC"
+      ],
+      "data_ciphers_fallback": "AES-256-CBC",
+      "auth": "SHA256",
+      "redirect_gateway": true,
+      "redirect_gateway_flags": [
+        "def1"
+      ],
+      "block_ipv6": true,
+      "ping_interval": "5s",
+      "tls_timeout": "30s",
+      "system": false,
+      "mtu": 1500
+    },
+    {
+      "type": "openvpn-client",
+      "tag": "🇩🇪 اصغر رمضانپور گرجی",
+      "mode": "tls",
+      "server": "181.214.173.141",
+      "server_port": 443,
+      "network": "tcp",
+      "username": "B8EwbytrkP",
+      "password": "ij24A4aqb8",
+      "auth_retry": "none",
+      "tls": {
+        "server_name": "",
+        "server_name_type": "name",
+        "certificate": [
+          "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+        ],
+        "client_certificate": [
+          ""
+        ],
+        "client_key": [
+          ""
+        ],
+        "remote_certificate_tls": "server",
+        "version_min": "1.2"
+      },
+      "data_ciphers": [
+        "AES-256-GCM",
+        "AES-128-GCM",
+        "AES-256-CBC"
+      ],
+      "data_ciphers_fallback": "AES-256-CBC",
+      "auth": "SHA256",
+      "redirect_gateway": true,
+      "redirect_gateway_flags": [
+        "def1"
+      ],
+      "block_ipv6": true,
+      "ping_interval": "5s",
+      "tls_timeout": "30s",
+      "system": false,
+      "mtu": 1500
+    },
+    {
+      "type": "openvpn-client",
+      "tag": "🇩🇪 بهرام رستمپور",
+      "mode": "tls",
+      "server": "181.214.173.211",
+      "server_port": 443,
+      "network": "tcp",
+      "username": "B8EwbytrkP",
+      "password": "ij24A4aqb8",
+      "auth_retry": "none",
+      "tls": {
+        "server_name": "",
+        "server_name_type": "name",
+        "certificate": [
+          "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+        ],
+        "client_certificate": [
+          ""
+        ],
+        "client_key": [
+          ""
+        ],
+        "remote_certificate_tls": "server",
+        "version_min": "1.2"
+      },
+      "data_ciphers": [
+        "AES-256-GCM",
+        "AES-128-GCM",
+        "AES-256-CBC"
+      ],
+      "data_ciphers_fallback": "AES-256-CBC",
+      "auth": "SHA256",
+      "redirect_gateway": true,
+      "redirect_gateway_flags": [
+        "def1"
+      ],
+      "block_ipv6": true,
+      "ping_interval": "5s",
+      "tls_timeout": "30s",
+      "system": false,
+      "mtu": 1500
+    },
+    {
+      "type": "openvpn-client",
+      "tag": "🇩🇪 حجتالله ذاکری",
+      "mode": "tls",
+      "server": "185.179.67.112",
+      "server_port": 443,
+      "network": "tcp",
+      "username": "B8EwbytrkP",
+      "password": "ij24A4aqb8",
+      "auth_retry": "none",
+      "tls": {
+        "server_name": "",
+        "server_name_type": "name",
+        "certificate": [
+          "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+        ],
+        "client_certificate": [
+          ""
+        ],
+        "client_key": [
+          ""
+        ],
+        "remote_certificate_tls": "server",
+        "version_min": "1.2"
+      },
+      "data_ciphers": [
+        "AES-256-GCM",
+        "AES-128-GCM",
+        "AES-256-CBC"
+      ],
+      "data_ciphers_fallback": "AES-256-CBC",
+      "auth": "SHA256",
+      "redirect_gateway": true,
+      "redirect_gateway_flags": [
+        "def1"
+      ],
+      "block_ipv6": true,
+      "ping_interval": "5s",
+      "tls_timeout": "30s",
+      "system": false,
+      "mtu": 1500
+    },
+    {
+      "type": "openvpn-client",
+      "tag": "🇩🇪 سعید عیدگاه طرقبهی",
+      "mode": "tls",
+      "server": "185.179.67.135",
+      "server_port": 443,
+      "network": "tcp",
+      "username": "B8EwbytrkP",
+      "password": "ij24A4aqb8",
+      "auth_retry": "none",
+      "tls": {
+        "server_name": "",
+        "server_name_type": "name",
+        "certificate": [
+          "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+        ],
+        "client_certificate": [
+          ""
+        ],
+        "client_key": [
+          ""
+        ],
+        "remote_certificate_tls": "server",
+        "version_min": "1.2"
+      },
+      "data_ciphers": [
+        "AES-256-GCM",
+        "AES-128-GCM",
+        "AES-256-CBC"
+      ],
+      "data_ciphers_fallback": "AES-256-CBC",
+      "auth": "SHA256",
+      "redirect_gateway": true,
+      "redirect_gateway_flags": [
+        "def1"
+      ],
+      "block_ipv6": true,
+      "ping_interval": "5s",
+      "tls_timeout": "30s",
+      "system": false,
+      "mtu": 1500
+    },
+    {
+      "type": "openvpn-client",
+      "tag": "🇩🇪 آروین خیرخواه",
+      "mode": "tls",
+      "server": "185.179.67.192",
+      "server_port": 443,
+      "network": "tcp",
+      "username": "B8EwbytrkP",
+      "password": "ij24A4aqb8",
+      "auth_retry": "none",
+      "tls": {
+        "server_name": "",
+        "server_name_type": "name",
+        "certificate": [
+          "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+        ],
+        "client_certificate": [
+          ""
+        ],
+        "client_key": [
+          ""
+        ],
+        "remote_certificate_tls": "server",
+        "version_min": "1.2"
+      },
+      "data_ciphers": [
+        "AES-256-GCM",
+        "AES-128-GCM",
+        "AES-256-CBC"
+      ],
+      "data_ciphers_fallback": "AES-256-CBC",
+      "auth": "SHA256",
+      "redirect_gateway": true,
+      "redirect_gateway_flags": [
+        "def1"
+      ],
+      "block_ipv6": true,
+      "ping_interval": "5s",
+      "tls_timeout": "30s",
+      "system": false,
+      "mtu": 1500
+    },
+    {
+      "type": "openvpn-client",
+      "tag": "🇩🇪 احمد نعمتی حسینحاجلو",
+      "mode": "tls",
+      "server": "185.179.67.245",
+      "server_port": 443,
+      "network": "tcp",
+      "username": "B8EwbytrkP",
+      "password": "ij24A4aqb8",
+      "auth_retry": "none",
+      "tls": {
+        "server_name": "",
+        "server_name_type": "name",
+        "certificate": [
+          "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+        ],
+        "client_certificate": [
+          ""
+        ],
+        "client_key": [
+          ""
+        ],
+        "remote_certificate_tls": "server",
+        "version_min": "1.2"
+      },
+      "data_ciphers": [
+        "AES-256-GCM",
+        "AES-128-GCM",
+        "AES-256-CBC"
+      ],
+      "data_ciphers_fallback": "AES-256-CBC",
+      "auth": "SHA256",
+      "redirect_gateway": true,
+      "redirect_gateway_flags": [
+        "def1"
+      ],
+      "block_ipv6": true,
+      "ping_interval": "5s",
+      "tls_timeout": "30s",
+      "system": false,
+      "mtu": 1500
+    },
+    {
+      "type": "openvpn-client",
+      "tag": "🇩🇪 فردوس محمدزاده",
+      "mode": "tls",
+      "server": "194.36.108.85",
+      "server_port": 443,
+      "network": "tcp",
+      "username": "B8EwbytrkP",
+      "password": "ij24A4aqb8",
+      "auth_retry": "none",
+      "tls": {
+        "server_name": "",
+        "server_name_type": "name",
+        "certificate": [
+          "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+        ],
+        "client_certificate": [
+          ""
+        ],
+        "client_key": [
+          ""
+        ],
+        "remote_certificate_tls": "server",
+        "version_min": "1.2"
+      },
+      "data_ciphers": [
+        "AES-256-GCM",
+        "AES-128-GCM",
+        "AES-256-CBC"
+      ],
+      "data_ciphers_fallback": "AES-256-CBC",
+      "auth": "SHA256",
+      "redirect_gateway": true,
+      "redirect_gateway_flags": [
+        "def1"
+      ],
+      "block_ipv6": true,
+      "ping_interval": "5s",
+      "tls_timeout": "30s",
+      "system": false,
+      "mtu": 1500
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    },
+    {
+      "type": "selector",
+      "tag": "🎯 Direct",
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "direct",
+        "block"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "🛑 Block",
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "block",
+        "direct"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "کانال تلگرام @JavidnamanIran-@wearestand",
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "🇩🇪 جواد طباطبایی",
+        "🇩🇪 ابوالفضل مرشد عباسی",
+        "🇩🇪 فرهاد صادقی",
+        "🇩🇪 مهران هدایی",
+        "🇩🇪 علی هاشمی",
+        "🇩🇪 مجید آدینه",
+        "🇩🇪 قائم حسینی",
+        "🇩🇪 شهرام صادقی",
+        "🇩🇪 محمد سلیمانی",
+        "🇩🇪 احمد کوکبی",
+        "🇩🇪 مهرداد سلطانی",
+        "🇩🇪 پریسا زارعی",
+        "🇩🇪 آرین مرادی",
+        "🇩🇪 اصغر رمضانپور گرجی",
+        "🇩🇪 بهرام رستمپور",
+        "🇩🇪 حجتالله ذاکری",
+        "🇩🇪 سعید عیدگاه طرقبهی",
+        "🇩🇪 آروین خیرخواه",
+        "🇩🇪 احمد نعمتی حسینحاجلو",
+        "🇩🇪 فردوس محمدزاده"
+      ]
+    }
+  ],
+  "route": {
+    "auto_detect_interface": true,
+    "final": "کانال تلگرام @JavidnamanIran-@wearestand",
+    "default_domain_resolver": "Local-DNS-Resolver"
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "Fake-IP",
+        "type": "fakeip",
+        "inet4_range": "198.18.0.0/15",
+        "inet6_range": "fc00::/18"
+      },
+      {
+        "tag": "Local-DNS",
+        "type": "tls",
+        "domain_resolver": "Local-DNS-Resolver",
+        "server_port": 443,
+        "server": "1.1.1.1"
+      },
+      {
+        "tag": "Local-DNS-Resolver",
+        "type": "tcp",
+        "server_port": 53,
+        "server": "64.6.64.6"
+      },
+      {
+        "tag": "Remote-DNS",
+        "type": "openvpn",
+        "endpoint": "🇩🇪 جواد طباطبایی",
+        "accept_default_resolvers": true,
+        "accept_search_domain": true
+      }
+    ],
+    "disable_cache": false,
+    "disable_expire": false,
+    "final": "Remote-DNS",
+    "strategy": "prefer_ipv4"
+  },
+  "http_clients": [
+    {
+      "tag": "rule-set-client",
+      "detour": "direct",
+      "domain_resolver": {
+        "server": "Local-DNS"
+      }
+    }
+  ]
+}
