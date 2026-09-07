@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sing-Box Subscriptions - ساب لینکهای سینگ باکس</title>
+    <title>Sing-Box Subscriptions - کانفیگ‌های سینگ باکس</title>
     <style>
         :root {
             --card-bg: rgba(30, 41, 59, 0.7);
@@ -224,6 +224,7 @@
             text-align: center;
             font-size: 0.85rem;
             color: var(--text-muted);
+            line-height: 1.6;
         }
     </style>
 </head>
@@ -231,7 +232,7 @@
 
     <div class="container">
         <h1>سرویس‌های اتصال Sing-Box</h1>
-        <p class="subtitle">ساب لینکهای  دسته‌بندی‌شده بر اساس کشور</p>
+        <p class="subtitle">فایل‌های کانفیگ دسته‌بندی‌شده بر اساس کشور</p>
 
         <input type="text" id="search" class="search-box" placeholder="جستجوی کشور..." onkeyup="filterCountries()">
 
@@ -276,7 +277,7 @@
                     { name: "Iceland", code: "IS", flag: "🇮🇸" },
                     { name: "India", code: "IN", flag: "🇮🇳" },
                     { name: "Indonesia", code: "ID", flag: "🇮🇩" },
-                    { name: "Iran", code: "IR", flag: "" },
+                    { name: "Iran", code: "IR", flag: "🇮🇷" },
                     { name: "Ireland", code: "IE", flag: "🇮🇪" },
                     { name: "isleofman", code: "IM", flag: "🇮🇲" },
                     { name: "Israel", code: "IL", flag: "🇮🇱" },
@@ -368,7 +369,8 @@
     </div>
 
     <footer>
-        Sing-Box Subscription Manager &copy; 2026
+        به یاد تمامی جاویدنامان ایران<br>
+        از کپی بدون ذکر منبع جدا خودداری فرمایید
     </footer>
 
     <script>
@@ -390,9 +392,15 @@
             }
         }
 
+        // Fix URL generation for Cloudflare Pages and GitHub Pages
+        function getAbsoluteUrl(fileName) {
+            let base = window.location.href.substring(0, window.location.href.lastIndexOf('/') + 1);
+            return base + fileName;
+        }
+
         // Copy full absolute URL of the config file to clipboard
         function copyFileLink(fileName) {
-            const fullUrl = window.location.origin + window.location.pathname.replace(/\/[^\/]*$/, '/') + fileName;
+            const fullUrl = getAbsoluteUrl(fileName);
             navigator.clipboard.writeText(fullUrl).then(() => {
                 alert("لینک کپی شد: " + fullUrl);
             }).catch(err => {
@@ -402,7 +410,7 @@
 
         // Show QR Code modal for specific file
         function showQRCode(fileName) {
-            const fullUrl = window.location.origin + window.location.pathname.replace(/\/[^\/]*$/, '/') + fileName;
+            const fullUrl = getAbsoluteUrl(fileName);
             const qrApi = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(fullUrl)}`;
             
             document.getElementById('qrImage').src = qrApi;
