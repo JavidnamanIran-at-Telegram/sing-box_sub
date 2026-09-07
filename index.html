@@ -266,8 +266,13 @@
         <div class="grid" id="countryGrid">
             <!-- Country Cards Template with Flags & Glassmorphism -->
             <script>
-                // List of countries paired with their emoji flags
+                // List of countries paired with their exact generated filename mapping
                 const countries = [
+                    { name: "Albania", code: "AL", flag: "🇦🇱" },
+                    { name: "Algeria", code: "DZ", flag: "🇩🇿" },
+                    { name: "Andorra", code: "AD", flag: "🇦🇩" },
+                    { name: "Argentina", code: "AR", flag: "🇦🇷" },
+                    { name: "Armenia", code: "AM", flag: "🇦🇲" },
                     { name: "Australia", code: "AU", flag: "🇦🇺" },
                     { name: "Austria", code: "AT", flag: "🇦🇹" },
                     { name: "Bahamas", code: "BS", flag: "🇧🇸" },
@@ -299,14 +304,14 @@
                     { name: "Greece", code: "GR", flag: "🇬🇷" },
                     { name: "Greenland", code: "GL", flag: "🇬🇱" },
                     { name: "Guatemala", code: "GT", flag: "🇬🇹" },
-                    { name: "Hong_Kong", code: "HK", flag: "🇭🇰" },
+                    { name: "Hong_Kong_Sar_China", code: "HK", flag: "🇭🇰" },
                     { name: "Hungary", code: "HU", flag: "🇭🇺" },
                     { name: "Iceland", code: "IS", flag: "🇮🇸" },
                     { name: "India", code: "IN", flag: "🇮🇳" },
                     { name: "Indonesia", code: "ID", flag: "🇮🇩" },
-                    { name: "Iran", code: "IR", flag: "" },
+                    { name: "Iran", code: "IR", flag: "🇮🇷" },
                     { name: "Ireland", code: "IE", flag: "🇮🇪" },
-                    { name: "isleofman", code: "IM", flag: "🇮🇲" },
+                    { name: "Isleofman", code: "IM", flag: "🇮🇲" },
                     { name: "Israel", code: "IL", flag: "🇮🇱" },
                     { name: "Italy", code: "IT", flag: "🇮🇹" },
                     { name: "Japan", code: "JP", flag: "🇯🇵" },
@@ -314,11 +319,11 @@
                     { name: "Kenya", code: "KE", flag: "🇰🇪" },
                     { name: "Laos", code: "LA", flag: "🇱🇦" },
                     { name: "Latvia", code: "LV", flag: "🇱🇻" },
-                    { name: "LIECHTENSTEIN", code: "LI", flag: "🇱🇮" },
-                    { name: "LITHUANIA", code: "LT", flag: "🇱🇹" },
-                    { name: "LUXEMBOURG", code: "LU", flag: "🇱🇺" },
-                    { name: "Macau", code: "MO", flag: "🇲🇴" },
-                    { name: "Macdonia", code: "MK", flag: "🇲🇰" },
+                    { name: "Liechtenstein", code: "LI", flag: "🇱🇮" },
+                    { name: "Lithuania", code: "LT", flag: "🇱🇹" },
+                    { name: "Luxembourg", code: "LU", flag: "🇱🇺" },
+                    { name: "Macau_Sar_China", code: "MO", flag: "🇲🇴" },
+                    { name: "Macedonia", code: "MK", flag: "🇲🇰" },
                     { name: "Malaysia", code: "MY", flag: "🇲🇾" },
                     { name: "Malta", code: "MT", flag: "🇲🇹" },
                     { name: "Mexico", code: "MX", flag: "🇲🇽" },
@@ -327,7 +332,7 @@
                     { name: "Mongolia", code: "MN", flag: "🇲🇳" },
                     { name: "Montenegro", code: "ME", flag: "🇲🇪" },
                     { name: "Morocco", code: "MA", flag: "🇲🇦" },
-                    { name: "Myanmar", code: "MM", flag: "🇲🇲" },
+                    { name: "Myanmar_Burma_", code: "MM", flag: "🇲🇲" },
                     { name: "Nepal", code: "NP", flag: "🇳🇵" },
                     { name: "Netherlands", code: "NL", flag: "🇳🇱" },
                     { name: "New_Zealand", code: "NZ", flag: "🇳🇿" },
@@ -346,20 +351,19 @@
                     { name: "Singapore", code: "SG", flag: "🇸🇬" },
                     { name: "Slovakia", code: "SK", flag: "🇸🇰" },
                     { name: "Slovenia", code: "SI", flag: "🇸🇮" },
+                    { name: "South Africa", code: "ZA", flag: "🇿🇦" },
                     { name: "South_Korea", code: "KR", flag: "🇰🇷" },
-                    { name: "Southafrica", code: "ZA", flag: "🇿🇦" },
                     { name: "Spain", code: "ES", flag: "🇪🇸" },
                     { name: "Srilanka", code: "LK", flag: "🇱🇰" },
                     { name: "Sweden", code: "SE", flag: "🇸🇪" },
-                    { name: "Sweitzerland", code: "CH", flag: "🇨🇭" },
+                    { name: "Switzerland", code: "CH", flag: "🇨🇭" },
                     { name: "Taiwan", code: "TW", flag: "🇹🇼" },
                     { name: "Thailand", code: "TH", flag: "🇹🇭" },
                     { name: "Turkey", code: "TR", flag: "🇹🇷" },
-                    { name: "UAE", code: "AE", flag: "🇦🇪" },
-                    { name: "UK", code: "GB", flag: "🇬🇧" },
+                    { name: "Uae", code: "AE", flag: "🇦🇪" },
+                    { name: "Uk", code: "GB", flag: "🇬🇧" },
                     { name: "Ukraine", code: "UA", flag: "🇺🇦" },
                     { name: "Uruguay", code: "UY", flag: "🇺🇾" },
-                    { name: "USA", code: "US", flag: "🇺🇸" },
                     { name: "Venezuela", code: "VE", flag: "🇻🇪" },
                     { name: "Vietnam", code: "VN", flag: "🇻🇳" }
                 ];
@@ -430,8 +434,6 @@
         // Build the sing-box app's own URL Scheme so a QR scan (or tapping the
         // link) tells the app directly to import this as a remote profile,
         // instead of just opening a plain link that the app doesn't recognize.
-        // Format defined by sing-box:
-        //   sing-box://import-remote-profile?url=<urlEncodedURL>#<urlEncodedName>
         function getSingBoxImportUrl(fileName) {
             const subUrl = getSubUrl(fileName);
             const profileName = fileName.replace(/\.txt$/i, '').replace(/_/g, ' ');
@@ -457,8 +459,7 @@
             });
         }
 
-        // Show QR Code modal pointing to the sing-box deep link, so scanning
-        // it opens the sing-box app and imports the profile automatically.
+        // Show QR Code modal pointing to the sing-box deep link
         function showQRCode(fileName) {
             const importUrl = getSingBoxImportUrl(fileName);
             const qrApi = `https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${encodeURIComponent(importUrl)}`;
