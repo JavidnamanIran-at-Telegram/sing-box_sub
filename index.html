@@ -38,7 +38,7 @@
 
         .container {
             width: 100%;
-            max-width: 900px;
+            max-width: 950px;
             background-color: rgba(30, 41, 59, 0.75);
             backdrop-filter: blur(16px);
             border: 1px solid var(--border-color);
@@ -84,9 +84,9 @@
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 12px;
-            max-height: 500px;
+            max-height: 520px;
             overflow-y: auto;
             padding: 4px;
         }
@@ -142,16 +142,27 @@
 
         .actions {
             display: flex;
-            gap: 6px;
+            gap: 4px;
+        }
+
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }
+
+        .btn-row {
+            display: flex;
+            gap: 4px;
         }
 
         .btn {
             background-color: transparent;
             border: 1px solid var(--border-color);
             color: var(--text-muted);
-            padding: 6px 12px;
-            border-radius: 6px;
-            font-size: 0.8rem;
+            padding: 4px 8px;
+            border-radius: 5px;
+            font-size: 0.72rem;
             cursor: pointer;
             text-decoration: none;
             transition: all 0.2s;
@@ -259,14 +270,14 @@
 
     <div class="container">
         <h1>سرویس‌های اتصال Sing-Box</h1>
-        <p class="subtitle">فایل‌های کانفیگ دسته‌بندی‌شده بر اساس کشور</p>
+        <p class="subtitle">فایل‌های کانفیگ دسته‌بندی‌شده بر اساس کشور (OpenVPN & Surfshark)</p>
 
         <input type="text" id="search" class="search-box" placeholder="جستجوی کشور..." onkeyup="filterCountries()">
 
         <div class="grid" id="countryGrid">
             <!-- Country Cards Template with Flags & Glassmorphism -->
             <script>
-                // List of countries paired with their exact generated filename mapping
+                // List of countries
                 const countries = [
                     { name: "Albania", code: "AL", flag: "🇦🇱" },
                     { name: "Algeria", code: "DZ", flag: "🇩🇿" },
@@ -368,19 +379,30 @@
                     { name: "Vietnam", code: "VN", flag: "🇻🇳" }
                 ];
 
-                // Render cards dynamically with Clean Code / JavaScript
+                // Render cards dynamically with OpenVPN & Surfshark options
                 document.write(countries.map(item => {
-                    const fileName = item.name + ".txt";
                     const displayName = item.name.replace(/_/g, ' ');
+                    const openVpnFile = item.name + ".txt";
+                    // Handle special naming conventions like South Africa -> South_African/South_Africassh.txt or direct match based on your structure
+                    const surfsharkFile = item.name.replace(/ /g, '_') + "ssh.txt";
+
                     return `
                         <div class="card">
                             <div class="country-info">
                                 <span class="flag">${item.flag}</span>
                                 <span class="name">${displayName}</span>
                             </div>
-                            <div class="actions">
-                                <button class="btn" onclick="copyFileLink('${fileName}')" title="کپی لینک ساب‌سکریپشن">کپی</button>
-                                <button class="btn" onclick="showQRCode('${fileName}')" title="QR کد ساب‌سکریپشن">QR</button>
+                            <div class="btn-group">
+                                <div class="btn-row">
+                                    <span style="font-size:0.65rem; color:var(--text-muted); width:55px; align-self:center;">OpenVPN:</span>
+                                    <button class="btn" onclick="copyFileLink('${openVpnFile}')" title="کپی لینک OpenVPN">کپی</button>
+                                    <button class="btn" onclick="showQRCode('${openVpnFile}', '${displayName} (OpenVPN)')" title="QR کد OpenVPN">QR</button>
+                                </div>
+                                <div class="btn-row">
+                                    <span style="font-size:0.65rem; color:var(--accent-color); width:55px; align-self:center;">Surfshark:</span>
+                                    <button class="btn" onclick="copyFileLink('${surfsharkFile}')" title="کپی لینک Surfshark">کپی</button>
+                                    <button class="btn" onclick="showQRCode('${surfsharkFile}', '${displayName} (Surfshark)')" title="QR کد Surfshark">QR</button>
+                                </div>
                             </div>
                         </div>
                     `;
@@ -393,7 +415,7 @@
     <div id="qrModal" class="modal">
         <div class="modal-content">
             <span class="close-btn" onclick="closeModal()">&times;</span>
-            <h3 style="margin:0 0 10px 0; font-size:1.1rem; color: var(--accent-color);">اسکن QR کد ساب‌سکریپشن</h3>
+            <h3 id="modalTitle" style="margin:0 0 10px 0; font-size:1.1rem; color: var(--accent-color);">اسکن QR کد ساب‌سکریپشن</h3>
             <img id="qrImage" src="" alt="QR Code">
             <p id="modalLinkText"></p>
         </div>
@@ -426,21 +448,18 @@
             }
         }
 
-        // Generate high-speed jsDelivr CDN link (Bypasses GitHub CORS restrictions completely)
+        // Generate high-speed jsDelivr CDN link
         function getSubUrl(fileName) {
             return `https://cdn.jsdelivr.net/gh/JavidnamanIran-at-Telegram/sing-box_sub@main/${fileName}`;
         }
 
-        // Build the sing-box app's own URL Scheme so a QR scan (or tapping the
-        // link) tells the app directly to import this as a remote profile,
-        // instead of just opening a plain link that the app doesn't recognize.
-        function getSingBoxImportUrl(fileName) {
+        // Build sing-box deep link for QR code scanning
+        function getSingBoxImportUrl(fileName, label) {
             const subUrl = getSubUrl(fileName);
-            const profileName = fileName.replace(/\.txt$/i, '').replace(/_/g, ' ');
-            return `sing-box://import-remote-profile?url=${encodeURIComponent(subUrl)}#${encodeURIComponent(profileName)}`;
+            return `sing-box://import-remote-profile?url=${encodeURIComponent(subUrl)}#${encodeURIComponent(label)}`;
         }
 
-        // Show a modern custom toast notification instead of messy alert
+        // Show a modern custom toast notification
         function showToast() {
             let toast = document.getElementById("toast");
             toast.className = "show";
@@ -460,10 +479,11 @@
         }
 
         // Show QR Code modal pointing to the sing-box deep link
-        function showQRCode(fileName) {
-            const importUrl = getSingBoxImportUrl(fileName);
+        function showQRCode(fileName, label) {
+            const importUrl = getSingBoxImportUrl(fileName, label);
             const qrApi = `https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${encodeURIComponent(importUrl)}`;
 
+            document.getElementById('modalTitle').innerText = label;
             document.getElementById('qrImage').src = qrApi;
             document.getElementById('modalLinkText').innerText = importUrl;
             document.getElementById('qrModal').style.display = 'flex';
