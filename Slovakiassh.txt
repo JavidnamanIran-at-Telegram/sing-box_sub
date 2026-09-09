@@ -1,0 +1,346 @@
+{
+    "log": {
+        "disabled": false,
+        "level": "debug",
+        "output": "",
+        "timestamp": false
+    },
+    "experimental": {
+        "clash_api": {
+            "external_controller": "127.0.0.1:20123",
+            "external_ui": "",
+            "external_ui_download_url": "",
+            "external_ui_download_detour": "🎯 Direct",
+            "secret": "b49673122775a7b5ce5e24fb20bfcf49dcdf6b4de3eb35a5a0635524f65fd05d",
+            "default_mode": "rule",
+            "access_control_allow_origin": [
+                "*"
+            ],
+            "access_control_allow_private_network": false
+        },
+        "cache_file": {
+            "enabled": true,
+            "path": "cache.db",
+            "cache_id": "ID_l00ggamo",
+            "store_fakeip": true,
+            "rdrc_timeout": "7d",
+            "store_dns": true
+        }
+    },
+    "inbounds": [
+        {
+            "type": "mixed",
+            "tag": "mixed-in",
+            "listen": "127.0.0.1",
+            "listen_port": 20122,
+            "tcp_fast_open": false,
+            "tcp_multi_path": false,
+            "udp_fragment": false
+        },
+        {
+            "type": "tun",
+            "tag": "tun-in",
+            "interface_name": "",
+            "address": [
+                "172.19.0.1/30"
+            ],
+            "mtu": 9000,
+            "auto_route": true,
+            "strict_route": false,
+            "endpoint_independent_nat": false,
+            "stack": "mixed",
+            "dns_address": [
+                "172.19.0.2"
+            ],
+            "dns_mode": "hijack"
+        }
+    ],
+    "endpoints": [
+        {
+            "type": "openvpn-client",
+            "tag": "محمدرضا کرمی 🇸🇰",
+            "mode": "tls",
+            "server": "185.76.8.210",
+            "server_port": 1443,
+            "network": "tcp",
+            "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
+            "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
+            "auth_retry": "none",
+            "tls": {
+                "server_name": "",
+                "server_name_type": "name",
+                "certificate": [
+                    "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
+                ],
+                "client_certificate": [],
+                "client_key": [],
+                "remote_certificate_tls": "server",
+                "version_min": "1.2",
+                "control_wrap": {
+                    "type": "tls_auth",
+                    "direction": "client",
+                    "key": [
+                        "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
+                    ]
+                }
+            },
+            "data_ciphers": [
+                "AES-256-CBC"
+            ],
+            "data_ciphers_fallback": "AES-256-CBC",
+            "auth": "SHA512",
+            "mss_fix": 1450,
+            "redirect_gateway": true,
+            "redirect_gateway_flags": [
+                "def1"
+            ],
+            "block_ipv6": true,
+            "ping_interval": "15s",
+            "renegotiate_disabled": true,
+            "system": false,
+            "mtu": 1500
+        },
+        {
+            "type": "openvpn-client",
+            "tag": "رضا مرادی عبدالوند 🇸🇰",
+            "mode": "tls",
+            "server": "185.76.8.217",
+            "server_port": 1443,
+            "network": "tcp",
+            "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
+            "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
+            "auth_retry": "none",
+            "tls": {
+                "server_name": "",
+                "server_name_type": "name",
+                "certificate": [
+                    "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
+                ],
+                "client_certificate": [],
+                "client_key": [],
+                "remote_certificate_tls": "server",
+                "version_min": "1.2",
+                "control_wrap": {
+                    "type": "tls_auth",
+                    "direction": "client",
+                    "key": [
+                        "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
+                    ]
+                }
+            },
+            "data_ciphers": [
+                "AES-256-CBC"
+            ],
+            "data_ciphers_fallback": "AES-256-CBC",
+            "auth": "SHA512",
+            "mss_fix": 1450,
+            "redirect_gateway": true,
+            "redirect_gateway_flags": [
+                "def1"
+            ],
+            "block_ipv6": true,
+            "ping_interval": "15s",
+            "renegotiate_disabled": true,
+            "system": false,
+            "mtu": 1500
+        }
+    ],
+    "outbounds": [
+        {
+            "type": "direct",
+            "tag": "🎯 Direct"
+        },
+        {
+            "type": "urltest",
+            "tag": "کانال تلگرام @IranRamona",
+            "outbounds": [
+                "محمدرضا کرمی 🇸🇰",
+                "رضا مرادی عبدالوند 🇸🇰"
+            ],
+            "url": "https://www.gstatic.com/generate_204",
+            "interval": "3m",
+            "tolerance": 150
+        },
+        {
+            "type": "selector",
+            "tag": "کانال تلگرام @JavidnamanIran-@wearestand",
+            "outbounds": [
+                "کانال تلگرام @IranRamona",
+                "محمدرضا کرمی 🇸🇰",
+                "رضا مرادی عبدالوند 🇸🇰"
+            ],
+            "interrupt_exist_connections": true
+        }
+    ],
+    "route": {
+        "auto_detect_interface": true,
+        "final": "کانال تلگرام @JavidnamanIran-@wearestand",
+        "default_domain_resolver": "dns-direct",
+        "rules": [
+            {
+                "action": "sniff",
+                "inbound": [
+                    "tun-in"
+                ]
+            },
+            {
+                "action": "resolve",
+                "inbound": [
+                    "tun-in"
+                ],
+                "strategy": "ipv4_only"
+            },
+            {
+                "action": "hijack-dns",
+                "port": [
+                    53
+                ]
+            },
+            {
+                "action": "hijack-dns",
+                "protocol": [
+                    "dns"
+                ]
+            },
+            {
+                "inbound": [
+                    "tun-in"
+                ],
+                "ip_cidr": [
+                    "1.1.1.1/32"
+                ],
+                "network": [
+                    "tcp"
+                ],
+                "outbound": "🎯 Direct",
+                "port": [
+                    53
+                ]
+            },
+            {
+                "inbound": [
+                    "tun-in"
+                ],
+                "ip_cidr": [
+                    "1.1.1.1/32",
+                    "1.0.0.1/32",
+                    "8.8.8.8/32",
+                    "8.8.4.4/32",
+                    "9.9.9.9/32",
+                    "149.112.112.112/32",
+                    "94.140.14.14/32",
+                    "94.140.15.15/32",
+                    "1.12.12.12/32",
+                    "120.53.53.53/32"
+                ],
+                "network": [
+                    "udp"
+                ],
+                "outbound": "کانال تلگرام @JavidnamanIran-@wearestand",
+                "port": [
+                    53
+                ]
+            },
+            {
+                "domain": [
+                    "dns.google",
+                    "dns.quad9.net",
+                    "dns9.quad9.net",
+                    "cloudflare-dns.com",
+                    "security.cloudflare-dns.com",
+                    "family.cloudflare-dns.com",
+                    "doh.pub",
+                    "dns.adguard-dns.com"
+                ],
+                "inbound": [
+                    "tun-in"
+                ],
+                "network": [
+                    "tcp",
+                    "udp"
+                ],
+                "outbound": "کانال تلگرام @JavidnamanIran-@wearestand",
+                "port": [
+                    443,
+                    853
+                ],
+                "protocol": [
+                    "tls",
+                    "quic"
+                ]
+            },
+            {
+                "outbound": "🎯 Direct",
+                "protocol": [
+                    "bittorrent"
+                ]
+            },
+            {
+                "ip_is_private": true,
+                "outbound": "🎯 Direct"
+            },
+            {
+                "action": "reject",
+                "ip_cidr": [
+                    "224.0.0.0/3",
+                    "ff00::/8"
+                ],
+                "source_ip_cidr": [
+                    "224.0.0.0/3",
+                    "ff00::/8"
+                ]
+            }
+        ],
+        "rule_set": []
+    },
+    "dns": {
+        "servers": [
+            {
+                "tag": "dns-local",
+                "type": "local"
+            },
+            {
+                "tag": "dns-direct",
+                "type": "local"
+            },
+            {
+                "tag": "dns-remote",
+                "type": "https",
+                "server": "1.1.1.1",
+                "server_port": 443,
+                "detour": "کانال تلگرام @JavidnamanIran-@wearestand"
+            },
+            {
+                "tag": "dns-fake",
+                "type": "fakeip",
+                "inet4_range": "198.18.0.0/15",
+                "inet6_range": "fc00::/18"
+            }
+        ],
+        "rules": [
+            {
+                "domain": [
+                    "api.ip2location.io"
+                ],
+                "inbound": [
+                    "tun-in"
+                ],
+                "server": "dns-remote"
+            },
+            {
+                "disable_cache": true,
+                "inbound": [
+                    "tun-in"
+                ],
+                "query_type": [
+                    "A",
+                    "AAAA"
+                ],
+                "server": "dns-fake"
+            }
+        ],
+        "final": "dns-remote",
+        "strategy": "ipv4_only",
+        "timeout": "10s"
+    }
+}
