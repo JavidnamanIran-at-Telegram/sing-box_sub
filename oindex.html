@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sing-Box Subscriptions - کانفیگ‌های سینگ باکس</title>
+    <style>
+        :root {
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --text-color: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-color: #f97316; /* نارنجی */
+            --accent-hover: #ea580c; /* نارنجی پررنگ‌تر */
+            --border-color: rgba(51, 65, 85, 0.6);
+        }
+
+        /* Animated Dancing Background */
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e1b4b, #090d16);
+            background-size: 400% 400%;
+            animation: gradientDance 15s ease infinite;
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        @keyframes gradientDance {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            background-color: rgba(30, 41, 59, 0.75);
+            backdrop-filter: blur(16px);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 1.75rem;
+            margin-top: 0;
+            margin-bottom: 8px;
+            text-align: center;
+            color: var(--text-color);
+        }
+
+        p.subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            margin-bottom: 24px;
+            font-size: 0.95rem;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 12px 16px;
+            font-size: 1rem;
+            background-color: rgba(15, 23, 42, 0.8);
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .search-box:focus {
+            border-color: var(--accent-color);
+            box-shadow: 0 0 12px rgba(249, 115, 22, 0.3);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 12px;
+            max-height: 500px;
+            overflow-y: auto;
+            padding: 4px;
+        }
+
+        .grid::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .grid::-webkit-scrollbar-track {
+            background: rgba(15, 23, 42, 0.5);
+            border-radius: 3px;
+        }
+
+        .grid::-webkit-scrollbar-thumb {
+            background: var(--border-color);
+            border-radius: 3px;
+        }
+
+        .card {
+            background-color: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(8px);
+            border: 1px solid var(--border-color);
+            padding: 12px 16px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card:hover {
+            border-color: var(--accent-color);
+            background-color: rgba(30, 41, 59, 0.9);
+            box-shadow: 0 4px 15px rgba(249, 115, 22, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .country-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .flag {
+            font-size: 1.3rem;
+            line-height: 1;
+        }
+
+        .card span.name {
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .actions {
+            display: flex;
+            gap: 6px;
+        }
+
+        .btn {
+            background-color: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-muted);
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .btn:hover {
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+            background-color: rgba(249, 115, 22, 0.15);
+        }
+
+        /* Modal styling for QR Code */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(6px);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: rgba(30, 41, 59, 0.95);
+            border: 1px solid var(--accent-color);
+            padding: 24px;
+            border-radius: 14px;
+            text-align: center;
+            max-width: 320px;
+            width: 90%;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(249, 115, 22, 0.3);
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            font-size: 1.5rem;
+            color: var(--text-muted);
+            cursor: pointer;
+        }
+
+        .close-btn:hover {
+            color: var(--accent-color);
+        }
+
+        .modal-content img {
+            margin: 15px 0;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            max-width: 200px;
+            height: auto;
+        }
+
+        .modal-content p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            word-break: break-all;
+            margin: 0;
+            direction: ltr;
+        }
+
+        /* Toast Notification */
+        #toast {
+            visibility: hidden;
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(15, 23, 42, 0.95);
+            color: var(--text-color);
+            border: 1px solid var(--accent-color);
+            padding: 12px 24px;
+            border-radius: 10px;
+            z-index: 2000;
+            font-size: 0.9rem;
+            box-shadow: 0 5px 20px rgba(249, 115, 22, 0.3);
+            backdrop-filter: blur(8px);
+            opacity: 0;
+            transition: opacity 0.3s ease, bottom 0.3s ease;
+        }
+
+        #toast.show {
+            visibility: visible;
+            opacity: 1;
+            bottom: 50px;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>سرویس‌های اتصال Sing-Box</h1>
+        <p class="subtitle">فایل‌های کانفیگ دسته‌بندی‌شده بر اساس کشور</p>
+
+        <input type="text" id="search" class="search-box" placeholder="جستجوی کشور..." onkeyup="filterCountries()">
+
+        <div class="grid" id="countryGrid">
+            <!-- Country Cards Template with Flags & Glassmorphism -->
+            <script>
+                // List of countries paired with their exact generated filename mapping
+                const countries = [
+                    { name: "Albania", code: "AL", flag: "🇦🇱" },
+                    { name: "Algeria", code: "DZ", flag: "🇩🇿" },
+                    { name: "Andorra", code: "AD", flag: "🇦🇩" },
+                    { name: "Argentina", code: "AR", flag: "🇦🇷" },
+                    { name: "Armenia", code: "AM", flag: "🇦🇲" },
+                    { name: "Australia", code: "AU", flag: "🇦🇺" },
+                    { name: "Austria", code: "AT", flag: "🇦🇹" },
+                    { name: "Bahamas", code: "BS", flag: "🇧🇸" },
+                    { name: "Bangladesh", code: "BD", flag: "🇧🇩" },
+                    { name: "Belarus", code: "BY", flag: "🇧🇾" },
+                    { name: "Belgium", code: "BE", flag: "🇧🇪" },
+                    { name: "Bolivia", code: "BO", flag: "🇧🇴" },
+                    { name: "Bosnia", code: "BA", flag: "🇧🇦" },
+                    { name: "Brazil", code: "BR", flag: "🇧🇷" },
+                    { name: "Bulgaria", code: "BG", flag: "🇧🇬" },
+                    { name: "Cambodia", code: "KH", flag: "🇰🇭" },
+                    { name: "Canada", code: "CA", flag: "🇨🇦" },
+                    { name: "Chile", code: "CL", flag: "🇨🇱" },
+                    { name: "China", code: "CN", flag: "🇨🇳" },
+                    { name: "Colombia", code: "CO", flag: "🇨🇴" },
+                    { name: "Costa_Rica", code: "CR", flag: "🇨🇷" },
+                    { name: "Croatia", code: "HR", flag: "🇭🇷" },
+                    { name: "Cyprus", code: "CY", flag: "🇨🇾" },
+                    { name: "Czech", code: "CZ", flag: "🇨🇿" },
+                    { name: "Denmark", code: "DK", flag: "🇩🇰" },
+                    { name: "Dominican_Republic", code: "DO", flag: "🇩🇴" },
+                    { name: "Ecuador", code: "EC", flag: "🇪🇨" },
+                    { name: "Egypt", code: "EG", flag: "🇪🇬" },
+                    { name: "Estonia", code: "EE", flag: "🇪🇪" },
+                    { name: "Finland", code: "FI", flag: "🇫🇮" },
+                    { name: "France", code: "FR", flag: "🇫🇷" },
+                    { name: "Georgia", code: "GE", flag: "🇬🇪" },
+                    { name: "Germany", code: "DE", flag: "🇩🇪" },
+                    { name: "Greece", code: "GR", flag: "🇬🇷" },
+                    { name: "Greenland", code: "GL", flag: "🇬🇱" },
+                    { name: "Guatemala", code: "GT", flag: "🇬🇹" },
+                    { name: "Hong_Kong_Sar_China", code: "HK", flag: "🇭🇰" },
+                    { name: "Hungary", code: "HU", flag: "🇭🇺" },
+                    { name: "Iceland", code: "IS", flag: "🇮🇸" },
+                    { name: "India", code: "IN", flag: "🇮🇳" },
+                    { name: "Indonesia", code: "ID", flag: "🇮🇩" },
+                    { name: "Iran", code: "IR", flag: "" },
+                    { name: "Ireland", code: "IE", flag: "🇮🇪" },
+                    { name: "Isleofman", code: "IM", flag: "🇮🇲" },
+                    { name: "Israel", code: "IL", flag: "🇮🇱" },
+                    { name: "Italy", code: "IT", flag: "🇮🇹" },
+                    { name: "Japan", code: "JP", flag: "🇯🇵" },
+                    { name: "Kazakhstan", code: "KZ", flag: "🇰🇿" },
+                    { name: "Kenya", code: "KE", flag: "🇰🇪" },
+                    { name: "Laos", code: "LA", flag: "🇱🇦" },
+                    { name: "Latvia", code: "LV", flag: "🇱🇻" },
+                    { name: "Liechtenstein", code: "LI", flag: "🇱🇮" },
+                    { name: "Lithuania", code: "LT", flag: "🇱🇹" },
+                    { name: "Luxembourg", code: "LU", flag: "🇱🇺" },
+                    { name: "Macau_Sar_China", code: "MO", flag: "🇲🇴" },
+                    { name: "Macedonia", code: "MK", flag: "🇲🇰" },
+                    { name: "Malaysia", code: "MY", flag: "🇲🇾" },
+                    { name: "Malta", code: "MT", flag: "🇲🇹" },
+                    { name: "Mexico", code: "MX", flag: "🇲🇽" },
+                    { name: "Moldova", code: "MD", flag: "🇲🇩" },
+                    { name: "Monaco", code: "MC", flag: "🇲🇨" },
+                    { name: "Mongolia", code: "MN", flag: "🇲🇳" },
+                    { name: "Montenegro", code: "ME", flag: "🇲🇪" },
+                    { name: "Morocco", code: "MA", flag: "🇲🇦" },
+                    { name: "Myanmar_Burma_", code: "MM", flag: "🇲🇲" },
+                    { name: "Nepal", code: "NP", flag: "🇳🇵" },
+                    { name: "Netherlands", code: "NL", flag: "🇳🇱" },
+                    { name: "New_Zealand", code: "NZ", flag: "🇳🇿" },
+                    { name: "Nigeria", code: "NG", flag: "🇳🇬" },
+                    { name: "Norway", code: "NO", flag: "🇳🇴" },
+                    { name: "Pakistan", code: "PK", flag: "🇵🇰" },
+                    { name: "Panama", code: "PA", flag: "🇵🇦" },
+                    { name: "Peru", code: "PE", flag: "🇵🇪" },
+                    { name: "Poland", code: "PL", flag: "🇵🇱" },
+                    { name: "Portugal", code: "PT", flag: "🇵🇹" },
+                    { name: "Qatar", code: "QA", flag: "🇶🇦" },
+                    { name: "Romania", code: "RO", flag: "🇷🇴" },
+                    { name: "Russia", code: "RU", flag: "🇷🇺" },
+                    { name: "Saudi", code: "SA", flag: "🇸🇦" },
+                    { name: "Serbia", code: "RS", flag: "🇷🇸" },
+                    { name: "Singapore", code: "SG", flag: "🇸🇬" },
+                    { name: "Slovakia", code: "SK", flag: "🇸🇰" },
+                    { name: "Slovenia", code: "SI", flag: "🇸🇮" },
+                    { name: "South Africa", code: "ZA", flag: "🇿🇦" },
+                    { name: "South_Korea", code: "KR", flag: "🇰🇷" },
+                    { name: "Spain", code: "ES", flag: "🇪🇸" },
+                    { name: "Srilanka", code: "LK", flag: "🇱🇰" },
+                    { name: "Sweden", code: "SE", flag: "🇸🇪" },
+                    { name: "Switzerland", code: "CH", flag: "🇨🇭" },
+                    { name: "Taiwan", code: "TW", flag: "🇹🇼" },
+                    { name: "Thailand", code: "TH", flag: "🇹🇭" },
+                    { name: "Turkey", code: "TR", flag: "🇹🇷" },
+                    { name: "Uae", code: "AE", flag: "🇦🇪" },
+                    { name: "Uk", code: "GB", flag: "🇬🇧" },
+                    { name: "Ukraine", code: "UA", flag: "🇺🇦" },
+                    { name: "Uruguay", code: "UY", flag: "🇺🇾" },
+                    { name: "Venezuela", code: "VE", flag: "🇻🇪" },
+                    { name: "Vietnam", code: "VN", flag: "🇻🇳" }
+                ];
+
+                // Render cards dynamically with Clean Code / JavaScript
+                document.write(countries.map(item => {
+                    const fileName = item.name + ".txt";
+                    const displayName = item.name.replace(/_/g, ' ');
+                    return `
+                        <div class="card">
+                            <div class="country-info">
+                                <span class="flag">${item.flag}</span>
+                                <span class="name">${displayName}</span>
+                            </div>
+                            <div class="actions">
+                                <button class="btn" onclick="copyFileLink('${fileName}')" title="کپی لینک ساب‌سکریپشن">کپی</button>
+                                <button class="btn" onclick="showQRCode('${fileName}')" title="QR کد ساب‌سکریپشن">QR</button>
+                            </div>
+                        </div>
+                    `;
+                }).join(''));
+            </script>
+        </div>
+    </div>
+
+    <!-- QR Code Modal Box -->
+    <div id="qrModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h3 style="margin:0 0 10px 0; font-size:1.1rem; color: var(--accent-color);">اسکن QR کد ساب‌سکریپشن</h3>
+            <img id="qrImage" src="" alt="QR Code">
+            <p id="modalLinkText"></p>
+        </div>
+    </div>
+
+    <!-- Custom Toast Notification -->
+    <div id="toast">لینک ساب‌سکریپشن با موفقیت کپی شد!</div>
+
+    <footer>
+        به یاد تمامی جاویدنامان ایران<br>
+        از کپی بدون ذکر منبع جدا خودداری فرمایید
+    </footer>
+
+    <script>
+        // Filter countries based on search input
+        function filterCountries() {
+            let input = document.getElementById('search');
+            let filter = input.value.toLowerCase();
+            let grid = document.getElementById('countryGrid');
+            let cards = grid.getElementsByClassName('card');
+
+            for (let i = 0; i < cards.length; i++) {
+                let nameSpan = cards[i].getElementsByClassName('name')[0];
+                let txtValue = nameSpan.textContent || nameSpan.innerText;
+                if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                    cards[i].style.display = "";
+                } else {
+                    cards[i].style.display = "none";
+                }
+            }
+        }
+
+        // Generate high-speed jsDelivr CDN link (Bypasses GitHub CORS restrictions completely)
+        function getSubUrl(fileName) {
+            return `https://cdn.jsdelivr.net/gh/JavidnamanIran-at-Telegram/sing-box_sub@main/${fileName}`;
+        }
+
+        // Build the sing-box app's own URL Scheme so a QR scan (or tapping the
+        // link) tells the app directly to import this as a remote profile,
+        // instead of just opening a plain link that the app doesn't recognize.
+        function getSingBoxImportUrl(fileName) {
+            const subUrl = getSubUrl(fileName);
+            const profileName = fileName.replace(/\.txt$/i, '').replace(/_/g, ' ');
+            return `sing-box://import-remote-profile?url=${encodeURIComponent(subUrl)}#${encodeURIComponent(profileName)}`;
+        }
+
+        // Show a modern custom toast notification instead of messy alert
+        function showToast() {
+            let toast = document.getElementById("toast");
+            toast.className = "show";
+            setTimeout(function(){ 
+                toast.className = toast.className.replace("show", ""); 
+            }, 2500);
+        }
+
+        // Copy subscription link to clipboard
+        function copyFileLink(fileName) {
+            const fullUrl = getSubUrl(fileName);
+            navigator.clipboard.writeText(fullUrl).then(() => {
+                showToast();
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+            });
+        }
+
+        // Show QR Code modal pointing to the sing-box deep link
+        function showQRCode(fileName) {
+            const importUrl = getSingBoxImportUrl(fileName);
+            const qrApi = `https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${encodeURIComponent(importUrl)}`;
+
+            document.getElementById('qrImage').src = qrApi;
+            document.getElementById('modalLinkText').innerText = importUrl;
+            document.getElementById('qrModal').style.display = 'flex';
+        }
+
+        // Close the modal popup
+        function closeModal() {
+            document.getElementById('qrModal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside of content box
+        window.onclick = function(event) {
+            const modal = document.getElementById('qrModal');
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
