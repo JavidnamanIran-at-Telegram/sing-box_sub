@@ -44,7 +44,7 @@
     <div class="modal-content"><button class="close" aria-label="بستن">×</button><h3 id="qrTitle">QR کد</h3><img id="qrImage" alt="QR Code"><p id="qrText"></p></div>
   </div>
   <div id="toast">لینک کپی شد.</div>
-  <footer>به یاد تمامی جاویدنامان ایران</footer>
+  <footer>لطفا به یاد تمامی جاویدنامان ایران از کپی و پخش سابها یا کانفیگهای آن بدون ذکر منبع جدا خودداری بفرمائید</footer>
   <script>
     // ==========================================================================
     // تنظیمات پایه
@@ -53,8 +53,8 @@
     // آدرس پایه‌ی مخزن که فایل‌های کانفیگ از آنجا سرو می‌شوند.
     const REPO_BASE = 'https://cdn.jsdelivr.net/gh/JavidnamanIran-at-Telegram/sing-box_sub@main/';
 
-    // اسم نمایشی نوع دوم کانفیگ (قبلاً Surfshark بود). فقط همین یک خط را عوض کن.
-    const TYPE_B_LABEL = 'Falcon';
+    // اسم نمایشی نوع دوم کانفیگ (قبلاً فالکون بود). فقط همین یک خط را عوض کن.
+    const TYPE_B_LABEL = 'JNIR';
 
     // ==========================================================================
     // لیست کشورها: [نام داخلی (بدون فاصله)، کد کشور، ایموجی پرچم]
@@ -89,17 +89,111 @@
     ];
 
     // ==========================================================================
-    // نام فایل‌های OpenVPN
-    // پیش‌فرض هر کشور: "<نام کشور>.txt" (تابع defaultOpenvpnFile پایین‌تر).
-    // اگر اسم فایل یک کشور با این قاعده فرق دارد، همین‌جا override کن؛
-    // مثال: Czech: 'Czechia_ovpn.txt'
-    // فقط کافیه کلید = همان نام داخلی کشور از آرایه‌ی COUNTRIES باشد.
+    // نام فایل‌های OpenVPN — دقیقاً مثل TYPE_B_FILES پایین‌تر، هر کشور یک خط جدا.
+    // هر خط را می‌شود مستقل ادیت/اضافه/حذف کرد. کلید = همان نام داخلی کشور در COUNTRIES.
     // ==========================================================================
-    const OPENVPN_FILE_OVERRIDES = {
-      // Czech: 'Czechia.txt',
+    const OPENVPN_FILES = {
+      Albania: 'Albania.txt',
+      Algeria: 'Algeria.txt',
+      Andorra: 'Andorra.txt',
+      Argentina: 'Argentina.txt',
+      Armenia: 'Armenia.txt',
+      Australia: 'Australia.txt',
+      Austria: 'Austria.txt',
+      Bahamas: 'Bahamas.txt',
+      Bangladesh: 'Bangladesh.txt',
+      Belarus: 'Belarus.txt',
+      Belgium: 'Belgium.txt',
+      Bolivia: 'Bolivia.txt',
+      Bosnia: 'Bosnia.txt',
+      Brazil: 'Brazil.txt',
+      Bulgaria: 'Bulgaria.txt',
+      Cambodia: 'Cambodia.txt',
+      Canada: 'Canada.txt',
+      Chile: 'Chile.txt',
+      China: 'China.txt',
+      Colombia: 'Colombia.txt',
+      Costa_Rica: 'Costa_Rica.txt',
+      Croatia: 'Croatia.txt',
+      Cyprus: 'Cyprus.txt',
+      Czech: 'Czech.txt',
+      Denmark: 'Denmark.txt',
+      Dominican_Republic: 'Dominican_Republic.txt',
+      Ecuador: 'Ecuador.txt',
+      Egypt: 'Egypt.txt',
+      Estonia: 'Estonia.txt',
+      Finland: 'Finland.txt',
+      France: 'France.txt',
+      Georgia: 'Georgia.txt',
+      Germany: 'Germany.txt',
+      Greece: 'Greece.txt',
+      Greenland: 'Greenland.txt',
+      Guatemala: 'Guatemala.txt',
+      Hong_Kong_Sar_China: 'Hong_Kong_Sar_China.txt',
+      Hungary: 'Hungary.txt',
+      Iceland: 'Iceland.txt',
+      India: 'India.txt',
+      Indonesia: 'Indonesia.txt',
+      Iran: 'Iran.txt',
+      Ireland: 'Ireland.txt',
+      Isleofman: 'Isleofman.txt',
+      Israel: 'Israel.txt',
+      Italy: 'Italy.txt',
+      Japan: 'Japan.txt',
+      Kazakhstan: 'Kazakhstan.txt',
+      Kenya: 'Kenya.txt',
+      Laos: 'Laos.txt',
+      Latvia: 'Latvia.txt',
+      Liechtenstein: 'Liechtenstein.txt',
+      Lithuania: 'Lithuania.txt',
+      Luxembourg: 'Luxembourg.txt',
+      Macau_Sar_China: 'Macau_Sar_China.txt',
+      Macedonia: 'Macedonia.txt',
+      Malaysia: 'Malaysia.txt',
+      Malta: 'Malta.txt',
+      Mexico: 'Mexico.txt',
+      Moldova: 'Moldova.txt',
+      Monaco: 'Monaco.txt',
+      Mongolia: 'Mongolia.txt',
+      Montenegro: 'Montenegro.txt',
+      Morocco: 'Morocco.txt',
+      Myanmar_Burma_: 'Myanmar_Burma_.txt',
+      Nepal: 'Nepal.txt',
+      Netherlands: 'Netherlands.txt',
+      New_Zealand: 'New_Zealand.txt',
+      Nigeria: 'Nigeria.txt',
+      Norway: 'Norway.txt',
+      Pakistan: 'Pakistan.txt',
+      Panama: 'Panama.txt',
+      Peru: 'Peru.txt',
+      Poland: 'Poland.txt',
+      Portugal: 'Portugal.txt',
+      Qatar: 'Qatar.txt',
+      Romania: 'Romania.txt',
+      Russia: 'Russia.txt',
+      Saudi: 'Saudi.txt',
+      Serbia: 'Serbia.txt',
+      Singapore: 'Singapore.txt',
+      Slovakia: 'Slovakia.txt',
+      Slovenia: 'Slovenia.txt',
+      South_Africa: 'South_Africa.txt',
+      South_Korea: 'South_Korea.txt',
+      Spain: 'Spain.txt',
+      Srilanka: 'Srilanka.txt',
+      Sweden: 'Sweden.txt',
+      Switzerland: 'Switzerland.txt',
+      Taiwan: 'Taiwan.txt',
+      Thailand: 'Thailand.txt',
+      Turkey: 'Turkey.txt',
+      Uae: 'Uae.txt',
+      Uk: 'Uk.txt',
+      Ukraine: 'Ukraine.txt',
+      USA: 'United_States.txt',
+      Uruguay: 'Uruguay.txt',
+      Venezuela: 'Venezuela.txt',
+      Vietnam: 'Vietnam.txt',
     };
-    const defaultOpenvpnFile = countryKey => `${countryKey}.txt`;
-    const openvpnFileFor = countryKey => OPENVPN_FILE_OVERRIDES[countryKey] || defaultOpenvpnFile(countryKey);
+    const openvpnFileFor = countryKey => OPENVPN_FILES[countryKey];
 
     // ==========================================================================
     // نام فایل‌های نوع دوم (Falcon) — فقط برای کشورهایی که فایل دارند.
