@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>اشتراک‌های OpenVPN و Surfshark</title>
+  <title>اشتراک‌های OpenVPN و Falcon</title>
   <style>
     :root { --card:rgba(15,23,42,.65); --text:#f8fafc; --muted:#94a3b8; --border:rgba(148,163,184,.28); --orange:#f97316; --blue:#38bdf8; }
     * { box-sizing:border-box; }
@@ -36,7 +36,7 @@
 <body>
   <main class="container">
     <h1>سرویس‌های اتصال</h1>
-    <p class="subtitle">فایل‌های OpenVPN و Surfshark بر اساس کشور</p>
+    <p class="subtitle">فایل‌های OpenVPN و Falcon بر اساس کشور</p>
     <input id="search" class="search" type="search" placeholder="جستجوی کشور..." autocomplete="off">
     <section id="countryGrid" class="grid" aria-live="polite"></section>
   </main>
@@ -46,33 +46,248 @@
   <div id="toast">لینک کپی شد.</div>
   <footer>به یاد تمامی جاویدنامان ایران</footer>
   <script>
-    const repoBase = 'https://cdn.jsdelivr.net/gh/JavidnamanIran-at-Telegram/sing-box_sub@main/';
-    const countries = [
-      ['Albania','AL','🇦🇱'],['Algeria','DZ','🇩🇿'],['Andorra','AD','🇦🇩'],['Argentina','AR','🇦🇷'],['Armenia','AM','🇦🇲'],['Australia','AU','🇦🇺'],['Austria','AT','🇦🇹'],['Bahamas','BS','🇧🇸'],['Bangladesh','BD','🇧🇩'],['Belarus','BY','🇧🇾'],['Belgium','BE','🇧🇪'],['Bolivia','BO','🇧🇴'],['Bosnia','BA','🇧🇦'],['Brazil','BR','🇧🇷'],['Bulgaria','BG','🇧🇬'],['Cambodia','KH','🇰🇭'],['Canada','CA','🇨🇦'],['Chile','CL','🇨🇱'],['China','CN','🇨🇳'],['Colombia','CO','🇨🇴'],['Costa_Rica','CR','🇨🇷'],['Croatia','HR','🇭🇷'],['Cyprus','CY','🇨🇾'],['Czech','CZ','🇨🇿'],['Denmark','DK','🇩🇰'],['Dominican_Republic','DO','🇩🇴'],['Ecuador','EC','🇪🇨'],['Egypt','EG','🇪🇬'],['Estonia','EE','🇪🇪'],['Finland','FI','🇫🇮'],['France','FR','🇫🇷'],['Georgia','GE','🇬🇪'],['Germany','DE','🇩🇪'],['Greece','GR','🇬🇷'],['Greenland','GL','🇬🇱'],['Guatemala','GT','🇬🇹'],['Hong_Kong_Sar_China','HK','🇭🇰'],['Hungary','HU','🇭🇺'],['Iceland','IS','🇮🇸'],['India','IN','🇮🇳'],['Indonesia','ID','🇮🇩'],['Iran','IR',''],['Ireland','IE','🇮🇪'],['Isleofman','IM','🇮🇲'],['Israel','IL','🇮🇱'],['Italy','IT','🇮🇹'],['Japan','JP','🇯🇵'],['Kazakhstan','KZ','🇰🇿'],['Kenya','KE','🇰🇪'],['Laos','LA','🇱🇦'],['Latvia','LV','🇱🇻'],['Liechtenstein','LI','🇱🇮'],['Lithuania','LT','🇱🇹'],['Luxembourg','LU','🇱🇺'],['Macau_Sar_China','MO','🇲🇴'],['Macedonia','MK','🇲🇰'],['Malaysia','MY','🇲🇾'],['Malta','MT','🇲🇹'],['Mexico','MX','🇲🇽'],['Moldova','MD','🇲🇩'],['Monaco','MC','🇲🇨'],['Mongolia','MN','🇲🇳'],['Montenegro','ME','🇲🇪'],['Morocco','MA','🇲🇦'],['Myanmar_Burma_','MM','🇲🇲'],['Nepal','NP','🇳🇵'],['Netherlands','NL','🇳🇱'],['New_Zealand','NZ','🇳🇿'],['Nigeria','NG','🇳🇬'],['Norway','NO','🇳🇴'],['Pakistan','PK','🇵🇰'],['Panama','PA','🇵🇦'],['Peru','PE','🇵🇪'],['Poland','PL','🇵🇱'],['Portugal','PT','🇵🇹'],['Qatar','QA','🇶🇦'],['Romania','RO','🇷🇴'],['Russia','RU','🇷🇺'],['Saudi','SA','🇸🇦'],['Serbia','RS','🇷🇸'],['Singapore','SG','🇸🇬'],['Slovakia','SK','🇸🇰'],['Slovenia','SI','🇸🇮'],['South_Africa','ZA','🇿🇦'],['South_Korea','KR','🇰🇷'],['Spain','ES','🇪🇸'],['Srilanka','LK','🇱🇰'],['Sweden','SE','🇸🇪'],['Switzerland','CH','🇨🇭'],['Taiwan','TW','🇹🇼'],['Thailand','TH','🇹🇭'],['Turkey','TR','🇹🇷'],['Uae','AE','🇦🇪'],['Uk','GB','🇬🇧'],['Ukraine','UA','🇺🇦'],['United_States','US','🇺🇸'],['Uruguay','UY','🇺🇾'],['Venezuela','VE','🇻🇪'],['Vietnam','VN','🇻🇳']
+    // ==========================================================================
+    // تنظیمات پایه
+    // ==========================================================================
+
+    // آدرس پایه‌ی مخزن که فایل‌های کانفیگ از آنجا سرو می‌شوند.
+    const REPO_BASE = 'https://cdn.jsdelivr.net/gh/JavidnamanIran-at-Telegram/sing-box_sub@main/';
+
+    // اسم نمایشی نوع دوم کانفیگ (قبلاً Surfshark بود). فقط همین یک خط را عوض کن.
+    const TYPE_B_LABEL = 'Falcon';
+
+    // ==========================================================================
+    // لیست کشورها: [نام داخلی (بدون فاصله)، کد کشور، ایموجی پرچم]
+    // نام داخلی هم برای ساخت لینک پیش‌فرض OpenVPN و هم برای نمایش (با جایگزینی _ با فاصله) استفاده می‌شود.
+    // ==========================================================================
+    const COUNTRIES = [
+      ['Albania', 'AL', '🇦🇱'], ['Algeria', 'DZ', '🇩🇿'], ['Andorra', 'AD', '🇦🇩'], ['Argentina', 'AR', '🇦🇷'],
+      ['Armenia', 'AM', '🇦🇲'], ['Australia', 'AU', '🇦🇺'], ['Austria', 'AT', '🇦🇹'], ['Bahamas', 'BS', '🇧🇸'],
+      ['Bangladesh', 'BD', '🇧🇩'], ['Belarus', 'BY', '🇧🇾'], ['Belgium', 'BE', '🇧🇪'], ['Bolivia', 'BO', '🇧🇴'],
+      ['Bosnia', 'BA', '🇧🇦'], ['Brazil', 'BR', '🇧🇷'], ['Bulgaria', 'BG', '🇧🇬'], ['Cambodia', 'KH', '🇰🇭'],
+      ['Canada', 'CA', '🇨🇦'], ['Chile', 'CL', '🇨🇱'], ['China', 'CN', '🇨🇳'], ['Colombia', 'CO', '🇨🇴'],
+      ['Costa_Rica', 'CR', '🇨🇷'], ['Croatia', 'HR', '🇭🇷'], ['Cyprus', 'CY', '🇨🇾'], ['Czech', 'CZ', '🇨🇿'],
+      ['Denmark', 'DK', '🇩🇰'], ['Dominican_Republic', 'DO', '🇩🇴'], ['Ecuador', 'EC', '🇪🇨'], ['Egypt', 'EG', '🇪🇬'],
+      ['Estonia', 'EE', '🇪🇪'], ['Finland', 'FI', '🇫🇮'], ['France', 'FR', '🇫🇷'], ['Georgia', 'GE', '🇬🇪'],
+      ['Germany', 'DE', '🇩🇪'], ['Greece', 'GR', '🇬🇷'], ['Greenland', 'GL', '🇬🇱'], ['Guatemala', 'GT', '🇬🇹'],
+      ['Hong_Kong_Sar_China', 'HK', '🇭🇰'], ['Hungary', 'HU', '🇭🇺'], ['Iceland', 'IS', '🇮🇸'], ['India', 'IN', '🇮🇳'],
+      ['Indonesia', 'ID', '🇮🇩'], ['Iran', 'IR', ''], ['Ireland', 'IE', '🇮🇪'], ['Isleofman', 'IM', '🇮🇲'],
+      ['Israel', 'IL', '🇮🇱'], ['Italy', 'IT', '🇮🇹'], ['Japan', 'JP', '🇯🇵'], ['Kazakhstan', 'KZ', '🇰🇿'],
+      ['Kenya', 'KE', '🇰🇪'], ['Laos', 'LA', '🇱🇦'], ['Latvia', 'LV', '🇱🇻'], ['Liechtenstein', 'LI', '🇱🇮'],
+      ['Lithuania', 'LT', '🇱🇹'], ['Luxembourg', 'LU', '🇱🇺'], ['Macau_Sar_China', 'MO', '🇲🇴'], ['Macedonia', 'MK', '🇲🇰'],
+      ['Malaysia', 'MY', '🇲🇾'], ['Malta', 'MT', '🇲🇹'], ['Mexico', 'MX', '🇲🇽'], ['Moldova', 'MD', '🇲🇩'],
+      ['Monaco', 'MC', '🇲🇨'], ['Mongolia', 'MN', '🇲🇳'], ['Montenegro', 'ME', '🇲🇪'], ['Morocco', 'MA', '🇲🇦'],
+      ['Myanmar_Burma_', 'MM', '🇲🇲'], ['Nepal', 'NP', '🇳🇵'], ['Netherlands', 'NL', '🇳🇱'], ['New_Zealand', 'NZ', '🇳🇿'],
+      ['Nigeria', 'NG', '🇳🇬'], ['Norway', 'NO', '🇳🇴'], ['Pakistan', 'PK', '🇵🇰'], ['Panama', 'PA', '🇵🇦'],
+      ['Peru', 'PE', '🇵🇪'], ['Poland', 'PL', '🇵🇱'], ['Portugal', 'PT', '🇵🇹'], ['Qatar', 'QA', '🇶🇦'],
+      ['Romania', 'RO', '🇷🇴'], ['Russia', 'RU', '🇷🇺'], ['Saudi', 'SA', '🇸🇦'], ['Serbia', 'RS', '🇷🇸'],
+      ['Singapore', 'SG', '🇸🇬'], ['Slovakia', 'SK', '🇸🇰'], ['Slovenia', 'SI', '🇸🇮'], ['South_Africa', 'ZA', '🇿🇦'],
+      ['South_Korea', 'KR', '🇰🇷'], ['Spain', 'ES', '🇪🇸'], ['Srilanka', 'LK', '🇱🇰'], ['Sweden', 'SE', '🇸🇪'],
+      ['Switzerland', 'CH', '🇨🇭'], ['Taiwan', 'TW', '🇹🇼'], ['Thailand', 'TH', '🇹🇭'], ['Turkey', 'TR', '🇹🇷'],
+      ['Uae', 'AE', '🇦🇪'], ['Uk', 'GB', '🇬🇧'], ['Ukraine', 'UA', '🇺🇦'], ['United_States', 'US', '🇺🇸'],
+      ['Uruguay', 'UY', '🇺🇾'], ['Venezuela', 'VE', '🇻🇪'], ['Vietnam', 'VN', '🇻🇳'],
     ];
-    // Exact filenames visible in the Surfshark screenshots.
-    const surfsharkFiles = {
-      Albania:'Albaniassh.txt', Argentina:'Argentinassh.txt', Armenia:'Armeniassh.txt', Australia:'Australiassh.txt', Austria:'Austriassh.txt', Belgium:'Belgiummssh.txt', Brazil:'Brazilssh.txt', Bulgaria:'Bulgariassh.txt', Canada:'Canadassh.txt', Chile:'Chilessh.txt', Colombia:'Colombiassh.txt', Costa_Rica:'Costa_Ricassh.txt', Croatia:'Croatiassh.txt', Cyprus:'Cyprusssh.txt', Czech:'Czechiassh.txt', Denmark:'Denmarkssh.txt', Ecuador:'Ecuadorssh.txt', Estonia:'Estoniassh.txt', Finland:'Finlandssh.txt', France:'Francessh.txt', Georgia:'Georgiassh.txt', Germany:'Germanyssh.txt', Greece:'Greecessh.txt', Hong_Kong_Sar_China:'Hong_Kongssh.txt', Hungary:'Hungaryssh.txt', Iceland:'Icelandssh.txt', India:'Indiassh.txt', Indonesia:'Indonesiassh.txt', Ireland:'Irelandssh.txt', Israel:'Israelssh.txt', Italy:'Italyssh.txt', Japan:'Japanssh.txt', Kazakhstan:'Kazakhstanssh.txt', Latvia:'Latviassh.txt', Lithuania:'Lithuaniassh.txt', Luxembourg:'Luxembourgssh.txt', Malaysia:'Malaysiassh.txt', Mexico:'Mexicoss h.txt'.replace(' ',''), Moldova:'Moldovassh.txt', Netherlands:'Netherlandsssh.txt', New_Zealand:'New_Zealandssh.txt', Norway:'Norwayssh.txt', Panama:'Panamassh.txt', Peru:'Perussh.txt', Poland:'Polandssh.txt', Portugal:'Portugalssh.txt', Romania:'Romaniassh.txt', Serbia:'Serbiassh.txt', Singapore:'Singaporessh.txt', Slovakia:'Slovakiassh.txt', Slovenia:'Sloveniassh.txt', South_Africa:'South_Africassh.txt', South_Korea:'South_Koreassh.txt', Spain:'Spainssh.txt', Sweden:'Swedenssh.txt', Switzerland:'Switzerlandssh.txt', Taiwan:'Taiwanssh.txt', Thailand:'Thailandssh.txt', Turkey:'Turkeyssh.txt', Ukraine:'Ukrainessh.txt', Uk:'United_Kingdomssh.txt', United_States:'United_Statesssh.txt', Uruguay:'Uruguayssh.txt', Venezuela:'Venezuelassh.txt', Vietnam:'Vietnamssh.txt'
+
+    // ==========================================================================
+    // نام فایل‌های OpenVPN
+    // پیش‌فرض هر کشور: "<نام کشور>.txt" (تابع defaultOpenvpnFile پایین‌تر).
+    // اگر اسم فایل یک کشور با این قاعده فرق دارد، همین‌جا override کن؛
+    // مثال: Czech: 'Czechia_ovpn.txt'
+    // فقط کافیه کلید = همان نام داخلی کشور از آرایه‌ی COUNTRIES باشد.
+    // ==========================================================================
+    const OPENVPN_FILE_OVERRIDES = {
+      // Czech: 'Czechia.txt',
     };
-    const grid = document.getElementById('countryGrid');
-    const escapeHtml = value => value.replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
-    const urlFor = file => repoBase + encodeURIComponent(file).replace(/%2F/g, '/');
-    const button = (label, file, type) => `<button class="btn ${type}" data-file="${escapeHtml(file)}" data-type="${type}" data-action="copy">${label} · کپی</button><button class="btn ${type}" data-file="${escapeHtml(file)}" data-type="${type}" data-action="qr">${label} · QR</button>`;
-    function render(filter = '') {
-      const query = filter.trim().toLowerCase();
-      grid.innerHTML = countries.filter(([name, code]) => `${name} ${code}`.toLowerCase().includes(query)).map(([name, code, flag]) => {
-        const openvpn = `${name}.txt`;
-        const surfshark = surfsharkFiles[name];
-        return `<article class="card"><div class="heading"><span class="flag">${flag}</span><span class="name">${name.replace(/_/g, ' ')}</span></div><div class="actions">${button('OpenVPN', openvpn, 'openvpn')}${surfshark ? button('Surfshark', surfshark, 'surf') : ''}</div></article>`;
-      }).join('');
+    const defaultOpenvpnFile = countryKey => `${countryKey}.txt`;
+    const openvpnFileFor = countryKey => OPENVPN_FILE_OVERRIDES[countryKey] || defaultOpenvpnFile(countryKey);
+
+    // ==========================================================================
+    // نام فایل‌های نوع دوم (Falcon) — فقط برای کشورهایی که فایل دارند.
+    // هر خط را می‌شود جدا اضافه/حذف/ادیت کرد.
+    // ==========================================================================
+    const TYPE_B_FILES = {
+      Albania: 'Albaniassh.txt',
+      Argentina: 'Argentinassh.txt',
+      Armenia: 'Armeniassh.txt',
+      Australia: 'Australiassh.txt',
+      Austria: 'Austriassh.txt',
+      Belgium: 'Belgiummssh.txt',
+      Brazil: 'Brazilssh.txt',
+      Bulgaria: 'Bulgariassh.txt',
+      Canada: 'Canadassh.txt',
+      Chile: 'Chilessh.txt',
+      Colombia: 'Colombiassh.txt',
+      Costa_Rica: 'Costa_Ricassh.txt',
+      Croatia: 'Croatiassh.txt',
+      Cyprus: 'Cyprusssh.txt',
+      Czech: 'Czechiassh.txt',
+      Denmark: 'Denmarkssh.txt',
+      Ecuador: 'Ecuadorssh.txt',
+      Estonia: 'Estoniassh.txt',
+      Finland: 'Finlandssh.txt',
+      France: 'Francessh.txt',
+      Georgia: 'Georgiassh.txt',
+      Germany: 'Germanyssh.txt',
+      Greece: 'Greecessh.txt',
+      Hong_Kong_Sar_China: 'Hong_Kongssh.txt',
+      Hungary: 'Hungaryssh.txt',
+      Iceland: 'Icelandssh.txt',
+      India: 'Indiassh.txt',
+      Indonesia: 'Indonesiassh.txt',
+      Ireland: 'Irelandssh.txt',
+      Israel: 'Israelssh.txt',
+      Italy: 'Italyssh.txt',
+      Japan: 'Japanssh.txt',
+      Kazakhstan: 'Kazakhstanssh.txt',
+      Latvia: 'Latviassh.txt',
+      Lithuania: 'Lithuaniassh.txt',
+      Luxembourg: 'Luxembourgssh.txt',
+      Malaysia: 'Malaysiassh.txt',
+      Mexico: 'Mexicossh.txt',
+      Moldova: 'Moldovassh.txt',
+      Netherlands: 'Netherlandsssh.txt',
+      New_Zealand: 'New_Zealandssh.txt',
+      Norway: 'Norwayssh.txt',
+      Panama: 'Panamassh.txt',
+      Peru: 'Perussh.txt',
+      Poland: 'Polandssh.txt',
+      Portugal: 'Portugalssh.txt',
+      Romania: 'Romaniassh.txt',
+      Serbia: 'Serbiassh.txt',
+      Singapore: 'Singaporessh.txt',
+      Slovakia: 'Slovakiassh.txt',
+      Slovenia: 'Sloveniassh.txt',
+      South_Africa: 'South_Africassh.txt',
+      South_Korea: 'South_Koreassh.txt',
+      Spain: 'Spainssh.txt',
+      Sweden: 'Swedenssh.txt',
+      Switzerland: 'Switzerlandssh.txt',
+      Taiwan: 'Taiwanssh.txt',
+      Thailand: 'Thailandssh.txt',
+      Turkey: 'Turkeyssh.txt',
+      Ukraine: 'Ukrainessh.txt',
+      Uk: 'United_Kingdomssh.txt',
+      United_States: 'United_Statesssh.txt',
+      Uruguay: 'Uruguayssh.txt',
+      Venezuela: 'Venezuelassh.txt',
+      Vietnam: 'Vietnamssh.txt',
+    };
+
+    // ==========================================================================
+    // توابع کمکی
+    // ==========================================================================
+
+    const HTML_ESCAPES = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
+    const escapeHtml = value => value.replace(/[&<>"']/g, char => HTML_ESCAPES[char]);
+
+    // نام قابل‌نمایش کشور: جایگزینی _ با فاصله. مثال: New_Zealand -> "New Zealand"
+    const displayName = countryKey => countryKey.replace(/_/g, ' ');
+
+    // ساخت لینک کامل دانلود از روی اسم فایل.
+    const urlFor = fileName => REPO_BASE + encodeURIComponent(fileName).replace(/%2F/g, '/');
+
+    // ==========================================================================
+    // ساخت HTML یک دکمه (کپی یا QR)
+    // data-country هم روی دکمه ذخیره می‌شود تا موقع کپی/QR، اسم کشور را هم داشته باشیم.
+    // ==========================================================================
+    function renderActionButtons(label, fileName, configType, countryLabel) {
+      const commonAttrs = `class="btn ${configType}" data-file="${escapeHtml(fileName)}" data-type="${configType}" data-country="${escapeHtml(countryLabel)}"`;
+      return `
+        <button ${commonAttrs} data-action="copy">${label} · کپی</button>
+        <button ${commonAttrs} data-action="qr">${label} · QR</button>
+      `;
     }
-    function showToast() { const toast = document.getElementById('toast'); toast.classList.add('show'); setTimeout(() => toast.classList.remove('show'), 2200); }
-    async function copy(file) { await navigator.clipboard.writeText(urlFor(file)); showToast(); }
-    function showQr(file, type) { const url = urlFor(file); const importUrl = `sing-box://import-remote-profile?url=${encodeURIComponent(url)}#${encodeURIComponent(type === 'surf' ? 'Surfshark' : 'OpenVPN')}`; document.getElementById('qrTitle').textContent = `QR کد ${type === 'surf' ? 'Surfshark' : 'OpenVPN'}`; document.getElementById('qrImage').src = `https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${encodeURIComponent(importUrl)}`; document.getElementById('qrText').textContent = importUrl; document.getElementById('modal').style.display = 'flex'; }
-    grid.addEventListener('click', event => { const target = event.target.closest('button[data-action]'); if (!target) return; const {file, type, action} = target.dataset; if (action === 'copy') copy(file).catch(() => alert('کپی ناموفق بود.')); else showQr(file, type); });
+
+    // ساخت HTML یک کارت کشور کامل (پرچم + اسم + دکمه‌های OpenVPN و نوع دوم در صورت وجود).
+    function renderCountryCard([countryKey, countryCode, flagEmoji]) {
+      const countryLabel = displayName(countryKey);
+      const openvpnFile = openvpnFileFor(countryKey);
+      const typeBFile = TYPE_B_FILES[countryKey];
+
+      const buttonsHtml = [
+        renderActionButtons('OpenVPN', openvpnFile, 'openvpn', countryLabel),
+        typeBFile ? renderActionButtons(TYPE_B_LABEL, typeBFile, 'surf', countryLabel) : '',
+      ].join('');
+
+      return `
+        <article class="card">
+          <div class="heading">
+            <span class="flag">${flagEmoji}</span>
+            <span class="name">${countryLabel}</span>
+          </div>
+          <div class="actions">${buttonsHtml}</div>
+        </article>
+      `;
+    }
+
+    // ==========================================================================
+    // رندر گرید کشورها بر اساس فیلتر جستجو
+    // ==========================================================================
+    const gridEl = document.getElementById('countryGrid');
+
+    function render(searchTerm = '') {
+      const query = searchTerm.trim().toLowerCase();
+      const matches = COUNTRIES.filter(([countryKey, countryCode]) =>
+        `${countryKey} ${countryCode}`.toLowerCase().includes(query)
+      );
+      gridEl.innerHTML = matches.map(renderCountryCard).join('');
+    }
+
+    // ==========================================================================
+    // اکشن‌های کپی و QR
+    // ==========================================================================
+
+    function showToast() {
+      const toastEl = document.getElementById('toast');
+      toastEl.classList.add('show');
+      setTimeout(() => toastEl.classList.remove('show'), 2200);
+    }
+
+    async function copyLink(fileName) {
+      await navigator.clipboard.writeText(urlFor(fileName));
+      showToast();
+    }
+
+    // نام پروفایلی که در سینگ‌باکس ذخیره می‌شود شامل «کشور - نوع کانفیگ» است، مثلا: "Germany - Falcon"
+    function showQrModal(fileName, configType, countryLabel) {
+      const downloadUrl = urlFor(fileName);
+      const typeLabel = configType === 'surf' ? TYPE_B_LABEL : 'OpenVPN';
+      const profileName = `${countryLabel} - ${typeLabel}`;
+      const importUrl = `sing-box://import-remote-profile?url=${encodeURIComponent(downloadUrl)}#${encodeURIComponent(profileName)}`;
+
+      document.getElementById('qrTitle').textContent = `QR کد ${profileName}`;
+      document.getElementById('qrImage').src = `https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${encodeURIComponent(importUrl)}`;
+      document.getElementById('qrText').textContent = importUrl;
+      document.getElementById('modal').style.display = 'flex';
+    }
+
+    // ==========================================================================
+    // اتصال رویدادها
+    // ==========================================================================
+
+    gridEl.addEventListener('click', event => {
+      const button = event.target.closest('button[data-action]');
+      if (!button) return;
+
+      const { file, type, action, country } = button.dataset;
+      if (action === 'copy') {
+        copyLink(file).catch(() => alert('کپی ناموفق بود.'));
+      } else {
+        showQrModal(file, type, country);
+      }
+    });
+
     document.getElementById('search').addEventListener('input', event => render(event.target.value));
-    document.querySelector('.close').addEventListener('click', () => document.getElementById('modal').style.display = 'none');
-    document.getElementById('modal').addEventListener('click', event => { if (event.target.id === 'modal') event.currentTarget.style.display = 'none'; });
+
+    document.querySelector('.close').addEventListener('click', () => {
+      document.getElementById('modal').style.display = 'none';
+    });
+
+    document.getElementById('modal').addEventListener('click', event => {
+      if (event.target.id === 'modal') event.currentTarget.style.display = 'none';
+    });
+
+    // رندر اولیه‌ی صفحه
     render();
   </script>
 </body>
