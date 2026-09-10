@@ -17,33 +17,62 @@
             color: #ffffff;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
         }
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
-            background-color: #1e1e1e;
+            background-color: #1a1a1a;
+            border-radius: 8px;
+            overflow: hidden;
         }
         th, td {
-            padding: 12px 15px;
+            padding: 14px 18px;
             text-align: left;
-            border-bottom: 1px solid #333333;
+            border-bottom: 1px solid #2a2a2a;
         }
         th {
-            background-color: #2c2c2c;
+            background-color: #222222;
             color: #ffffff;
+            font-weight: bold;
         }
         tr:hover {
-            background-color: #2a2a2a;
+            background-color: #222222;
         }
-        a {
-            color: #4dabf7;
+        /* Button styling to bring back the gorgeous look */
+        .btn {
+            display: inline-block;
+            padding: 8px 14px;
+            font-size: 13px;
+            font-weight: 600;
+            text-align: center;
             text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.2s, transform 0.1s;
         }
-        a:hover {
-            text-decoration: underline;
+        .btn-openvpn {
+            background-color: #2b3a4a;
+            color: #61afef;
+            border: 1px solid #3b506b;
+        }
+        .btn-openvpn:hover {
+            background-color: #3b506b;
+            color: #ffffff;
+        }
+        .btn-surfshark {
+            background-color: #2a3d33;
+            color: #98c379;
+            border: 1px solid #3b584a;
+        }
+        .btn-surfshark:hover {
+            background-color: #3b584a;
+            color: #ffffff;
+        }
+        .no-link {
+            color: #555555;
+            font-style: italic;
         }
     </style>
 </head>
@@ -182,18 +211,18 @@
         // OpenVPN Column
         const tdOpenVpn = document.createElement("td");
         if (c.openvpn) {
-            tdOpenVpn.innerHTML = `<a href="${c.openvpn}" target="_blank">OpenVPN Config</a>`;
+            tdOpenVpn.innerHTML = `<a href="${c.openvpn}" class="btn btn-openvpn" target="_blank">OpenVPN Config</a>`;
         } else {
-            tdOpenVpn.innerText = "-";
+            tdOpenVpn.innerHTML = `<span class="no-link">-</span>`;
         }
         tr.appendChild(tdOpenVpn);
 
         // Surfshark Column
         const tdSurfshark = document.createElement("td");
         if (c.surfshark) {
-            tdSurfshark.innerHTML = `<a href="${c.surfshark}" target="_blank">Surfshark Config</a>`;
+            tdSurfshark.innerHTML = `<a href="${c.surfshark}" class="btn btn-surfshark" target="_blank">Surfshark Config</a>`;
         } else {
-            tdSurfshark.innerText = "-";
+            tdSurfshark.innerHTML = `<span class="no-link">-</span>`;
         }
         tr.appendChild(tdSurfshark);
 
