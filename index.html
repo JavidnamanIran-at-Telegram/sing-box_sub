@@ -196,7 +196,7 @@
     const openvpnFileFor = countryKey => OPENVPN_FILES[countryKey];
 
     // ==========================================================================
-    // نام فایل‌های نوع دوم (Falcon) — فقط برای کشورهایی که فایل دارند.
+    // نام فایل‌های نوع دوم (JNIR) — فقط برای کشورهایی که فایل دارند.
     // هر خط را می‌شود جدا اضافه/حذف/ادیت کرد.
     // ==========================================================================
     const TYPE_B_FILES = {
@@ -342,7 +342,7 @@
       showToast();
     }
 
-    // نام پروفایلی که در سینگ‌باکس ذخیره می‌شود شامل «کشور - نوع کانفیگ» است، مثلا: "Germany - Falcon"
+    // نام پروفایلی که در سینگ‌باکس ذخیره می‌شود شامل «کشور - نوع کانفیگ» است، مثلا: "Germany - JNIR"
     function showQrModal(fileName, configType, countryLabel) {
       const downloadUrl = urlFor(fileName);
       const typeLabel = configType === 'surf' ? TYPE_B_LABEL : 'OpenVPN';
