@@ -84,7 +84,7 @@
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
             gap: 12px;
             max-height: 520px;
             overflow-y: auto;
@@ -140,18 +140,25 @@
             font-size: 0.95rem;
         }
 
-        .actions {
+        .btn-group {
             display: flex;
-            gap: 6px;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .btn-row {
+            display: flex;
+            gap: 4px;
+            align-items: center;
         }
 
         .btn {
             background-color: transparent;
             border: 1px solid var(--border-color);
             color: var(--text-muted);
-            padding: 6px 12px;
-            border-radius: 6px;
-            font-size: 0.8rem;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.72rem;
             cursor: pointer;
             text-decoration: none;
             transition: all 0.2s;
@@ -161,11 +168,6 @@
             border-color: var(--accent-color);
             color: var(--accent-color);
             background-color: rgba(249, 115, 22, 0.15);
-        }
-
-        .badge-surfshark {
-            border-color: var(--accent-color);
-            color: var(--accent-color);
         }
 
         /* Modal styling for QR Code */
@@ -271,126 +273,139 @@
         <div class="grid" id="countryGrid">
             <!-- Country Cards Template -->
             <script>
-                // لیست دقیق کشورها با مشخص کردن نوع فایل (OpenVPN یا Surfshark بر اساس تصاویر و وجود پسوند ssh)
-                const items = [
-                    { name: "Albania", flag: "🇦🇱", type: "surfshark", filename: "Albaniassh.txt", label: "Albania (Surfshark)" },
-                    { name: "Algeria", flag: "🇩🇿", type: "openvpn", filename: "Algeria.txt", label: "Algeria (OpenVPN)" },
-                    { name: "Andorra", flag: "🇦🇩", type: "openvpn", filename: "Andorra.txt", label: "Andorra (OpenVPN)" },
-                    { name: "Argentina", flag: "🇦🇷", type: "surfshark", filename: "Argentinassh.txt", label: "Argentina (Surfshark)" },
-                    { name: "Armenia", flag: "🇦🇲", type: "surfshark", filename: "Armeniassh.txt", label: "Armenia (Surfshark)" },
-                    { name: "Australia", flag: "🇦🇺", type: "surfshark", filename: "Australiassh.txt", label: "Australia (Surfshark)" },
-                    { name: "Austria", flag: "🇦🇹", type: "surfshark", filename: "Austriassh.txt", label: "Austria (Surfshark)" },
-                    { name: "Bahamas", flag: "🇧🇸", type: "openvpn", filename: "Bahamas.txt", label: "Bahamas (OpenVPN)" },
-                    { name: "Bangladesh", flag: "🇧🇩", type: "openvpn", filename: "Bangladesh.txt", label: "Bangladesh (OpenVPN)" },
-                    { name: "Belarus", flag: "🇧🇾", type: "openvpn", filename: "Belarus.txt", label: "Belarus (OpenVPN)" },
-                    { name: "Belgium", flag: "🇧🇪", type: "surfshark", filename: "Belgiumssh.txt", label: "Belgium (Surfshark)" },
-                    { name: "Bolivia", flag: "🇧🇴", type: "openvpn", filename: "Bolivia.txt", label: "Bolivia (OpenVPN)" },
-                    { name: "Bosnia", flag: "🇧🇦", type: "openvpn", filename: "Bosnia.txt", label: "Bosnia (OpenVPN)" },
-                    { name: "Brazil", flag: "🇧🇷", type: "surfshark", filename: "Brazilssh.txt", label: "Brazil (Surfshark)" },
-                    { name: "Bulgaria", flag: "🇧🇬", type: "surfshark", filename: "Bulgariassh.txt", label: "Bulgaria (Surfshark)" },
-                    { name: "Cambodia", flag: "🇰🇭", type: "openvpn", filename: "Cambodia.txt", label: "Cambodia (OpenVPN)" },
-                    { name: "Canada", flag: "🇨🇦", type: "surfshark", filename: "Canadassh.txt", label: "Canada (Surfshark)" },
-                    { name: "Chile", flag: "🇨🇱", type: "surfshark", filename: "Chilessh.txt", label: "Chile (Surfshark)" },
-                    { name: "China", flag: "🇨🇳", type: "openvpn", filename: "China.txt", label: "China (OpenVPN)" },
-                    { name: "Colombia", flag: "🇨🇴", type: "surfshark", filename: "Colombiassh.txt", label: "Colombia (Surfshark)" },
-                    { name: "Costa_Rica", flag: "🇨🇷", type: "surfshark", filename: "Costa_Ricassh.txt", label: "Costa Rica (Surfshark)" },
-                    { name: "Croatia", flag: "🇭🇷", type: "surfshark", filename: "Croatiassh.txt", label: "Croatia (Surfshark)" },
-                    { name: "Cyprus", flag: "🇨🇾", type: "surfshark", filename: "Cyprusssh.txt", label: "Cyprus (Surfshark)" },
-                    { name: "Czech", flag: "🇨🇿", type: "surfshark", filename: "Czechiassh.txt", label: "Czech (Surfshark)" },
-                    { name: "Denmark", flag: "🇩🇰", type: "surfshark", filename: "Denmarkssh.txt", label: "Denmark (Surfshark)" },
-                    { name: "Dominican_Republic", flag: "🇩🇴", type: "openvpn", filename: "Dominican_Republic.txt", label: "Dominican Republic (OpenVPN)" },
-                    { name: "Ecuador", flag: "🇪🇨", type: "surfshark", filename: "Ecuadorssh.txt", label: "Ecuador (Surfshark)" },
-                    { name: "Egypt", flag: "🇪🇬", type: "openvpn", filename: "Egypt.txt", label: "Egypt (OpenVPN)" },
-                    { name: "Estonia", flag: "🇪🇪", type: "surfshark", filename: "Estoniassh.txt", label: "Estonia (Surfshark)" },
-                    { name: "Finland", flag: "🇫🇮", type: "surfshark", filename: "Finlandssh.txt", label: "Finland (Surfshark)" },
-                    { name: "France", flag: "🇫🇷", type: "surfshark", filename: "Francessh.txt", label: "France (Surfshark)" },
-                    { name: "Georgia", flag: "🇬🇪", type: "surfshark", filename: "Georgiassh.txt", label: "Georgia (Surfshark)" },
-                    { name: "Germany", flag: "🇩🇪", type: "surfshark", filename: "Germanyssh.txt", label: "Germany (Surfshark)" },
-                    { name: "Greece", flag: "🇬🇷", type: "surfshark", filename: "Greecessh.txt", label: "Greece (Surfshark)" },
-                    { name: "Greenland", flag: "🇬🇱", type: "openvpn", filename: "Greenland.txt", label: "Greenland (OpenVPN)" },
-                    { name: "Guatemala", flag: "🇬🇹", type: "openvpn", filename: "Guatemala.txt", label: "Guatemala (OpenVPN)" },
-                    { name: "Hong_Kong_Sar_China", flag: "🇭🇰", type: "surfshark", filename: "Hong_Kongssh.txt", label: "Hong Kong (Surfshark)" },
-                    { name: "Hungary", flag: "🇭🇺", type: "surfshark", filename: "Hungaryssh.txt", label: "Hungary (Surfshark)" },
-                    { name: "Iceland", flag: "🇮🇸", type: "surfshark", filename: "Icelandssh.txt", label: "Iceland (Surfshark)" },
-                    { name: "India", flag: "🇮🇳", type: "surfshark", filename: "Indiassh.txt", label: "India (Surfshark)" },
-                    { name: "Indonesia", flag: "🇮🇩", type: "surfshark", filename: "Indonesiassh.txt", label: "Indonesia (Surfshark)" },
-                    { name: "Iran", flag: "", type: "openvpn", filename: "Iran.txt", label: "Iran (OpenVPN)" },
-                    { name: "Ireland", flag: "🇮🇪", type: "surfshark", filename: "Irelandssh.txt", label: "Ireland (Surfshark)" },
-                    { name: "Isleofman", flag: "🇮🇲", type: "openvpn", filename: "Isleofman.txt", label: "Isle of Man (OpenVPN)" },
-                    { name: "Israel", flag: "🇮🇱", type: "surfshark", filename: "Israelssh.txt", label: "Israel (Surfshark)" },
-                    { name: "Italy", flag: "🇮🇹", type: "surfshark", filename: "Italyssh.txt", label: "Italy (Surfshark)" },
-                    { name: "Japan", flag: "🇯🇵", type: "surfshark", filename: "Japanssh.txt", label: "Japan (Surfshark)" },
-                    { name: "Kazakhstan", flag: "🇰🇿", type: "surfshark", filename: "Kazakhstanssh.txt", label: "Kazakhstan (Surfshark)" },
-                    { name: "Kenya", flag: "🇰🇪", type: "openvpn", filename: "Kenya.txt", label: "Kenya (OpenVPN)" },
-                    { name: "Laos", flag: "🇱🇦", type: "openvpn", filename: "Laos.txt", label: "Laos (OpenVPN)" },
-                    { name: "Latvia", flag: "🇱🇻", type: "surfshark", filename: "Latviassh.txt", label: "Latvia (Surfshark)" },
-                    { name: "Liechtenstein", flag: "🇱🇮", type: "openvpn", filename: "Liechtenstein.txt", label: "Liechtenstein (OpenVPN)" },
-                    { name: "Lithuania", flag: "🇱🇹", type: "surfshark", filename: "Lithuaniassh.txt", label: "Lithuania (Surfshark)" },
-                    { name: "Luxembourg", flag: "🇱🇺", type: "surfshark", filename: "Luxembourgssh.txt", label: "Luxembourg (Surfshark)" },
-                    { name: "Macau_Sar_China", flag: "🇲🇴", type: "openvpn", filename: "Macau_Sar_China.txt", label: "Macau (OpenVPN)" },
-                    { name: "Macedonia", flag: "🇲🇰", type: "openvpn", filename: "Macedonia.txt", label: "Macedonia (OpenVPN)" },
-                    { name: "Malaysia", flag: "🇲🇾", type: "surfshark", filename: "Malaysiassh.txt", label: "Malaysia (Surfshark)" },
-                    { name: "Malta", flag: "🇲🇹", type: "openvpn", filename: "Malta.txt", label: "Malta (OpenVPN)" },
-                    { name: "Mexico", flag: "🇲🇽", type: "surfshark", filename: "Mexicossh.txt", label: "Mexico (Surfshark)" },
-                    { name: "Moldova", flag: "🇲🇩", type: "surfshark", filename: "Moldovassh.txt", label: "Moldova (Surfshark)" },
-                    { name: "Monaco", flag: "🇲🇨", type: "openvpn", filename: "Monaco.txt", label: "Monaco (OpenVPN)" },
-                    { name: "Mongolia", flag: "🇲🇳", type: "openvpn", filename: "Mongolia.txt", label: "Mongolia (OpenVPN)" },
-                    { name: "Montenegro", flag: "🇲🇪", type: "openvpn", filename: "Montenegro.txt", label: "Montenegro (OpenVPN)" },
-                    { name: "Morocco", flag: "🇲🇦", type: "openvpn", filename: "Morocco.txt", label: "Morocco (OpenVPN)" },
-                    { name: "Myanmar_Burma_", flag: "🇲🇲", type: "openvpn", filename: "Myanmar_Burma_.txt", label: "Myanmar (OpenVPN)" },
-                    { name: "Nepal", flag: "🇳🇵", type: "openvpn", filename: "Nepal.txt", label: "Nepal (OpenVPN)" },
-                    { name: "Netherlands", flag: "🇳🇱", type: "surfshark", filename: "Netherlandsssh.txt", label: "Netherlands (Surfshark)" },
-                    { name: "New_Zealand", flag: "🇳🇿", type: "surfshark", filename: "New_Zealandssh.txt", label: "New Zealand (Surfshark)" },
-                    { name: "Nigeria", flag: "🇳🇬", type: "openvpn", filename: "Nigeria.txt", label: "Nigeria (OpenVPN)" },
-                    { name: "Norway", flag: "🇳🇴", type: "surfshark", filename: "Norwayssh.txt", label: "Norway (Surfshark)" },
-                    { name: "Pakistan", flag: "🇵🇰", type: "openvpn", filename: "Pakistan.txt", label: "Pakistan (OpenVPN)" },
-                    { name: "Panama", flag: "🇵🇦", type: "surfshark", filename: "Panamassh.txt", label: "Panama (Surfshark)" },
-                    { name: "Peru", flag: "🇵🇪", type: "surfshark", filename: "Perussh.txt", label: "Peru (Surfshark)" },
-                    { name: "Poland", flag: "🇵🇱", type: "surfshark", filename: "Polandssh.txt", label: "Poland (Surfshark)" },
-                    { name: "Portugal", flag: "🇵🇹", type: "surfshark", filename: "Portugalssh.txt", label: "Portugal (Surfshark)" },
-                    { name: "Qatar", flag: "🇶🇦", type: "openvpn", filename: "Qatar.txt", label: "Qatar (OpenVPN)" },
-                    { name: "Romania", flag: "🇷🇴", type: "surfshark", filename: "Romaniassh.txt", label: "Romania (Surfshark)" },
-                    { name: "Russia", flag: "🇷🇺", type: "openvpn", filename: "Russia.txt", label: "Russia (OpenVPN)" },
-                    { name: "Saudi", flag: "🇸🇦", type: "openvpn", filename: "Saudi.txt", label: "Saudi Arabia (OpenVPN)" },
-                    { name: "Serbia", flag: "🇷🇸", type: "surfshark", filename: "Serbiassh.txt", label: "Serbia (Surfshark)" },
-                    { name: "Singapore", flag: "🇸🇬", type: "surfshark", filename: "Singaporessh.txt", label: "Singapore (Surfshark)" },
-                    { name: "Slovakia", flag: "🇸🇰", type: "surfshark", filename: "Svokiassh.txt".replace("vokia", "vakia"), filename: "Sovakiassh.txt".replace("ovakia", "lovakiassh.txt") || "Sovakiassh.txt", filename: "Slovakiassh.txt", label: "Slovakia (Surfshark)" },
-                    { name: "Slovenia", flag: "🇸🇮", type: "surfshark", filename: "Sloveniassh.txt", label: "Slovenia (Surfshark)" },
-                    { name: "South Africa", flag: "🇿🇦", type: "surfshark", filename: "South_Africassh.txt", label: "South Africa (Surfshark)" },
-                    { name: "South_Korea", flag: "🇰🇷", type: "surfshark", filename: "South_Koreassh.txt", label: "South Korea (Surfshark)" },
-                    { name: "Spain", flag: "🇪🇸", type: "surfshark", filename: "Spainssh.txt", label: "Spain (Surfshark)" },
-                    { name: "Srilanka", flag: "🇱🇰", type: "openvpn", filename: "Srilanka.txt", label: "Sri Lanka (OpenVPN)" },
-                    { name: "Sweden", flag: "🇸🇪", type: "surfshark", filename: "Swedenssh.txt", label: "Sweden (Surfshark)" },
-                    { name: "Switzerland", flag: "🇨🇭", type: "surfshark", filename: "Switzerlandssh.txt", label: "Switzerland (Surfshark)" },
-                    { name: "Taiwan", flag: "🇹🇼", type: "surfshark", filename: "Taiwanssh.txt", label: "Taiwan (Surfshark)" },
-                    { name: "Thailand", flag: "🇹🇭", type: "surfshark", filename: "Thailandssh.txt", label: "Thailand (Surfshark)" },
-                    { name: "Turkey", flag: "🇹🇷", type: "surfshark", filename: "Turkeyssh.txt", label: "Turkey (Surfshark)" },
-                    { name: "Uae", flag: "🇦🇪", type: "openvpn", filename: "Uae.txt", label: "UAE (OpenVPN)" },
-                    { name: "Uk", flag: "🇬🇧", type: "surfshark", filename: "United_Kingdomssh.txt", filename: "United_Kingdomssh.txt", label: "UK (Surfshark)" },
-                    { name: "Ukraine", flag: "🇺🇦", type: "surfshark", filename: "Ukrainessh.txt", label: "Ukraine (Surfshark)" },
-                    { name: "Uruguay", flag: "🇺🇾", type: "surfshark", filename: "Uruguayssh.txt", label: "Uruguay (Surfshark)" },
-                    { name: "Venezuela", flag: "🇻🇪", type: "surfshark", filename: "Venezuelassh.txt", label: "Venezuela (Surfshark)" },
-                    { name: "Vietnam", flag: "🇻🇳", type: "surfshark", filename: "Vietnamssh.txt", label: "Vietnam (Surfshark)" }
+                // لیست کامل کشورها از فایل اصلی (همگی OpenVPN دارند)
+                // کشورهایی که در تصاویر عکس‌های ssh داشتند، به عنوان دارای Surfshark نیز مشخص شده‌اند
+                const countries = [
+                    { name: "Albania", flag: "🇦🇱", openvpn: "Albania.txt", surfshark: "Albaniassh.txt" },
+                    { name: "Algeria", flag: "🇩🇿", openvpn: "Algeria.txt" },
+                    { name: "Andorra", flag: "🇦🇩", openvpn: "Andorra.txt" },
+                    { name: "Argentina", flag: "🇦🇷", openvpn: "Argentina.txt", surfshark: "Argentinassh.txt" },
+                    { name: "Armenia", flag: "🇦🇲", openvpn: "Armenia.txt", surfshark: "Armeniassh.txt" },
+                    { name: "Australia", flag: "🇦🇺", openvpn: "Australia.txt", surfshark: "Australiassh.txt" },
+                    { name: "Austria", flag: "🇦🇹", openvpn: "Austria.txt", surfshark: "Austriassh.txt" },
+                    { name: "Bahamas", flag: "🇧🇸", openvpn: "Bahamas.txt" },
+                    { name: "Bangladesh", flag: "🇧🇩", openvpn: "Bangladesh.txt" },
+                    { name: "Belarus", flag: "🇧🇾", openvpn: "Belarus.txt" },
+                    { name: "Belgium", flag: "🇧🇪", openvpn: "Belgium.txt", surfshark: "Belgiumssh.txt" },
+                    { name: "Bolivia", flag: "🇧🇴", openvpn: "Bolivia.txt" },
+                    { name: "Bosnia", flag: "🇧🇦", openvpn: "Bosnia.txt" },
+                    { name: "Brazil", flag: "🇧🇷", openvpn: "Brazil.txt", surfshark: "Brazilssh.txt" },
+                    { name: "Bulgaria", flag: "🇧🇬", openvpn: "Bulgaria.txt", surfshark: "Bulgariassh.txt" },
+                    { name: "Cambodia", flag: "🇰🇭", openvpn: "Cambodia.txt" },
+                    { name: "Canada", flag: "🇨🇦", openvpn: "Canada.txt", surfshark: "Canadassh.txt" },
+                    { name: "Chile", flag: "🇨🇱", openvpn: "Chile.txt", surfshark: "Chilessh.txt" },
+                    { name: "China", flag: "🇨🇳", openvpn: "China.txt" },
+                    { name: "Colombia", flag: "🇨🇴", openvpn: "Colombia.txt", surfshark: "Colombiassh.txt" },
+                    { name: "Costa_Rica", flag: "🇨🇷", openvpn: "Costa_Rica.txt", surfshark: "Costa_Ricassh.txt" },
+                    { name: "Croatia", flag: "🇭🇷", openvpn: "Croatia.txt", surfshark: "Croatiassh.txt" },
+                    { name: "Cyprus", flag: "🇨🇾", openvpn: "Cyprus.txt", surfshark: "Cyprusssh.txt" },
+                    { name: "Czech", flag: "🇨🇿", openvpn: "Czech.txt", surfshark: "Czechiassh.txt" },
+                    { name: "Denmark", flag: "🇩🇰", openvpn: "Denmark.txt", surfshark: "Denmarkssh.txt" },
+                    { name: "Dominican_Republic", flag: "🇩🇴", openvpn: "Dominican_Republic.txt" },
+                    { name: "Ecuador", flag: "🇪🇨", openvpn: "Ecuador.txt", surfshark: "Ecuadorssh.txt" },
+                    { name: "Egypt", flag: "🇪🇬", openvpn: "Egypt.txt" },
+                    { name: "Estonia", flag: "🇪🇪", openvpn: "Estonia.txt", surfshark: "Estoniassh.txt" },
+                    { name: "Finland", flag: "🇫🇮", openvpn: "Finland.txt", surfshark: "Finlandssh.txt" },
+                    { name: "France", flag: "🇫🇷", openvpn: "France.txt", surfshark: "Francessh.txt" },
+                    { name: "Georgia", flag: "🇬🇪", openvpn: "Georgia.txt", surfshark: "Georgiassh.txt" },
+                    { name: "Germany", flag: "🇩🇪", openvpn: "Germany.txt", surfshark: "Germanyssh.txt" },
+                    { name: "Greece", flag: "🇬🇷", openvpn: "Greece.txt", surfshark: "Greecessh.txt" },
+                    { name: "Greenland", flag: "🇬🇱", openvpn: "Greenland.txt" },
+                    { name: "Guatemala", flag: "🇬🇹", openvpn: "Guatemala.txt" },
+                    { name: "Hong_Kong_Sar_China", flag: "🇭🇰", openvpn: "Hong_Kong_Sar_China.txt", surfshark: "Hong_Kongssh.txt" },
+                    { name: "Hungary", flag: "🇭🇺", openvpn: "Hungary.txt", surfshark: "Hungaryssh.txt" },
+                    { name: "Iceland", flag: "🇮🇸", openvpn: "Iceland.txt", surfshark: "Icelandssh.txt" },
+                    { name: "India", flag: "🇮🇳", openvpn: "India.txt", surfshark: "Indiassh.txt" },
+                    { name: "Indonesia", flag: "🇮🇩", openvpn: "Indonesia.txt", surfshark: "Indonesiassh.txt" },
+                    { name: "Iran", flag: "", openvpn: "Iran.txt" },
+                    { name: "Ireland", flag: "🇮🇪", openvpn: "Ireland.txt", surfshark: "Irelandssh.txt" },
+                    { name: "Isleofman", flag: "🇮🇲", openvpn: "Isleofman.txt" },
+                    { name: "Israel", flag: "🇮🇱", openvpn: "Israel.txt", surfshark: "Israelssh.txt" },
+                    { name: "Italy", flag: "🇮🇹", openvpn: "Italy.txt", surfshark: "Italyssh.txt" },
+                    { name: "Japan", flag: "🇯🇵", openvpn: "Japan.txt", surfshark: "Japanssh.txt" },
+                    { name: "Kazakhstan", flag: "🇰🇿", openvpn: "Kazakhstan.txt", surfshark: "Kazakhstanssh.txt" },
+                    { name: "Kenya", flag: "🇰🇪", openvpn: "Kenya.txt" },
+                    { name: "Laos", flag: "🇱🇦", openvpn: "Laos.txt" },
+                    { name: "Latvia", flag: "🇱🇻", openvpn: "Latvia.txt", surfshark: "Latviassh.txt" },
+                    { name: "Liechtenstein", flag: "🇱🇮", openvpn: "Liechtenstein.txt" },
+                    { name: "Lithuania", flag: "🇱🇹", openvpn: "Lithuania.txt", surfshark: "Lithuaniassh.txt" },
+                    { name: "Luxembourg", flag: "🇱🇺", openvpn: "Luxembourg.txt", surfshark: "Luxembourgssh.txt" },
+                    { name: "Macau_Sar_China", flag: "🇲🇴", openvpn: "Macau_Sar_China.txt" },
+                    { name: "Macedonia", flag: "🇲🇰", openvpn: "Macedonia.txt" },
+                    { name: "Malaysia", flag: "🇲🇾", openvpn: "Malaysia.txt", surfshark: "Malaysiassh.txt" },
+                    { name: "Malta", flag: "🇲🇹", openvpn: "Malta.txt" },
+                    { name: "Mexico", flag: "🇲🇽", openvpn: "Mexico.txt", surfshark: "Mexicossh.txt" },
+                    { name: "Moldova", flag: "🇲🇩", openvpn: "Moldova.txt", surfshark: "Moldovassh.txt" },
+                    { name: "Monaco", flag: "🇲🇨", openvpn: "Monaco.txt" },
+                    { name: "Mongolia", flag: "🇲🇳", openvpn: "Mongolia.txt" },
+                    { name: "Montenegro", flag: "🇲🇪", openvpn: "Montenegro.txt" },
+                    { name: "Morocco", flag: "🇲🇦", openvpn: "Morocco.txt" },
+                    { name: "Myanmar_Burma_", flag: "🇲🇲", openvpn: "Myanmar_Burma_.txt" },
+                    { name: "Nepal", flag: "🇳🇵", openvpn: "Nepal.txt" },
+                    { name: "Netherlands", flag: "🇳🇱", openvpn: "Netherlands.txt", surfshark: "Netherlandsssh.txt" },
+                    { name: "New_Zealand", flag: "🇳🇿", openvpn: "New_Zealand.txt", surfshark: "New_Zealandssh.txt" },
+                    { name: "Nigeria", flag: "🇳🇬", openvpn: "Nigeria.txt" },
+                    { name: "Norway", flag: "🇳🇴", openvpn: "Norway.txt", surfshark: "Norwayssh.txt" },
+                    { name: "Pakistan", flag: "🇵🇰", openvpn: "Pakistan.txt" },
+                    { name: "Panama", flag: "🇵🇦", openvpn: "Panama.txt", surfshark: "Panamassh.txt" },
+                    { name: "Peru", flag: "🇵🇪", openvpn: "Peru.txt", surfshark: "Perussh.txt" },
+                    { name: "Poland", flag: "🇵🇱", openvpn: "Poland.txt", surfshark: "Polandssh.txt" },
+                    { name: "Portugal", flag: "🇵🇹", openvpn: "Portugal.txt", surfshark: "Portugalssh.txt" },
+                    { name: "Qatar", flag: "🇶🇦", openvpn: "Qatar.txt" },
+                    { name: "Romania", flag: "🇷🇴", openvpn: "Romania.txt", surfshark: "Romaniassh.txt" },
+                    { name: "Russia", flag: "🇷🇺", openvpn: "Russia.txt" },
+                    { name: "Saudi", flag: "🇸🇦", openvpn: "Saudi.txt" },
+                    { name: "Serbia", flag: "🇷🇸", openvpn: "Serbia.txt", surfshark: "Serbiassh.txt" },
+                    { name: "Singapore", flag: "🇸🇬", openvpn: "Singapore.txt", surfshark: "Singaporessh.txt" },
+                    { name: "Slovakia", flag: "🇸🇰", openvpn: "Slovakia.txt", surfshark: "Slovakiassh.txt" },
+                    { name: "Slovenia", flag: "🇸🇮", openvpn: "Slovenia.txt", surfshark: "Sloveniassh.txt" },
+                    { name: "South Africa", flag: "🇿🇦", openvpn: "South Africa.txt", surfshark: "South_Africassh.txt" },
+                    { name: "South_Korea", flag: "🇰🇷", openvpn: "South_Korea.txt", surfshark: "South_Koreassh.txt" },
+                    { name: "Spain", flag: "🇪🇸", openvpn: "Spain.txt", surfshark: "Spainssh.txt" },
+                    { name: "Srilanka", flag: "🇱🇰", openvpn: "Srilanka.txt" },
+                    { name: "Sweden", flag: "🇸🇪", openvpn: "Sweden.txt", surfshark: "Swedenssh.txt" },
+                    { name: "Switzerland", flag: "🇨🇭", openvpn: "Switzerland.txt", surfshark: "Switzerlandssh.txt" },
+                    { name: "Taiwan", flag: "🇹🇼", openvpn: "Taiwan.txt", surfshark: "Taiwanssh.txt" },
+                    { name: "Thailand", flag: "🇹🇭", openvpn: "Thailand.txt", surfshark: "Thailandssh.txt" },
+                    { name: "Turkey", flag: "🇹🇷", openvpn: "Turkey.txt", surfshark: "Turkeyssh.txt" },
+                    { name: "Uae", flag: "🇦🇪", openvpn: "Uae.txt" },
+                    { name: "Uk", flag: "🇬🇧", openvpn: "Uk.txt", surfshark: "United_Kingdomssh.txt" },
+                    { name: "Ukraine", flag: "🇺🇦", openvpn: "Ukraine.txt", surfshark: "Ukrainessh.txt" },
+                    { name: "Uruguay", flag: "🇺🇾", openvpn: "Uruguay.txt", surfshark: "Uruguayssh.txt" },
+                    { name: "Venezuela", flag: "🇻🇪", openvpn: "Venezuela.txt", surfshark: "Venezuelassh.txt" },
+                    { name: "Vietnam", flag: "🇻🇳", openvpn: "Vietnam.txt", surfshark: "Vietnamssh.txt" }
                 ];
 
                 // Render cards dynamically
-                document.write(items.map(item => {
+                document.write(countries.map(item => {
                     const displayName = item.name.replace(/_/g, ' ');
-                    const badgeClass = item.type === 'surfshark' ? 'badge-surfshark' : '';
-                    const badgeText = item.type === 'surfshark' ? 'Surfshark' : 'OpenVPN';
+                    
+                    let buttonsHtml = `
+                        <div class="btn-row">
+                            <span style="font-size:0.65rem; color:var(--text-muted); width:55px;">OpenVPN:</span>
+                            <button class="btn" onclick="copyFileLink('${item.openvpn}')" title="کپی OpenVPN">کپی</button>
+                            <button class="btn" onclick="showQRCode('${item.openvpn}', '${displayName} (OpenVPN)')" title="QR کد OpenVPN">QR</button>
+                        </div>
+                    `;
+
+                    if (item.surfshark) {
+                        buttonsHtml += `
+                            <div class="btn-row">
+                                <span style="font-size:0.65rem; color:var(--accent-color); width:55px;">Surfshark:</span>
+                                <button class="btn" onclick="copyFileLink('${item.surfshark}')" title="کپی Surfshark">کپی</button>
+                                <button class="btn" onclick="showQRCode('${item.surfshark}', '${displayName} (Surfshark)')" title="QR کد Surfshark">QR</button>
+                            </div>
+                        `;
+                    }
 
                     return `
                         <div class="card">
                             <div class="country-info">
                                 <span class="flag">${item.flag}</span>
-                                <div>
-                                    <span class="name" style="display:block;">${displayName}</span>
-                                    <span style="font-size:0.7rem; color:var(--text-muted);" class="${badgeClass}">${badgeText}</span>
-                                </div>
+                                <span class="name">${displayName}</span>
                             </div>
-                            <div class="actions">
-                                <button class="btn" onclick="copyFileLink('${item.filename}')" title="کپی لینک ساب‌سکریپشن">کپی</button>
-                                <button class="btn" onclick="showQRCode('${item.filename}', '${item.label}')" title="QR کد ساب‌سکریپشن">QR</button>
+                            <div class="btn-group">
+                                ${buttonsHtml}
                             </div>
                         </div>
                     `;
