@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>اشتراک‌های OpenVPN و JNIR</title>
+  <title>اشتراک‌های OpenVPN و JNIR </title>
   <style>
     :root { --card:rgba(15,23,42,.65); --text:#f8fafc; --muted:#94a3b8; --border:rgba(148,163,184,.28); --orange:#f97316; --blue:#38bdf8; }
     * { box-sizing:border-box; }
@@ -53,7 +53,7 @@
     // آدرس پایه‌ی مخزن که فایل‌های کانفیگ از آنجا سرو می‌شوند.
     const REPO_BASE = 'https://cdn.jsdelivr.net/gh/JavidnamanIran-at-Telegram/sing-box_sub@main/';
 
-    // اسم نمایشی نوع دوم کانفیگ (قبلاً فالکون بود). فقط همین یک خط را عوض کن.
+    // اسم نمایشی نوع دوم کانفیگ. فقط همین یک خط را عوض کن.
     const TYPE_B_LABEL = 'JNIR';
 
     // ==========================================================================
@@ -188,7 +188,7 @@
       Uae: 'Uae.txt',
       Uk: 'Uk.txt',
       Ukraine: 'Ukraine.txt',
-      USA: 'United_States.txt',
+      United_States: 'United_States.txt',
       Uruguay: 'Uruguay.txt',
       Venezuela: 'Venezuela.txt',
       Vietnam: 'Vietnam.txt',
@@ -197,7 +197,8 @@
 
     // ==========================================================================
     // نام فایل‌های نوع دوم (JNIR) — فقط برای کشورهایی که فایل دارند.
-    // هر خط را می‌شود جدا اضافه/حذف/ادیت کرد.
+    // هر کشور می‌تواند یک اسم فایل (رشته‌ی ساده) یا چند اسم فایل (آرایه) داشته باشد.
+    // برای اضافه‌کردن یک لینک دوم به یک کشور، مقدارش را به آرایه تبدیل کن، مثل نمونه‌ی زیر برای United_States.
     // ==========================================================================
     const TYPE_B_FILES = {
       Albania: 'Albaniassh.txt',
@@ -261,11 +262,16 @@
       Turkey: 'Turkeyssh.txt',
       Ukraine: 'Ukrainessh.txt',
       Uk: 'United_Kingdomssh.txt',
-      USA: 'us2.txt',
+      // نمونه‌ی دو لینک برای یک کشور: به‌جای یک رشته، یک آرایه از اسم فایل‌ها بگذار.
+      // اسم دومی رو با اسم واقعی فایلی که توی ریپازیتوری آپلود کردی جایگزین کن.
+      USA: ['us1.txt', 'us2.txt'],
       Uruguay: 'Uruguayssh.txt',
       Venezuela: 'Venezuelassh.txt',
       Vietnam: 'Vietnamssh.txt',
     };
+
+    // یک مقدار (رشته یا آرایه یا خالی) را همیشه به آرایه‌ای از اسم فایل‌ها تبدیل می‌کند.
+    const toFileList = value => (Array.isArray(value) ? value : value ? [value] : []);
 
     // ==========================================================================
     // توابع کمکی
@@ -281,7 +287,7 @@
     const urlFor = fileName => REPO_BASE + encodeURIComponent(fileName).replace(/%2F/g, '/');
 
     // ==========================================================================
-    // ساخت HTML یک دکمه (کپی یا QR)
+    // ساخت HTML دکمه‌های یک فایل مشخص (کپی + QR)
     // data-country هم روی دکمه ذخیره می‌شود تا موقع کپی/QR، اسم کشور را هم داشته باشیم.
     // ==========================================================================
     function renderActionButtons(label, fileName, configType, countryLabel) {
@@ -292,15 +298,24 @@
       `;
     }
 
+    // ساخت دکمه‌ها برای یک نوع کانفیگ (OpenVPN یا Falcon) وقتی چند فایل/لینک دارد.
+    // اگر فقط یک فایل باشد لیبل تغییر نمی‌کند؛ اگر چند فایل باشد به هرکدام شماره اضافه می‌شود (مثلا "Falcon 1"، "Falcon 2").
+    function renderConfigTypeButtons(label, files, configType, countryLabel) {
+      if (files.length <= 1) {
+        return files.map(file => renderActionButtons(label, file, configType, countryLabel)).join('');
+      }
+      return files.map((file, index) => renderActionButtons(`${label} ${index + 1}`, file, configType, countryLabel)).join('');
+    }
+
     // ساخت HTML یک کارت کشور کامل (پرچم + اسم + دکمه‌های OpenVPN و نوع دوم در صورت وجود).
     function renderCountryCard([countryKey, countryCode, flagEmoji]) {
       const countryLabel = displayName(countryKey);
-      const openvpnFile = openvpnFileFor(countryKey);
-      const typeBFile = TYPE_B_FILES[countryKey];
+      const openvpnFiles = toFileList(openvpnFileFor(countryKey));
+      const typeBFiles = toFileList(TYPE_B_FILES[countryKey]);
 
       const buttonsHtml = [
-        renderActionButtons('OpenVPN', openvpnFile, 'openvpn', countryLabel),
-        typeBFile ? renderActionButtons(TYPE_B_LABEL, typeBFile, 'surf', countryLabel) : '',
+        renderConfigTypeButtons('OpenVPN', openvpnFiles, 'openvpn', countryLabel),
+        renderConfigTypeButtons(TYPE_B_LABEL, typeBFiles, 'surf', countryLabel),
       ].join('');
 
       return `
