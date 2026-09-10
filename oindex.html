@@ -1,486 +1,403 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sing-Box Subscriptions - کانفیگ‌های سینگ باکس</title>
-    <style>
-        :root {
-            --card-bg: rgba(30, 41, 59, 0.7);
-            --text-color: #f8fafc;
-            --text-muted: #94a3b8;
-            --accent-color: #f97316; /* نارنجی */
-            --accent-hover: #ea580c; /* نارنجی پررنگ‌تر */
-            --border-color: rgba(51, 65, 85, 0.6);
-        }
-
-        /* Animated Dancing Background */
-        body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background: linear-gradient(135deg, #0f172a, #1e1b4b, #090d16);
-            background-size: 400% 400%;
-            animation: gradientDance 15s ease infinite;
-            color: var(--text-color);
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-            box-sizing: border-box;
-        }
-
-        @keyframes gradientDance {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        .container {
-            width: 100%;
-            max-width: 900px;
-            background-color: rgba(30, 41, 59, 0.75);
-            backdrop-filter: blur(16px);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            padding: 30px;
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-            box-sizing: border-box;
-        }
-
-        h1 {
-            font-size: 1.75rem;
-            margin-top: 0;
-            margin-bottom: 8px;
-            text-align: center;
-            color: var(--text-color);
-        }
-
-        p.subtitle {
-            text-align: center;
-            color: var(--text-muted);
-            margin-bottom: 24px;
-            font-size: 0.95rem;
-        }
-
-        .search-box {
-            width: 100%;
-            padding: 12px 16px;
-            font-size: 1rem;
-            background-color: rgba(15, 23, 42, 0.8);
-            border: 1px solid var(--border-color);
-            color: var(--text-color);
-            border-radius: 10px;
-            margin-bottom: 20px;
-            box-sizing: border-box;
-            outline: none;
-            transition: all 0.3s ease;
-        }
-
-        .search-box:focus {
-            border-color: var(--accent-color);
-            box-shadow: 0 0 12px rgba(249, 115, 22, 0.3);
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-            gap: 12px;
-            max-height: 500px;
-            overflow-y: auto;
-            padding: 4px;
-        }
-
-        .grid::-webkit-scrollbar {
-            width: 6px;
-        }
-
-        .grid::-webkit-scrollbar-track {
-            background: rgba(15, 23, 42, 0.5);
-            border-radius: 3px;
-        }
-
-        .grid::-webkit-scrollbar-thumb {
-            background: var(--border-color);
-            border-radius: 3px;
-        }
-
-        .card {
-            background-color: rgba(15, 23, 42, 0.6);
-            backdrop-filter: blur(8px);
-            border: 1px solid var(--border-color);
-            padding: 12px 16px;
-            border-radius: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .card:hover {
-            border-color: var(--accent-color);
-            background-color: rgba(30, 41, 59, 0.9);
-            box-shadow: 0 4px 15px rgba(249, 115, 22, 0.2);
-            transform: translateY(-2px);
-        }
-
-        .country-info {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .flag {
-            font-size: 1.3rem;
-            line-height: 1;
-        }
-
-        .card span.name {
-            font-weight: 500;
-            font-size: 0.95rem;
-        }
-
-        .actions {
-            display: flex;
-            gap: 6px;
-        }
-
-        .btn {
-            background-color: transparent;
-            border: 1px solid var(--border-color);
-            color: var(--text-muted);
-            padding: 6px 12px;
-            border-radius: 6px;
-            font-size: 0.8rem;
-            cursor: pointer;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-
-        .btn:hover {
-            border-color: var(--accent-color);
-            color: var(--accent-color);
-            background-color: rgba(249, 115, 22, 0.15);
-        }
-
-        /* Modal styling for QR Code */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            backdrop-filter: blur(6px);
-            justify-content: center;
-            align-items: center;
-        }
-
-        .modal-content {
-            background-color: rgba(30, 41, 59, 0.95);
-            border: 1px solid var(--accent-color);
-            padding: 24px;
-            border-radius: 14px;
-            text-align: center;
-            max-width: 320px;
-            width: 90%;
-            position: relative;
-            box-shadow: 0 10px 30px rgba(249, 115, 22, 0.3);
-        }
-
-        .close-btn {
-            position: absolute;
-            top: 10px;
-            left: 15px;
-            font-size: 1.5rem;
-            color: var(--text-muted);
-            cursor: pointer;
-        }
-
-        .close-btn:hover {
-            color: var(--accent-color);
-        }
-
-        .modal-content img {
-            margin: 15px 0;
-            background: white;
-            padding: 10px;
-            border-radius: 8px;
-            max-width: 200px;
-            height: auto;
-        }
-
-        .modal-content p {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            word-break: break-all;
-            margin: 0;
-            direction: ltr;
-        }
-
-        /* Toast Notification */
-        #toast {
-            visibility: hidden;
-            position: fixed;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: rgba(15, 23, 42, 0.95);
-            color: var(--text-color);
-            border: 1px solid var(--accent-color);
-            padding: 12px 24px;
-            border-radius: 10px;
-            z-index: 2000;
-            font-size: 0.9rem;
-            box-shadow: 0 5px 20px rgba(249, 115, 22, 0.3);
-            backdrop-filter: blur(8px);
-            opacity: 0;
-            transition: opacity 0.3s ease, bottom 0.3s ease;
-        }
-
-        #toast.show {
-            visibility: visible;
-            opacity: 1;
-            bottom: 50px;
-        }
-
-        footer {
-            margin-top: 20px;
-            text-align: center;
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            line-height: 1.6;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اشتراک‌های OpenVPN و JNIR </title>
+  <style>
+    :root { --card:rgba(15,23,42,.65); --text:#f8fafc; --muted:#94a3b8; --border:rgba(148,163,184,.28); --orange:#f97316; --blue:#38bdf8; }
+    * { box-sizing:border-box; }
+    body { margin:0; min-height:100vh; padding:20px; color:var(--text); font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; background:linear-gradient(135deg,#0f172a,#1e1b4b,#090d16); background-size:400% 400%; animation:background 15s ease infinite; }
+    @keyframes background { 0%,100%{background-position:0 50%} 50%{background-position:100% 50%} }
+    .container { max-width:1000px; margin:auto; padding:30px; background:rgba(30,41,59,.76); border:1px solid var(--border); border-radius:16px; box-shadow:0 8px 32px rgba(0,0,0,.35); backdrop-filter:blur(16px); }
+    h1 { margin:0 0 8px; text-align:center; font-size:1.75rem; }
+    .subtitle { margin:0 0 24px; text-align:center; color:var(--muted); }
+    .search { width:100%; padding:12px 16px; margin-bottom:20px; color:var(--text); background:rgba(15,23,42,.8); border:1px solid var(--border); border-radius:10px; font:inherit; outline:none; }
+    .search:focus { border-color:var(--orange); box-shadow:0 0 12px rgba(249,115,22,.25); }
+    .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:12px; max-height:620px; padding:4px; overflow-y:auto; }
+    .card { padding:14px 16px; border:1px solid var(--border); border-radius:10px; background:var(--card); transition:.2s; }
+    .card:hover { transform:translateY(-2px); border-color:var(--orange); box-shadow:0 4px 15px rgba(249,115,22,.18); }
+    .heading { display:flex; gap:10px; align-items:center; margin-bottom:12px; direction:ltr; }
+    .flag { font-size:1.35rem; } .name { font-weight:600; font-size:.95rem; }
+    .actions { display:flex; flex-wrap:wrap; gap:6px; direction:ltr; }
+    .btn { padding:6px 9px; cursor:pointer; border:1px solid var(--border); border-radius:6px; color:var(--muted); background:transparent; font:inherit; font-size:.78rem; transition:.2s; }
+    .btn:hover { color:var(--orange); border-color:var(--orange); background:rgba(249,115,22,.12); }
+    .btn.surf:hover { color:var(--blue); border-color:var(--blue); background:rgba(56,189,248,.12); }
+    .modal { display:none; position:fixed; inset:0; z-index:10; align-items:center; justify-content:center; background:rgba(0,0,0,.72); backdrop-filter:blur(6px); }
+    .modal-content { position:relative; width:min(320px,90vw); padding:24px; text-align:center; background:#1e293b; border:1px solid var(--orange); border-radius:14px; }
+    .close { position:absolute; top:8px; left:14px; border:0; color:var(--muted); background:transparent; font-size:1.5rem; cursor:pointer; }
+    #qrImage { display:block; width:220px; max-width:100%; margin:16px auto; padding:8px; background:#fff; border-radius:8px; }
+    #qrText { direction:ltr; word-break:break-all; color:var(--muted); font-size:.78rem; }
+    #toast { visibility:hidden; position:fixed; z-index:20; bottom:32px; left:50%; transform:translateX(-50%); padding:12px 24px; border:1px solid var(--orange); border-radius:10px; color:var(--text); background:#0f172a; opacity:0; transition:.25s; }
+    #toast.show { visibility:visible; opacity:1; bottom:50px; }
+    footer { margin-top:20px; text-align:center; color:var(--muted); font-size:.85rem; }
+  </style>
 </head>
 <body>
+  <main class="container">
+    <h1>سرویس‌های اتصال</h1>
+    <p class="subtitle">فایل‌های OpenVPN و JNIR بر اساس کشور</p>
+    <input id="search" class="search" type="search" placeholder="جستجوی کشور..." autocomplete="off">
+    <section id="countryGrid" class="grid" aria-live="polite"></section>
+  </main>
+  <div id="modal" class="modal" role="dialog" aria-modal="true">
+    <div class="modal-content"><button class="close" aria-label="بستن">×</button><h3 id="qrTitle">QR کد</h3><img id="qrImage" alt="QR Code"><p id="qrText"></p></div>
+  </div>
+  <div id="toast">لینک کپی شد.</div>
+  <footer>لطفا به یاد تمامی جاویدنامان ایران از کپی و پخش این سابها و یا کانفیگهای آن بدون ذکر منبع جدا خودداری بفرمائید</footer>
+  <script>
+    // ==========================================================================
+    // تنظیمات پایه
+    // ==========================================================================
 
-    <div class="container">
-        <h1>سرویس‌های اتصال Sing-Box</h1>
-        <p class="subtitle">فایل‌های کانفیگ دسته‌بندی‌شده بر اساس کشور</p>
+    // آدرس پایه‌ی مخزن که فایل‌های کانفیگ از آنجا سرو می‌شوند.
+    const REPO_BASE = 'https://cdn.jsdelivr.net/gh/JavidnamanIran-at-Telegram/sing-box_sub@main/';
 
-        <input type="text" id="search" class="search-box" placeholder="جستجوی کشور..." onkeyup="filterCountries()">
+    // اسم نمایشی نوع دوم کانفیگ. فقط همین یک خط را عوض کن.
+    const TYPE_B_LABEL = 'JNIR';
 
-        <div class="grid" id="countryGrid">
-            <!-- Country Cards Template with Flags & Glassmorphism -->
-            <script>
-                // List of countries paired with their exact generated filename mapping
-                const countries = [
-                    { name: "Albania", code: "AL", flag: "🇦🇱" },
-                    { name: "Algeria", code: "DZ", flag: "🇩🇿" },
-                    { name: "Andorra", code: "AD", flag: "🇦🇩" },
-                    { name: "Argentina", code: "AR", flag: "🇦🇷" },
-                    { name: "Armenia", code: "AM", flag: "🇦🇲" },
-                    { name: "Australia", code: "AU", flag: "🇦🇺" },
-                    { name: "Austria", code: "AT", flag: "🇦🇹" },
-                    { name: "Bahamas", code: "BS", flag: "🇧🇸" },
-                    { name: "Bangladesh", code: "BD", flag: "🇧🇩" },
-                    { name: "Belarus", code: "BY", flag: "🇧🇾" },
-                    { name: "Belgium", code: "BE", flag: "🇧🇪" },
-                    { name: "Bolivia", code: "BO", flag: "🇧🇴" },
-                    { name: "Bosnia", code: "BA", flag: "🇧🇦" },
-                    { name: "Brazil", code: "BR", flag: "🇧🇷" },
-                    { name: "Bulgaria", code: "BG", flag: "🇧🇬" },
-                    { name: "Cambodia", code: "KH", flag: "🇰🇭" },
-                    { name: "Canada", code: "CA", flag: "🇨🇦" },
-                    { name: "Chile", code: "CL", flag: "🇨🇱" },
-                    { name: "China", code: "CN", flag: "🇨🇳" },
-                    { name: "Colombia", code: "CO", flag: "🇨🇴" },
-                    { name: "Costa_Rica", code: "CR", flag: "🇨🇷" },
-                    { name: "Croatia", code: "HR", flag: "🇭🇷" },
-                    { name: "Cyprus", code: "CY", flag: "🇨🇾" },
-                    { name: "Czech", code: "CZ", flag: "🇨🇿" },
-                    { name: "Denmark", code: "DK", flag: "🇩🇰" },
-                    { name: "Dominican_Republic", code: "DO", flag: "🇩🇴" },
-                    { name: "Ecuador", code: "EC", flag: "🇪🇨" },
-                    { name: "Egypt", code: "EG", flag: "🇪🇬" },
-                    { name: "Estonia", code: "EE", flag: "🇪🇪" },
-                    { name: "Finland", code: "FI", flag: "🇫🇮" },
-                    { name: "France", code: "FR", flag: "🇫🇷" },
-                    { name: "Georgia", code: "GE", flag: "🇬🇪" },
-                    { name: "Germany", code: "DE", flag: "🇩🇪" },
-                    { name: "Greece", code: "GR", flag: "🇬🇷" },
-                    { name: "Greenland", code: "GL", flag: "🇬🇱" },
-                    { name: "Guatemala", code: "GT", flag: "🇬🇹" },
-                    { name: "Hong_Kong_Sar_China", code: "HK", flag: "🇭🇰" },
-                    { name: "Hungary", code: "HU", flag: "🇭🇺" },
-                    { name: "Iceland", code: "IS", flag: "🇮🇸" },
-                    { name: "India", code: "IN", flag: "🇮🇳" },
-                    { name: "Indonesia", code: "ID", flag: "🇮🇩" },
-                    { name: "Iran", code: "IR", flag: "" },
-                    { name: "Ireland", code: "IE", flag: "🇮🇪" },
-                    { name: "Isleofman", code: "IM", flag: "🇮🇲" },
-                    { name: "Israel", code: "IL", flag: "🇮🇱" },
-                    { name: "Italy", code: "IT", flag: "🇮🇹" },
-                    { name: "Japan", code: "JP", flag: "🇯🇵" },
-                    { name: "Kazakhstan", code: "KZ", flag: "🇰🇿" },
-                    { name: "Kenya", code: "KE", flag: "🇰🇪" },
-                    { name: "Laos", code: "LA", flag: "🇱🇦" },
-                    { name: "Latvia", code: "LV", flag: "🇱🇻" },
-                    { name: "Liechtenstein", code: "LI", flag: "🇱🇮" },
-                    { name: "Lithuania", code: "LT", flag: "🇱🇹" },
-                    { name: "Luxembourg", code: "LU", flag: "🇱🇺" },
-                    { name: "Macau_Sar_China", code: "MO", flag: "🇲🇴" },
-                    { name: "Macedonia", code: "MK", flag: "🇲🇰" },
-                    { name: "Malaysia", code: "MY", flag: "🇲🇾" },
-                    { name: "Malta", code: "MT", flag: "🇲🇹" },
-                    { name: "Mexico", code: "MX", flag: "🇲🇽" },
-                    { name: "Moldova", code: "MD", flag: "🇲🇩" },
-                    { name: "Monaco", code: "MC", flag: "🇲🇨" },
-                    { name: "Mongolia", code: "MN", flag: "🇲🇳" },
-                    { name: "Montenegro", code: "ME", flag: "🇲🇪" },
-                    { name: "Morocco", code: "MA", flag: "🇲🇦" },
-                    { name: "Myanmar_Burma_", code: "MM", flag: "🇲🇲" },
-                    { name: "Nepal", code: "NP", flag: "🇳🇵" },
-                    { name: "Netherlands", code: "NL", flag: "🇳🇱" },
-                    { name: "New_Zealand", code: "NZ", flag: "🇳🇿" },
-                    { name: "Nigeria", code: "NG", flag: "🇳🇬" },
-                    { name: "Norway", code: "NO", flag: "🇳🇴" },
-                    { name: "Pakistan", code: "PK", flag: "🇵🇰" },
-                    { name: "Panama", code: "PA", flag: "🇵🇦" },
-                    { name: "Peru", code: "PE", flag: "🇵🇪" },
-                    { name: "Poland", code: "PL", flag: "🇵🇱" },
-                    { name: "Portugal", code: "PT", flag: "🇵🇹" },
-                    { name: "Qatar", code: "QA", flag: "🇶🇦" },
-                    { name: "Romania", code: "RO", flag: "🇷🇴" },
-                    { name: "Russia", code: "RU", flag: "🇷🇺" },
-                    { name: "Saudi", code: "SA", flag: "🇸🇦" },
-                    { name: "Serbia", code: "RS", flag: "🇷🇸" },
-                    { name: "Singapore", code: "SG", flag: "🇸🇬" },
-                    { name: "Slovakia", code: "SK", flag: "🇸🇰" },
-                    { name: "Slovenia", code: "SI", flag: "🇸🇮" },
-                    { name: "South Africa", code: "ZA", flag: "🇿🇦" },
-                    { name: "South_Korea", code: "KR", flag: "🇰🇷" },
-                    { name: "Spain", code: "ES", flag: "🇪🇸" },
-                    { name: "Srilanka", code: "LK", flag: "🇱🇰" },
-                    { name: "Sweden", code: "SE", flag: "🇸🇪" },
-                    { name: "Switzerland", code: "CH", flag: "🇨🇭" },
-                    { name: "Taiwan", code: "TW", flag: "🇹🇼" },
-                    { name: "Thailand", code: "TH", flag: "🇹🇭" },
-                    { name: "Turkey", code: "TR", flag: "🇹🇷" },
-                    { name: "Uae", code: "AE", flag: "🇦🇪" },
-                    { name: "Uk", code: "GB", flag: "🇬🇧" },
-                    { name: "Ukraine", code: "UA", flag: "🇺🇦" },
-                    { name: "Uruguay", code: "UY", flag: "🇺🇾" },
-                    { name: "Venezuela", code: "VE", flag: "🇻🇪" },
-                    { name: "Vietnam", code: "VN", flag: "🇻🇳" }
-                ];
+    // ==========================================================================
+    // لیست کشورها: [نام داخلی (بدون فاصله)، کد کشور، ایموجی پرچم]
+    // نام داخلی هم برای ساخت لینک پیش‌فرض OpenVPN و هم برای نمایش (با جایگزینی _ با فاصله) استفاده می‌شود.
+    // ==========================================================================
+    const COUNTRIES = [
+      ['Albania', 'AL', '🇦🇱'], ['Algeria', 'DZ', '🇩🇿'], ['Andorra', 'AD', '🇦🇩'], ['Argentina', 'AR', '🇦🇷'],
+      ['Armenia', 'AM', '🇦🇲'], ['Australia', 'AU', '🇦🇺'], ['Austria', 'AT', '🇦🇹'], ['Bahamas', 'BS', '🇧🇸'],
+      ['Bangladesh', 'BD', '🇧🇩'], ['Belarus', 'BY', '🇧🇾'], ['Belgium', 'BE', '🇧🇪'], ['Bolivia', 'BO', '🇧🇴'],
+      ['Bosnia', 'BA', '🇧🇦'], ['Brazil', 'BR', '🇧🇷'], ['Bulgaria', 'BG', '🇧🇬'], ['Cambodia', 'KH', '🇰🇭'],
+      ['Canada', 'CA', '🇨🇦'], ['Chile', 'CL', '🇨🇱'], ['China', 'CN', '🇨🇳'], ['Colombia', 'CO', '🇨🇴'],
+      ['Costa_Rica', 'CR', '🇨🇷'], ['Croatia', 'HR', '🇭🇷'], ['Cyprus', 'CY', '🇨🇾'], ['Czech', 'CZ', '🇨🇿'],
+      ['Denmark', 'DK', '🇩🇰'], ['Dominican_Republic', 'DO', '🇩🇴'], ['Ecuador', 'EC', '🇪🇨'], ['Egypt', 'EG', '🇪🇬'],
+      ['Estonia', 'EE', '🇪🇪'], ['Finland', 'FI', '🇫🇮'], ['France', 'FR', '🇫🇷'], ['Georgia', 'GE', '🇬🇪'],
+      ['Germany', 'DE', '🇩🇪'], ['Greece', 'GR', '🇬🇷'], ['Greenland', 'GL', '🇬🇱'], ['Guatemala', 'GT', '🇬🇹'],
+      ['Hong_Kong_Sar_China', 'HK', '🇭🇰'], ['Hungary', 'HU', '🇭🇺'], ['Iceland', 'IS', '🇮🇸'], ['India', 'IN', '🇮🇳'],
+      ['Indonesia', 'ID', '🇮🇩'], ['Iran', 'IR', ''], ['Ireland', 'IE', '🇮🇪'], ['Isleofman', 'IM', '🇮🇲'],
+      ['Israel', 'IL', '🇮🇱'], ['Italy', 'IT', '🇮🇹'], ['Japan', 'JP', '🇯🇵'], ['Kazakhstan', 'KZ', '🇰🇿'],
+      ['Kenya', 'KE', '🇰🇪'], ['Laos', 'LA', '🇱🇦'], ['Latvia', 'LV', '🇱🇻'], ['Liechtenstein', 'LI', '🇱🇮'],
+      ['Lithuania', 'LT', '🇱🇹'], ['Luxembourg', 'LU', '🇱🇺'], ['Macau_Sar_China', 'MO', '🇲🇴'], ['Macedonia', 'MK', '🇲🇰'],
+      ['Malaysia', 'MY', '🇲🇾'], ['Malta', 'MT', '🇲🇹'], ['Mexico', 'MX', '🇲🇽'], ['Moldova', 'MD', '🇲🇩'],
+      ['Monaco', 'MC', '🇲🇨'], ['Mongolia', 'MN', '🇲🇳'], ['Montenegro', 'ME', '🇲🇪'], ['Morocco', 'MA', '🇲🇦'],
+      ['Myanmar_Burma_', 'MM', '🇲🇲'], ['Nepal', 'NP', '🇳🇵'], ['Netherlands', 'NL', '🇳🇱'], ['New_Zealand', 'NZ', '🇳🇿'],
+      ['Nigeria', 'NG', '🇳🇬'], ['Norway', 'NO', '🇳🇴'], ['Pakistan', 'PK', '🇵🇰'], ['Panama', 'PA', '🇵🇦'],
+      ['Peru', 'PE', '🇵🇪'], ['Poland', 'PL', '🇵🇱'], ['Portugal', 'PT', '🇵🇹'], ['Qatar', 'QA', '🇶🇦'],
+      ['Romania', 'RO', '🇷🇴'], ['Russia', 'RU', '🇷🇺'], ['Saudi', 'SA', '🇸🇦'], ['Serbia', 'RS', '🇷🇸'],
+      ['Singapore', 'SG', '🇸🇬'], ['Slovakia', 'SK', '🇸🇰'], ['Slovenia', 'SI', '🇸🇮'], ['South_Africa', 'ZA', '🇿🇦'],
+      ['South_Korea', 'KR', '🇰🇷'], ['Spain', 'ES', '🇪🇸'], ['Srilanka', 'LK', '🇱🇰'], ['Sweden', 'SE', '🇸🇪'],
+      ['Switzerland', 'CH', '🇨🇭'], ['Taiwan', 'TW', '🇹🇼'], ['Thailand', 'TH', '🇹🇭'], ['Turkey', 'TR', '🇹🇷'],
+      ['Uae', 'AE', '🇦🇪'], ['Uk', 'GB', '🇬🇧'], ['Ukraine', 'UA', '🇺🇦'], ['USA', 'US', '🇺🇸'],
+      ['Uruguay', 'UY', '🇺🇾'], ['Venezuela', 'VE', '🇻🇪'], ['Vietnam', 'VN', '🇻🇳'],
+    ];
 
-                // Render cards dynamically with Clean Code / JavaScript
-                document.write(countries.map(item => {
-                    const fileName = item.name + ".txt";
-                    const displayName = item.name.replace(/_/g, ' ');
-                    return `
-                        <div class="card">
-                            <div class="country-info">
-                                <span class="flag">${item.flag}</span>
-                                <span class="name">${displayName}</span>
-                            </div>
-                            <div class="actions">
-                                <button class="btn" onclick="copyFileLink('${fileName}')" title="کپی لینک ساب‌سکریپشن">کپی</button>
-                                <button class="btn" onclick="showQRCode('${fileName}')" title="QR کد ساب‌سکریپشن">QR</button>
-                            </div>
-                        </div>
-                    `;
-                }).join(''));
-            </script>
-        </div>
-    </div>
+    // ==========================================================================
+    // نام فایل‌های OpenVPN — دقیقاً مثل TYPE_B_FILES پایین‌تر، هر کشور یک خط جدا.
+    // هر خط را می‌شود مستقل ادیت/اضافه/حذف کرد. کلید = همان نام داخلی کشور در COUNTRIES.
+    // ==========================================================================
+    const OPENVPN_FILES = {
+      Albania: 'Albania.txt',
+      Algeria: 'Algeria.txt',
+      Andorra: 'Andorra.txt',
+      Argentina: 'Argentina.txt',
+      Armenia: 'Armenia.txt',
+      Australia: 'Australia.txt',
+      Austria: 'Austria.txt',
+      Bahamas: 'Bahamas.txt',
+      Bangladesh: 'Bangladesh.txt',
+      Belarus: 'Belarus.txt',
+      Belgium: 'Belgium.txt',
+      Bolivia: 'Bolivia.txt',
+      Bosnia: 'Bosnia.txt',
+      Brazil: 'Brazil.txt',
+      Bulgaria: 'Bulgaria.txt',
+      Cambodia: 'Cambodia.txt',
+      Canada: 'Canada.txt',
+      Chile: 'Chile.txt',
+      China: 'China.txt',
+      Colombia: 'Colombia.txt',
+      Costa_Rica: 'Costa_Rica.txt',
+      Croatia: 'Croatia.txt',
+      Cyprus: 'Cyprus.txt',
+      Czech: 'Czech.txt',
+      Denmark: 'Denmark.txt',
+      Dominican_Republic: 'Dominican_Republic.txt',
+      Ecuador: 'Ecuador.txt',
+      Egypt: 'Egypt.txt',
+      Estonia: 'Estonia.txt',
+      Finland: 'Finland.txt',
+      France: 'France.txt',
+      Georgia: 'Georgia.txt',
+      Germany: 'Germany.txt',
+      Greece: 'Greece.txt',
+      Greenland: 'Greenland.txt',
+      Guatemala: 'Guatemala.txt',
+      Hong_Kong_Sar_China: 'Hong_Kong_Sar_China.txt',
+      Hungary: 'Hungary.txt',
+      Iceland: 'Iceland.txt',
+      India: 'India.txt',
+      Indonesia: 'Indonesia.txt',
+      Iran: 'Iran.txt',
+      Ireland: 'Ireland.txt',
+      Isleofman: 'Isleofman.txt',
+      Israel: 'Israel.txt',
+      Italy: 'Italy.txt',
+      Japan: 'Japan.txt',
+      Kazakhstan: 'Kazakhstan.txt',
+      Kenya: 'Kenya.txt',
+      Laos: 'Laos.txt',
+      Latvia: 'Latvia.txt',
+      Liechtenstein: 'Liechtenstein.txt',
+      Lithuania: 'Lithuania.txt',
+      Luxembourg: 'Luxembourg.txt',
+      Macau_Sar_China: 'Macau_Sar_China.txt',
+      Macedonia: 'Macedonia.txt',
+      Malaysia: 'Malaysia.txt',
+      Malta: 'Malta.txt',
+      Mexico: 'Mexico.txt',
+      Moldova: 'Moldova.txt',
+      Monaco: 'Monaco.txt',
+      Mongolia: 'Mongolia.txt',
+      Montenegro: 'Montenegro.txt',
+      Morocco: 'Morocco.txt',
+      Myanmar_Burma_: 'Myanmar_Burma_.txt',
+      Nepal: 'Nepal.txt',
+      Netherlands: 'Netherlands.txt',
+      New_Zealand: 'New_Zealand.txt',
+      Nigeria: 'Nigeria.txt',
+      Norway: 'Norway.txt',
+      Pakistan: 'Pakistan.txt',
+      Panama: 'Panama.txt',
+      Peru: 'Peru.txt',
+      Poland: 'Poland.txt',
+      Portugal: 'Portugal.txt',
+      Qatar: 'Qatar.txt',
+      Romania: 'Romania.txt',
+      Russia: 'Russia.txt',
+      Saudi: 'Saudi.txt',
+      Serbia: 'Serbia.txt',
+      Singapore: 'Singapore.txt',
+      Slovakia: 'Slovakia.txt',
+      Slovenia: 'Slovenia.txt',
+      South_Africa: 'South_Africa.txt',
+      South_Korea: 'South_Korea.txt',
+      Spain: 'Spain.txt',
+      Srilanka: 'Srilanka.txt',
+      Sweden: 'Sweden.txt',
+      Switzerland: 'Switzerland.txt',
+      Taiwan: 'Taiwan.txt',
+      Thailand: 'Thailand.txt',
+      Turkey: 'Turkey.txt',
+      Uae: 'Uae.txt',
+      Uk: 'Uk.txt',
+      Ukraine: 'Ukraine.txt',
+      United_States: 'United_States.txt',
+      Uruguay: 'Uruguay.txt',
+      Venezuela: 'Venezuela.txt',
+      Vietnam: 'Vietnam.txt',
+    };
+    const openvpnFileFor = countryKey => OPENVPN_FILES[countryKey];
 
-    <!-- QR Code Modal Box -->
-    <div id="qrModal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" onclick="closeModal()">&times;</span>
-            <h3 style="margin:0 0 10px 0; font-size:1.1rem; color: var(--accent-color);">اسکن QR کد ساب‌سکریپشن</h3>
-            <img id="qrImage" src="" alt="QR Code">
-            <p id="modalLinkText"></p>
-        </div>
-    </div>
+    // ==========================================================================
+    // نام فایل‌های نوع دوم (JNIR) — فقط برای کشورهایی که فایل دارند.
+    // هر کشور می‌تواند یک اسم فایل (رشته‌ی ساده) یا چند اسم فایل (آرایه) داشته باشد.
+    // برای اضافه‌کردن یک لینک دوم به یک کشور، مقدارش را به آرایه تبدیل کن، مثل نمونه‌ی زیر برای United_States.
+    // ==========================================================================
+    const TYPE_B_FILES = {
+      Albania: 'Albaniassh.txt',
+      Argentina: 'Argentinassh.txt',
+      Armenia: 'Armeniassh.txt',
+      Australia: 'Australiassh.txt',
+      Austria: 'Austriassh.txt',
+      Belgium: 'Belgiummssh.txt',
+      Brazil: 'Brazilssh.txt',
+      Bulgaria: 'Bulgariassh.txt',
+      Canada: 'Canadassh.txt',
+      Chile: 'Chilessh.txt',
+      Colombia: 'Colombiassh.txt',
+      Costa_Rica: 'Costa_Ricassh.txt',
+      Croatia: 'Croatiassh.txt',
+      Cyprus: 'Cyprusssh.txt',
+      Czech: 'Czechiassh.txt',
+      Denmark: 'Denmarkssh.txt',
+      Ecuador: 'Ecuadorssh.txt',
+      Estonia: 'Estoniassh.txt',
+      Finland: 'Finlandssh.txt',
+      France: 'Francessh.txt',
+      Georgia: 'Georgiassh.txt',
+      Germany: 'Germanyssh.txt',
+      Greece: 'Greecessh.txt',
+      Hong_Kong_Sar_China: 'Hong_Kongssh.txt',
+      Hungary: 'Hungaryssh.txt',
+      Iceland: 'Icelandssh.txt',
+      India: 'Indiassh.txt',
+      Indonesia: 'Indonesiassh.txt',
+      Ireland: 'Irelandssh.txt',
+      Israel: 'Israelssh.txt',
+      Italy: 'Italyssh.txt',
+      Japan: 'Japanssh.txt',
+      Kazakhstan: 'Kazakhstanssh.txt',
+      Latvia: 'Latviassh.txt',
+      Lithuania: 'Lithuaniassh.txt',
+      Luxembourg: 'Luxembourgssh.txt',
+      Malaysia: 'Malaysiassh.txt',
+      Mexico: 'Mexicossh.txt',
+      Moldova: 'Moldovassh.txt',
+      Netherlands: 'Netherlandsssh.txt',
+      New_Zealand: 'New_Zealandssh.txt',
+      Norway: 'Norwayssh.txt',
+      Panama: 'Panamassh.txt',
+      Peru: 'Perussh.txt',
+      Poland: 'Polandssh.txt',
+      Portugal: 'Portugalssh.txt',
+      Romania: 'Romaniassh.txt',
+      Serbia: 'Serbiassh.txt',
+      Singapore: 'Singaporessh.txt',
+      Slovakia: 'Slovakiassh.txt',
+      Slovenia: 'Sloveniassh.txt',
+      South_Africa: 'South_Africassh.txt',
+      South_Korea: 'South_Koreassh.txt',
+      Spain: 'Spainssh.txt',
+      Sweden: 'Swedenssh.txt',
+      Switzerland: 'Switzerlandssh.txt',
+      Taiwan: 'Taiwanssh.txt',
+      Thailand: 'Thailandssh.txt',
+      Turkey: 'Turkeyssh.txt',
+      Ukraine: 'Ukrainessh.txt',
+      Uk: 'United_Kingdomssh.txt',
+      // نمونه‌ی دو لینک برای یک کشور: به‌جای یک رشته، یک آرایه از اسم فایل‌ها بگذار.
+      // اسم دومی رو با اسم واقعی فایلی که توی ریپازیتوری آپلود کردی جایگزین کن.
+      USA: ['us1.txt', 'us2.txt'],
+      Uruguay: 'Uruguayssh.txt',
+      Venezuela: 'Venezuelassh.txt',
+      Vietnam: 'Vietnamssh.txt',
+    };
 
-    <!-- Custom Toast Notification -->
-    <div id="toast">لینک ساب‌سکریپشن با موفقیت کپی شد!</div>
+    // یک مقدار (رشته یا آرایه یا خالی) را همیشه به آرایه‌ای از اسم فایل‌ها تبدیل می‌کند.
+    const toFileList = value => (Array.isArray(value) ? value : value ? [value] : []);
 
-    <footer>
-        به یاد تمامی جاویدنامان ایران<br>
-        از کپی بدون ذکر منبع جدا خودداری فرمایید
-    </footer>
+    // ==========================================================================
+    // توابع کمکی
+    // ==========================================================================
 
-    <script>
-        // Filter countries based on search input
-        function filterCountries() {
-            let input = document.getElementById('search');
-            let filter = input.value.toLowerCase();
-            let grid = document.getElementById('countryGrid');
-            let cards = grid.getElementsByClassName('card');
+    const HTML_ESCAPES = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
+    const escapeHtml = value => value.replace(/[&<>"']/g, char => HTML_ESCAPES[char]);
 
-            for (let i = 0; i < cards.length; i++) {
-                let nameSpan = cards[i].getElementsByClassName('name')[0];
-                let txtValue = nameSpan.textContent || nameSpan.innerText;
-                if (txtValue.toLowerCase().indexOf(filter) > -1) {
-                    cards[i].style.display = "";
-                } else {
-                    cards[i].style.display = "none";
-                }
-            }
-        }
+    // نام قابل‌نمایش کشور: جایگزینی _ با فاصله. مثال: New_Zealand -> "New Zealand"
+    const displayName = countryKey => countryKey.replace(/_/g, ' ');
 
-        // Generate high-speed jsDelivr CDN link (Bypasses GitHub CORS restrictions completely)
-        function getSubUrl(fileName) {
-            return `https://cdn.jsdelivr.net/gh/JavidnamanIran-at-Telegram/sing-box_sub@main/${fileName}`;
-        }
+    // ساخت لینک کامل دانلود از روی اسم فایل.
+    const urlFor = fileName => REPO_BASE + encodeURIComponent(fileName).replace(/%2F/g, '/');
 
-        // Build the sing-box app's own URL Scheme so a QR scan (or tapping the
-        // link) tells the app directly to import this as a remote profile,
-        // instead of just opening a plain link that the app doesn't recognize.
-        function getSingBoxImportUrl(fileName) {
-            const subUrl = getSubUrl(fileName);
-            const profileName = fileName.replace(/\.txt$/i, '').replace(/_/g, ' ');
-            return `sing-box://import-remote-profile?url=${encodeURIComponent(subUrl)}#${encodeURIComponent(profileName)}`;
-        }
+    // ==========================================================================
+    // ساخت HTML دکمه‌های یک فایل مشخص (کپی + QR)
+    // data-country هم روی دکمه ذخیره می‌شود تا موقع کپی/QR، اسم کشور را هم داشته باشیم.
+    // ==========================================================================
+    function renderActionButtons(label, fileName, configType, countryLabel) {
+      const commonAttrs = `class="btn ${configType}" data-file="${escapeHtml(fileName)}" data-type="${configType}" data-country="${escapeHtml(countryLabel)}"`;
+      return `
+        <button ${commonAttrs} data-action="copy">${label} · کپی</button>
+        <button ${commonAttrs} data-action="qr">${label} · QR</button>
+      `;
+    }
 
-        // Show a modern custom toast notification instead of messy alert
-        function showToast() {
-            let toast = document.getElementById("toast");
-            toast.className = "show";
-            setTimeout(function(){ 
-                toast.className = toast.className.replace("show", ""); 
-            }, 2500);
-        }
+    // ساخت دکمه‌ها برای یک نوع کانفیگ (OpenVPN یا Falcon) وقتی چند فایل/لینک دارد.
+    // اگر فقط یک فایل باشد لیبل تغییر نمی‌کند؛ اگر چند فایل باشد به هرکدام شماره اضافه می‌شود (مثلا "Falcon 1"، "Falcon 2").
+    function renderConfigTypeButtons(label, files, configType, countryLabel) {
+      if (files.length <= 1) {
+        return files.map(file => renderActionButtons(label, file, configType, countryLabel)).join('');
+      }
+      return files.map((file, index) => renderActionButtons(`${label} ${index + 1}`, file, configType, countryLabel)).join('');
+    }
 
-        // Copy subscription link to clipboard
-        function copyFileLink(fileName) {
-            const fullUrl = getSubUrl(fileName);
-            navigator.clipboard.writeText(fullUrl).then(() => {
-                showToast();
-            }).catch(err => {
-                console.error('Failed to copy: ', err);
-            });
-        }
+    // ساخت HTML یک کارت کشور کامل (پرچم + اسم + دکمه‌های OpenVPN و نوع دوم در صورت وجود).
+    function renderCountryCard([countryKey, countryCode, flagEmoji]) {
+      const countryLabel = displayName(countryKey);
+      const openvpnFiles = toFileList(openvpnFileFor(countryKey));
+      const typeBFiles = toFileList(TYPE_B_FILES[countryKey]);
 
-        // Show QR Code modal pointing to the sing-box deep link
-        function showQRCode(fileName) {
-            const importUrl = getSingBoxImportUrl(fileName);
-            const qrApi = `https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${encodeURIComponent(importUrl)}`;
+      const buttonsHtml = [
+        renderConfigTypeButtons('OpenVPN', openvpnFiles, 'openvpn', countryLabel),
+        renderConfigTypeButtons(TYPE_B_LABEL, typeBFiles, 'surf', countryLabel),
+      ].join('');
 
-            document.getElementById('qrImage').src = qrApi;
-            document.getElementById('modalLinkText').innerText = importUrl;
-            document.getElementById('qrModal').style.display = 'flex';
-        }
+      return `
+        <article class="card">
+          <div class="heading">
+            <span class="flag">${flagEmoji}</span>
+            <span class="name">${countryLabel}</span>
+          </div>
+          <div class="actions">${buttonsHtml}</div>
+        </article>
+      `;
+    }
 
-        // Close the modal popup
-        function closeModal() {
-            document.getElementById('qrModal').style.display = 'none';
-        }
+    // ==========================================================================
+    // رندر گرید کشورها بر اساس فیلتر جستجو
+    // ==========================================================================
+    const gridEl = document.getElementById('countryGrid');
 
-        // Close modal when clicking outside of content box
-        window.onclick = function(event) {
-            const modal = document.getElementById('qrModal');
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
+    function render(searchTerm = '') {
+      const query = searchTerm.trim().toLowerCase();
+      const matches = COUNTRIES.filter(([countryKey, countryCode]) =>
+        `${countryKey} ${countryCode}`.toLowerCase().includes(query)
+      );
+      gridEl.innerHTML = matches.map(renderCountryCard).join('');
+    }
+
+    // ==========================================================================
+    // اکشن‌های کپی و QR
+    // ==========================================================================
+
+    function showToast() {
+      const toastEl = document.getElementById('toast');
+      toastEl.classList.add('show');
+      setTimeout(() => toastEl.classList.remove('show'), 2200);
+    }
+
+    async function copyLink(fileName) {
+      await navigator.clipboard.writeText(urlFor(fileName));
+      showToast();
+    }
+
+    // نام پروفایلی که در سینگ‌باکس ذخیره می‌شود شامل «کشور - نوع کانفیگ» است، مثلا: "Germany - JNIR"
+    function showQrModal(fileName, configType, countryLabel) {
+      const downloadUrl = urlFor(fileName);
+      const typeLabel = configType === 'surf' ? TYPE_B_LABEL : 'OpenVPN';
+      const profileName = `${countryLabel} - ${typeLabel}`;
+      const importUrl = `sing-box://import-remote-profile?url=${encodeURIComponent(downloadUrl)}#${encodeURIComponent(profileName)}`;
+
+      document.getElementById('qrTitle').textContent = `QR کد ${profileName}`;
+      document.getElementById('qrImage').src = `https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${encodeURIComponent(importUrl)}`;
+      document.getElementById('qrText').textContent = importUrl;
+      document.getElementById('modal').style.display = 'flex';
+    }
+
+    // ==========================================================================
+    // اتصال رویدادها
+    // ==========================================================================
+
+    gridEl.addEventListener('click', event => {
+      const button = event.target.closest('button[data-action]');
+      if (!button) return;
+
+      const { file, type, action, country } = button.dataset;
+      if (action === 'copy') {
+        copyLink(file).catch(() => alert('کپی ناموفق بود.'));
+      } else {
+        showQrModal(file, type, country);
+      }
+    });
+
+    document.getElementById('search').addEventListener('input', event => render(event.target.value));
+
+    document.querySelector('.close').addEventListener('click', () => {
+      document.getElementById('modal').style.display = 'none';
+    });
+
+    document.getElementById('modal').addEventListener('click', event => {
+      if (event.target.id === 'modal') event.currentTarget.style.display = 'none';
+    });
+
+    // رندر اولیه‌ی صفحه
+    render();
+  </script>
 </body>
 </html>
