@@ -58,7 +58,7 @@
   "endpoints": [
     {
       "type": "openvpn-client",
-      "tag": "اسماعیل مولودی 🇺🇸",
+      "tag": "احمد جلیل 🇺🇸",
       "mode": "tls",
       "server": "138.199.12.57",
       "server_port": 1443,
@@ -102,7 +102,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "محمد شریعتی 🇺🇸",
+      "tag": "امیرحسام خدایاریفرد 🇺🇸",
       "mode": "tls",
       "server": "146.70.183.203",
       "server_port": 1443,
@@ -146,7 +146,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "افشین آشام 🇺🇸",
+      "tag": "داریوش انصاری 🇺🇸",
       "mode": "tls",
       "server": "149.102.227.113",
       "server_port": 1443,
@@ -190,7 +190,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "مائده جوانفر 🇺🇸",
+      "tag": "صدرالدین لیتانی 🇺🇸",
       "mode": "tls",
       "server": "149.34.240.97",
       "server_port": 1443,
@@ -234,7 +234,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "شاهو خضری 🇺🇸",
+      "tag": "مهرگان زحمتکش 🇺🇸",
       "mode": "tls",
       "server": "149.36.48.77",
       "server_port": 1443,
@@ -278,7 +278,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "کبری شیخ سقا 🇺🇸",
+      "tag": "عارف عاشوری 🇺🇸",
       "mode": "tls",
       "server": "149.40.50.204",
       "server_port": 1443,
@@ -322,7 +322,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "زانیار ابوبکری 🇺🇸",
+      "tag": "نگین صالحی 🇺🇸",
       "mode": "tls",
       "server": "149.40.56.19",
       "server_port": 1443,
@@ -366,7 +366,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "کیوان درویشی 🇺🇸",
+      "tag": "میلاد درخشان 🇺🇸",
       "mode": "tls",
       "server": "149.40.58.2",
       "server_port": 1443,
@@ -410,7 +410,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "امین معرفت 🇺🇸",
+      "tag": "مهران رجبی 🇺🇸",
       "mode": "tls",
       "server": "151.240.254.45",
       "server_port": 1443,
@@ -454,7 +454,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "محمد لطفاللهی 🇺🇸",
+      "tag": "مهرزاد بهروز 🇺🇸",
       "mode": "tls",
       "server": "154.16.169.79",
       "server_port": 1443,
@@ -498,7 +498,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "مهرشاد شهیدی 🇺🇸",
+      "tag": "سیدمحمد حسینی 🇺🇸",
       "mode": "tls",
       "server": "154.16.169.93",
       "server_port": 1443,
@@ -542,7 +542,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "فریدون فرجی 🇺🇸",
+      "tag": "حسین جزی 🇺🇸",
       "mode": "tls",
       "server": "154.47.25.110",
       "server_port": 1443,
@@ -586,7 +586,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "فرشته احمدی 🇺🇸",
+      "tag": "اسرا پناهی 🇺🇸",
       "mode": "tls",
       "server": "165.232.53.25",
       "server_port": 1443,
@@ -630,7 +630,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "مطلب سعید پیرو 🇺🇸",
+      "tag": "محمد عبداللهی 🇺🇸",
       "mode": "tls",
       "server": "169.150.203.199",
       "server_port": 1443,
@@ -674,7 +674,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "صدف موحدی 🇺🇸",
+      "tag": "دانش رهنما 🇺🇸",
       "mode": "tls",
       "server": "169.150.203.250",
       "server_port": 1443,
@@ -718,7 +718,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "سارینا ساعدی 🇺🇸",
+      "tag": "احمدرضا قلیجی 🇺🇸",
       "mode": "tls",
       "server": "169.150.254.76",
       "server_port": 1443,
@@ -762,7 +762,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "حنانه کیا 🇺🇸",
+      "tag": "علی اکبر ربیعی 🇺🇸",
       "mode": "tls",
       "server": "170.39.214.227",
       "server_port": 1443,
@@ -806,7 +806,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "محمدصدیق نارویی 🇺🇸",
+      "tag": "علی بنی اسد 🇺🇸",
       "mode": "tls",
       "server": "170.39.214.229",
       "server_port": 1443,
@@ -850,7 +850,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "سدیس کشانی 🇺🇸",
+      "tag": "علی جلیلی 🇺🇸",
       "mode": "tls",
       "server": "172.216.11.20",
       "server_port": 1443,
@@ -894,7 +894,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "عبدالله نارویی 🇺🇸",
+      "tag": "رامین فاتحی 🇺🇸",
       "mode": "tls",
       "server": "172.216.11.42",
       "server_port": 1443,
@@ -938,7 +938,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "موسی آنشینی 🇺🇸",
+      "tag": "رامین کرمی 🇺🇸",
       "mode": "tls",
       "server": "172.216.252.32",
       "server_port": 1443,
@@ -982,7 +982,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "ابراهیم گرگیج 🇺🇸",
+      "tag": "سینا ملایری 🇺🇸",
       "mode": "tls",
       "server": "172.216.252.5",
       "server_port": 1443,
@@ -1026,7 +1026,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "ابوبکر علیزهی 🇺🇸",
+      "tag": "ساسان قربانی 🇺🇸",
       "mode": "tls",
       "server": "172.216.9.18",
       "server_port": 1443,
@@ -1070,7 +1070,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "محراب دولتپناه 🇺🇸",
+      "tag": "مهدی فرحانی 🇺🇸",
       "mode": "tls",
       "server": "172.245.193.188",
       "server_port": 1443,
@@ -1114,7 +1114,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "امیرمهدی فرخیپور 🇺🇸",
+      "tag": "اسماعیل مولودی 🇺🇸",
       "mode": "tls",
       "server": "172.93.148.165",
       "server_port": 1443,
@@ -1158,7 +1158,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "محسن محمدی کوچکسرایی 🇺🇸",
+      "tag": "محمد شریعتی 🇺🇸",
       "mode": "tls",
       "server": "185.141.119.66",
       "server_port": 1443,
@@ -1202,7 +1202,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "محمد زارعی 🇺🇸",
+      "tag": "افشین آشام 🇺🇸",
       "mode": "tls",
       "server": "185.156.46.105",
       "server_port": 1443,
@@ -1246,7 +1246,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "ستایش شریفینیا 🇺🇸",
+      "tag": "مائده جوانفر 🇺🇸",
       "mode": "tls",
       "server": "185.193.157.208",
       "server_port": 1443,
@@ -1290,7 +1290,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "رضا رسایی 🇺🇸",
+      "tag": "شاهو خضری 🇺🇸",
       "mode": "tls",
       "server": "191.96.101.177",
       "server_port": 1443,
@@ -1334,7 +1334,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "مجید کاظمی 🇺🇸",
+      "tag": "کبری شیخ سقا 🇺🇸",
       "mode": "tls",
       "server": "191.96.101.179",
       "server_port": 1443,
@@ -1378,7 +1378,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "محبت مظفری 🇺🇸",
+      "tag": "زانیار ابوبکری 🇺🇸",
       "mode": "tls",
       "server": "193.148.18.51",
       "server_port": 1443,
@@ -1422,7 +1422,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "مریم آروین 🇺🇸",
+      "tag": "کیوان درویشی 🇺🇸",
       "mode": "tls",
       "server": "193.148.18.53",
       "server_port": 1443,
@@ -1466,7 +1466,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "نرگس خرمیفرد 🇺🇸",
+      "tag": "امین معرفت 🇺🇸",
       "mode": "tls",
       "server": "194.33.45.114",
       "server_port": 1443,
@@ -1510,7 +1510,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "امیرحسین شمس 🇺🇸",
+      "tag": "محمد لطفاللهی 🇺🇸",
       "mode": "tls",
       "server": "195.181.171.238",
       "server_port": 1443,
@@ -1554,7 +1554,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "ابوالفضل آدینهزاده 🇺🇸",
+      "tag": "مهرشاد شهیدی 🇺🇸",
       "mode": "tls",
       "server": "195.181.171.249",
       "server_port": 1443,
@@ -1598,7 +1598,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "امیرجواد اسعدزاده 🇺🇸",
+      "tag": "فریدون فرجی 🇺🇸",
       "mode": "tls",
       "server": "195.242.212.141",
       "server_port": 1443,
@@ -1642,7 +1642,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "علی مظفری 🇺🇸",
+      "tag": "فرشته احمدی 🇺🇸",
       "mode": "tls",
       "server": "195.242.212.205",
       "server_port": 1443,
@@ -1686,7 +1686,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "مهدی ببرنژاد 🇺🇸",
+      "tag": "مطلب سعید پیرو 🇺🇸",
       "mode": "tls",
       "server": "198.37.111.16",
       "server_port": 1443,
@@ -1730,7 +1730,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "حسن ناصریخور 🇺🇸",
+      "tag": "صدف موحدی 🇺🇸",
       "mode": "tls",
       "server": "199.79.241.27",
       "server_port": 1443,
@@ -1774,7 +1774,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "مجیدرضا رهنورد 🇺🇸",
+      "tag": "سارینا ساعدی 🇺🇸",
       "mode": "tls",
       "server": "206.212.255.75",
       "server_port": 1443,
@@ -1818,7 +1818,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "سعید اسعدی 🇺🇸",
+      "tag": "حنانه کیا 🇺🇸",
       "mode": "tls",
       "server": "212.102.40.71",
       "server_port": 1443,
@@ -1862,7 +1862,7 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "شعیب حیدری 🇺🇸",
+      "tag": "محمدصدیق نارویی 🇺🇸",
       "mode": "tls",
       "server": "212.102.44.105",
       "server_port": 1443,
@@ -1906,1857 +1906,9 @@
     },
     {
       "type": "openvpn-client",
-      "tag": "آرش پهلوان 🇺🇸",
+      "tag": "سدیس کشانی 🇺🇸",
       "mode": "tls",
       "server": "212.102.44.86",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "مسعود بلوچ 🇺🇸",
-      "mode": "tls",
-      "server": "212.102.46.56",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "امیر نظافت 🇺🇸",
-      "mode": "tls",
-      "server": "212.102.61.138",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "آتوسا استادی 🇺🇸",
-      "mode": "tls",
-      "server": "212.102.61.146",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "محمد خلیلی 🇺🇸",
-      "mode": "tls",
-      "server": "212.102.61.150",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "علی اکبر حیدرزاده 🇺🇸",
-      "mode": "tls",
-      "server": "23.136.68.157",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "امیرمهدی حسنی 🇺🇸",
-      "mode": "tls",
-      "server": "37.19.199.226",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "امیرحسین مصدق شریفپور 🇺🇸",
-      "mode": "tls",
-      "server": "37.19.221.68",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "مریم غواصی 🇺🇸",
-      "mode": "tls",
-      "server": "37.19.221.86",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "فریدون محمودی 🇺🇸",
-      "mode": "tls",
-      "server": "43.225.189.100",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "آرین مریدی 🇺🇸",
-      "mode": "tls",
-      "server": "43.225.189.59",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "کیان پیر فلک 🇺🇸",
-      "mode": "tls",
-      "server": "43.225.189.63",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "محمدجواد زاهدی 🇺🇸",
-      "mode": "tls",
-      "server": "45.134.140.17",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "احمد شکراللهی 🇺🇸",
-      "mode": "tls",
-      "server": "45.144.115.138",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "اسماعیل دزوار 🇺🇸",
-      "mode": "tls",
-      "server": "45.43.14.123",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "امید مهدوی 🇺🇸",
-      "mode": "tls",
-      "server": "45.43.14.125",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "آرمین صیادی 🇺🇸",
-      "mode": "tls",
-      "server": "45.55.60.159",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "عزیز مرادی 🇺🇸",
-      "mode": "tls",
-      "server": "45.86.208.114",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "سینا نادری 🇺🇸",
-      "mode": "tls",
-      "server": "45.86.208.24",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "Surfshark 64.44.86.131 🇺🇸",
-      "mode": "tls",
-      "server": "64.44.86.131",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "Surfshark 66.235.168.215 🇺🇸",
-      "mode": "tls",
-      "server": "66.235.168.215",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "Surfshark 66.235.168.218 🇺🇸",
-      "mode": "tls",
-      "server": "66.235.168.218",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "Surfshark 74.80.182.72 🇺🇸",
-      "mode": "tls",
-      "server": "74.80.182.72",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "Surfshark 74.80.182.74 🇺🇸",
-      "mode": "tls",
-      "server": "74.80.182.74",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "Surfshark 74.80.182.82 🇺🇸",
-      "mode": "tls",
-      "server": "74.80.182.82",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "Surfshark 74.80.182.87 🇺🇸",
-      "mode": "tls",
-      "server": "74.80.182.87",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "Surfshark 79.110.53.11 🇺🇸",
-      "mode": "tls",
-      "server": "79.110.53.11",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "Surfshark 79.110.54.101 🇺🇸",
-      "mode": "tls",
-      "server": "79.110.54.101",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "Surfshark 79.110.54.107 🇺🇸",
-      "mode": "tls",
-      "server": "79.110.54.107",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "Surfshark 79.110.54.109 🇺🇸",
-      "mode": "tls",
-      "server": "79.110.54.109",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "Surfshark 82.23.1.20 🇺🇸",
-      "mode": "tls",
-      "server": "82.23.1.20",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "Surfshark 82.23.1.5 🇺🇸",
-      "mode": "tls",
-      "server": "82.23.1.5",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "Surfshark 84.20.26.185 🇺🇸",
-      "mode": "tls",
-      "server": "84.20.26.185",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "Surfshark 84.233.212.76 🇺🇸",
-      "mode": "tls",
-      "server": "84.233.212.76",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "Surfshark 89.117.45.163 🇺🇸",
-      "mode": "tls",
-      "server": "89.117.45.163",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "Surfshark 89.117.45.213 🇺🇸",
-      "mode": "tls",
-      "server": "89.117.45.213",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "Surfshark 89.117.45.37 🇺🇸",
-      "mode": "tls",
-      "server": "89.117.45.37",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "Surfshark 89.117.45.51 🇺🇸",
-      "mode": "tls",
-      "server": "89.117.45.51",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "Surfshark 89.187.187.78 🇺🇸",
-      "mode": "tls",
-      "server": "89.187.187.78",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "Surfshark 89.222.103.172 🇺🇸",
-      "mode": "tls",
-      "server": "89.222.103.172",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "Surfshark 92.119.177.19 🇺🇸",
-      "mode": "tls",
-      "server": "92.119.177.19",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "Surfshark 92.119.177.21 🇺🇸",
-      "mode": "tls",
-      "server": "92.119.177.21",
-      "server_port": 1443,
-      "network": "tcp",
-      "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
-      "password": "Mqbh5DcJx5AJKt7C3jLKvbxe",
-      "auth_retry": "none",
-      "tls": {
-        "server_name": "",
-        "server_name_type": "name",
-        "certificate": [
-          "-----BEGIN CERTIFICATE-----\nMIIFTTCCAzWgAwIBAgIJAMs9S3fqwv+mMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV\nBAYTAlZHMRIwEAYDVQQKDAlTdXJmc2hhcmsxGjAYBgNVBAMMEVN1cmZzaGFyayBS\nb290IENBMB4XDTE4MDMxNDA4NTkyM1oXDTI4MDMxMTA4NTkyM1owPTELMAkGA1UE\nBhMCVkcxEjAQBgNVBAoMCVN1cmZzaGFyazEaMBgGA1UEAwwRU3VyZnNoYXJrIFJv\nb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEGMNj0aisM63o\nSkmVJyZPaYX7aPsZtzsxo6m6p5Wta3MGASoryRsBuRaH6VVa0fwbI1nw5ubyxkua\nNa4v3zHVwuSq6F1p8S811+1YP1av+jqDcMyojH0ujZSHIcb/i5LtaHNXBQ3qN48C\nc7sqBnTIIFpmb5HthQ/4pW+a82b1guM5dZHsh7q+LKQDIGmvtMtO1+NEnmj81BAp\nFayiaD1ggvwDI4x7o/Y3ksfWSCHnqXGyqzSFLh8QuQrTmWUm84YHGFxoI1/8AKdI\nyVoB6BjcaMKtKs/pbctk6vkzmYf0XmGovDKPQF6MwUekchLjB5gSBNnptSQ9kNgn\nTLqi0OpSwI6ixX52Ksva6UM8P01ZIhWZ6ua/T/tArgODy5JZMW+pQ1A6L0b7egIe\nghpwKnPRG+5CzgO0J5UE6gv000mqbmC3CbiS8xi2xuNgruAyY2hUOoV9/BuBev8t\ntE5ZCsJH3YlG6NtbZ9hPc61GiBSx8NJnX5QHyCnfic/X87eST/amZsZCAOJ5v4EP\nSaKrItt+HrEFWZQIq4fJmHJNNbYvWzCE08AL+5/6Z+lxb/Bm3dapx2zdit3x2e+m\niGHekuiE8lQWD0rXD4+T+nDRi3X+kyt8Ex/8qRiUfrisrSHFzVMRungIMGdO9O/z\nCINFrb7wahm4PqU2f12Z9TRCOTXciQIDAQABo1AwTjAdBgNVHQ4EFgQUYRpbQwyD\nahLMN3F2ony3+UqOYOgwHwYDVR0jBBgwFoAUYRpbQwyDahLMN3F2ony3+UqOYOgw\nDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAn9zV7F/XVnFNZhHFrt0Z\nS1Yqz+qM9CojLmiyblMFh0p7t+Hh+VKVgMwrz0LwDH4UsOosXA28eJPmech6/bjf\nymkoXISy/NUSTFpUChGO9RabGGxJsT4dugOw9MPaIVZffny4qYOc/rXDXDSfF2b+\n303lLPI43y9qoe0oyZ1vtk/UKG75FkWfFUogGNbpOkuz+et5Y0aIEiyg0yh6/l5Q\n5h8+yom0HZnREHhqieGbkaGKLkyu7zQ4D4tRK/mBhd8nv+09GtPEG+D5LPbabFVx\nKjBMP4Vp24WuSUOqcGSsURHevawPVBfgmsxf1UCjelaIwngdh6WfNCRXa5QQPQTK\nubQvkvXONCDdhmdXQccnRX1nJWhPYi0onffvjsWUfztRypsKzX4dvM9k7xnIcGSG\nEnCC4RCgt1UiZIj7frcCMssbA6vJ9naM0s7JF7N3VKeHJtqe1OCRHMYnWUZt9vrq\nX6IoIHlZCoLlv39wFW9QNxelcAOCVbD+19MZ0ZXt7LitjIqe7yF5WxDQN4xru087\nFzQ4Hfj7eH1SNLLyKZkA1eecjmRoi/OoqAt7afSnwtQLtMUc2bQDg6rHt5C0e4dC\nLqP/9PGZTSJiwmtRHJ/N5qYWIh9ju83APvLm/AGBTR2pXmj9G3KdVOkpIC7L35dI\n623cSEC3Q3UZutsEm/UplsM=\n-----END CERTIFICATE-----"
-        ],
-        "client_certificate": [],
-        "client_key": [],
-        "remote_certificate_tls": "server",
-        "version_min": "1.2",
-        "control_wrap": {
-          "type": "tls_auth",
-          "direction": "client",
-          "key": [
-            "-----BEGIN OpenVPN Static key V1-----\nb02cb1d7c6fee5d4f89b8de72b51a8d0\nc7b282631d6fc19be1df6ebae9e2779e\n6d9f097058a31c97f57f0c35526a44ae\n09a01d1284b50b954d9246725a1ead1f\nf224a102ed9ab3da0152a15525643b2e\nee226c37041dc55539d475183b889a10\ne18bb94f079a4a49888da566b9978346\n0ece01daaf93548beea6c827d9674897\ne7279ff1a19cb092659e8c1860fbad0d\nb4ad0ad5732f1af4655dbd66214e552f\n04ed8fd0104e1d4bf99c249ac229ce16\n9d9ba22068c6c0ab742424760911d463\n6aafb4b85f0c952a9ce4275bc821391a\na65fcd0d2394f006e3fba0fd34c4bc4a\nb260f4b45dec3285875589c97d3087c9\n134d3a3aa2f904512e85aa2dc2202498\n-----END OpenVPN Static key V1-----"
-          ]
-        }
-      },
-      "data_ciphers": [
-        "AES-256-CBC"
-      ],
-      "data_ciphers_fallback": "AES-256-CBC",
-      "auth": "SHA512",
-      "mss_fix": 1450,
-      "redirect_gateway": true,
-      "redirect_gateway_flags": [
-        "def1"
-      ],
-      "block_ipv6": true,
-      "ping_interval": "15s",
-      "renegotiate_disabled": true,
-      "system": false,
-      "mtu": 1500
-    },
-    {
-      "type": "openvpn-client",
-      "tag": "Surfshark 92.119.177.23 🇺🇸",
-      "mode": "tls",
-      "server": "92.119.177.23",
       "server_port": 1443,
       "network": "tcp",
       "username": "bDKNHbZNSN4zPsxHhzYgQXgV",
@@ -3806,6 +1958,30 @@
       "type": "urltest",
       "tag": "کانال تلگرام @IranRamona",
       "outbounds": [
+        "احمد جلیل 🇺🇸",
+        "امیرحسام خدایاریفرد 🇺🇸",
+        "داریوش انصاری 🇺🇸",
+        "صدرالدین لیتانی 🇺🇸",
+        "مهرگان زحمتکش 🇺🇸",
+        "عارف عاشوری 🇺🇸",
+        "نگین صالحی 🇺🇸",
+        "میلاد درخشان 🇺🇸",
+        "مهران رجبی 🇺🇸",
+        "مهرزاد بهروز 🇺🇸",
+        "سیدمحمد حسینی 🇺🇸",
+        "حسین جزی 🇺🇸",
+        "اسرا پناهی 🇺🇸",
+        "محمد عبداللهی 🇺🇸",
+        "دانش رهنما 🇺🇸",
+        "احمدرضا قلیجی 🇺🇸",
+        "علی اکبر ربیعی 🇺🇸",
+        "علی بنی اسد 🇺🇸",
+        "علی جلیلی 🇺🇸",
+        "رامین فاتحی 🇺🇸",
+        "رامین کرمی 🇺🇸",
+        "سینا ملایری 🇺🇸",
+        "ساسان قربانی 🇺🇸",
+        "مهدی فرحانی 🇺🇸",
         "اسماعیل مولودی 🇺🇸",
         "محمد شریعتی 🇺🇸",
         "افشین آشام 🇺🇸",
@@ -3824,73 +2000,7 @@
         "سارینا ساعدی 🇺🇸",
         "حنانه کیا 🇺🇸",
         "محمدصدیق نارویی 🇺🇸",
-        "سدیس کشانی 🇺🇸",
-        "عبدالله نارویی 🇺🇸",
-        "موسی آنشینی 🇺🇸",
-        "ابراهیم گرگیج 🇺🇸",
-        "ابوبکر علیزهی 🇺🇸",
-        "محراب دولتپناه 🇺🇸",
-        "امیرمهدی فرخیپور 🇺🇸",
-        "محسن محمدی کوچکسرایی 🇺🇸",
-        "محمد زارعی 🇺🇸",
-        "ستایش شریفینیا 🇺🇸",
-        "رضا رسایی 🇺🇸",
-        "مجید کاظمی 🇺🇸",
-        "محبت مظفری 🇺🇸",
-        "مریم آروین 🇺🇸",
-        "نرگس خرمیفرد 🇺🇸",
-        "امیرحسین شمس 🇺🇸",
-        "ابوالفضل آدینهزاده 🇺🇸",
-        "امیرجواد اسعدزاده 🇺🇸",
-        "علی مظفری 🇺🇸",
-        "مهدی ببرنژاد 🇺🇸",
-        "حسن ناصریخور 🇺🇸",
-        "مجیدرضا رهنورد 🇺🇸",
-        "سعید اسعدی 🇺🇸",
-        "شعیب حیدری 🇺🇸",
-        "آرش پهلوان 🇺🇸",
-        "مسعود بلوچ 🇺🇸",
-        "امیر نظافت 🇺🇸",
-        "آتوسا استادی 🇺🇸",
-        "محمد خلیلی 🇺🇸",
-        "علی اکبر حیدرزاده 🇺🇸",
-        "امیرمهدی حسنی 🇺🇸",
-        "امیرحسین مصدق شریفپور 🇺🇸",
-        "مریم غواصی 🇺🇸",
-        "فریدون محمودی 🇺🇸",
-        "آرین مریدی 🇺🇸",
-        "کیان پیر فلک 🇺🇸",
-        "محمدجواد زاهدی 🇺🇸",
-        "احمد شکراللهی 🇺🇸",
-        "اسماعیل دزوار 🇺🇸",
-        "امید مهدوی 🇺🇸",
-        "آرمین صیادی 🇺🇸",
-        "عزیز مرادی 🇺🇸",
-        "سینا نادری 🇺🇸",
-        "Surfshark 64.44.86.131 🇺🇸",
-        "Surfshark 66.235.168.215 🇺🇸",
-        "Surfshark 66.235.168.218 🇺🇸",
-        "Surfshark 74.80.182.72 🇺🇸",
-        "Surfshark 74.80.182.74 🇺🇸",
-        "Surfshark 74.80.182.82 🇺🇸",
-        "Surfshark 74.80.182.87 🇺🇸",
-        "Surfshark 79.110.53.11 🇺🇸",
-        "Surfshark 79.110.54.101 🇺🇸",
-        "Surfshark 79.110.54.107 🇺🇸",
-        "Surfshark 79.110.54.109 🇺🇸",
-        "Surfshark 82.23.1.20 🇺🇸",
-        "Surfshark 82.23.1.5 🇺🇸",
-        "Surfshark 84.20.26.185 🇺🇸",
-        "Surfshark 84.233.212.76 🇺🇸",
-        "Surfshark 89.117.45.163 🇺🇸",
-        "Surfshark 89.117.45.213 🇺🇸",
-        "Surfshark 89.117.45.37 🇺🇸",
-        "Surfshark 89.117.45.51 🇺🇸",
-        "Surfshark 89.187.187.78 🇺🇸",
-        "Surfshark 89.222.103.172 🇺🇸",
-        "Surfshark 92.119.177.19 🇺🇸",
-        "Surfshark 92.119.177.21 🇺🇸",
-        "Surfshark 92.119.177.23 🇺🇸"
+        "سدیس کشانی 🇺🇸"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -3901,6 +2011,30 @@
       "tag": "کانال تلگرام @JavidnamanIran-@wearestand",
       "outbounds": [
         "کانال تلگرام @IranRamona",
+        "احمد جلیل 🇺🇸",
+        "امیرحسام خدایاریفرد 🇺🇸",
+        "داریوش انصاری 🇺🇸",
+        "صدرالدین لیتانی 🇺🇸",
+        "مهرگان زحمتکش 🇺🇸",
+        "عارف عاشوری 🇺🇸",
+        "نگین صالحی 🇺🇸",
+        "میلاد درخشان 🇺🇸",
+        "مهران رجبی 🇺🇸",
+        "مهرزاد بهروز 🇺🇸",
+        "سیدمحمد حسینی 🇺🇸",
+        "حسین جزی 🇺🇸",
+        "اسرا پناهی 🇺🇸",
+        "محمد عبداللهی 🇺🇸",
+        "دانش رهنما 🇺🇸",
+        "احمدرضا قلیجی 🇺🇸",
+        "علی اکبر ربیعی 🇺🇸",
+        "علی بنی اسد 🇺🇸",
+        "علی جلیلی 🇺🇸",
+        "رامین فاتحی 🇺🇸",
+        "رامین کرمی 🇺🇸",
+        "سینا ملایری 🇺🇸",
+        "ساسان قربانی 🇺🇸",
+        "مهدی فرحانی 🇺🇸",
         "اسماعیل مولودی 🇺🇸",
         "محمد شریعتی 🇺🇸",
         "افشین آشام 🇺🇸",
@@ -3919,73 +2053,7 @@
         "سارینا ساعدی 🇺🇸",
         "حنانه کیا 🇺🇸",
         "محمدصدیق نارویی 🇺🇸",
-        "سدیس کشانی 🇺🇸",
-        "عبدالله نارویی 🇺🇸",
-        "موسی آنشینی 🇺🇸",
-        "ابراهیم گرگیج 🇺🇸",
-        "ابوبکر علیزهی 🇺🇸",
-        "محراب دولتپناه 🇺🇸",
-        "امیرمهدی فرخیپور 🇺🇸",
-        "محسن محمدی کوچکسرایی 🇺🇸",
-        "محمد زارعی 🇺🇸",
-        "ستایش شریفینیا 🇺🇸",
-        "رضا رسایی 🇺🇸",
-        "مجید کاظمی 🇺🇸",
-        "محبت مظفری 🇺🇸",
-        "مریم آروین 🇺🇸",
-        "نرگس خرمیفرد 🇺🇸",
-        "امیرحسین شمس 🇺🇸",
-        "ابوالفضل آدینهزاده 🇺🇸",
-        "امیرجواد اسعدزاده 🇺🇸",
-        "علی مظفری 🇺🇸",
-        "مهدی ببرنژاد 🇺🇸",
-        "حسن ناصریخور 🇺🇸",
-        "مجیدرضا رهنورد 🇺🇸",
-        "سعید اسعدی 🇺🇸",
-        "شعیب حیدری 🇺🇸",
-        "آرش پهلوان 🇺🇸",
-        "مسعود بلوچ 🇺🇸",
-        "امیر نظافت 🇺🇸",
-        "آتوسا استادی 🇺🇸",
-        "محمد خلیلی 🇺🇸",
-        "علی اکبر حیدرزاده 🇺🇸",
-        "امیرمهدی حسنی 🇺🇸",
-        "امیرحسین مصدق شریفپور 🇺🇸",
-        "مریم غواصی 🇺🇸",
-        "فریدون محمودی 🇺🇸",
-        "آرین مریدی 🇺🇸",
-        "کیان پیر فلک 🇺🇸",
-        "محمدجواد زاهدی 🇺🇸",
-        "احمد شکراللهی 🇺🇸",
-        "اسماعیل دزوار 🇺🇸",
-        "امید مهدوی 🇺🇸",
-        "آرمین صیادی 🇺🇸",
-        "عزیز مرادی 🇺🇸",
-        "سینا نادری 🇺🇸",
-        "Surfshark 64.44.86.131 🇺🇸",
-        "Surfshark 66.235.168.215 🇺🇸",
-        "Surfshark 66.235.168.218 🇺🇸",
-        "Surfshark 74.80.182.72 🇺🇸",
-        "Surfshark 74.80.182.74 🇺🇸",
-        "Surfshark 74.80.182.82 🇺🇸",
-        "Surfshark 74.80.182.87 🇺🇸",
-        "Surfshark 79.110.53.11 🇺🇸",
-        "Surfshark 79.110.54.101 🇺🇸",
-        "Surfshark 79.110.54.107 🇺🇸",
-        "Surfshark 79.110.54.109 🇺🇸",
-        "Surfshark 82.23.1.20 🇺🇸",
-        "Surfshark 82.23.1.5 🇺🇸",
-        "Surfshark 84.20.26.185 🇺🇸",
-        "Surfshark 84.233.212.76 🇺🇸",
-        "Surfshark 89.117.45.163 🇺🇸",
-        "Surfshark 89.117.45.213 🇺🇸",
-        "Surfshark 89.117.45.37 🇺🇸",
-        "Surfshark 89.117.45.51 🇺🇸",
-        "Surfshark 89.187.187.78 🇺🇸",
-        "Surfshark 89.222.103.172 🇺🇸",
-        "Surfshark 92.119.177.19 🇺🇸",
-        "Surfshark 92.119.177.21 🇺🇸",
-        "Surfshark 92.119.177.23 🇺🇸"
+        "سدیس کشانی 🇺🇸"
       ],
       "interrupt_exist_connections": true
     }
