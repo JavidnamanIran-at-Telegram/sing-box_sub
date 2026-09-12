@@ -1,0 +1,87 @@
+{
+  "log": {
+    "level": "info",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "dns-remote",
+        "type": "https",
+        "server": "1.1.1.1"
+      }
+    ],
+    "final": "dns-remote"
+  },
+  "inbounds": [
+    {
+      "type": "anytls",
+      "tag": "anytls-in",
+      "listen": "0.0.0.0",
+      "listen_port": 2083,
+      "users": [
+        {
+          "name": "TEST",
+          "password": "8Mut/m5H1OXcvYVPuAbF4854O+vBP+xx"
+        }
+      ],
+      "padding_scheme": [],
+      "tls": {
+        "enabled": true,
+        "server_name": "solaris.bamak.xyz",
+        "certificate_path": "/certs/fullchain.cer",
+        "key_path": "/certs/bamak.xyz.key"
+      }
+    },
+    {
+      "type": "shadowtls",
+      "tag": "shadowtls-in",
+      "listen": "0.0.0.0",
+      "listen_port": 443,
+      "version": 3,
+      "users": [
+        {
+          "name": "user1",
+          "password": "nOSLzOCy4kD7hZwWnNqIotsNY26YEuhv"
+        }
+      ],
+      "handshake": {
+        "server": "www.bing.com",
+        "server_port": 443
+      },
+      "strict_mode": true,
+      "detour": "shadowsocks-in"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "shadowsocks-in",
+      "listen": "127.0.0.1",
+      "listen_port": 2087,
+      "network": "tcp",
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "lR2Tm4dZ9ZC3mbUwt6LplQ=="
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "direct",
+      "tag": "direct"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "protocol": "dns",
+        "outbound": "direct"
+      },
+      {
+        "domain": [
+          "sp.v2.udp-over-tcp.arpa"
+        ],
+        "outbound": "direct"
+      }
+    ],
+    "final": "direct",
+    "default_domain_resolver": "dns-remote"
+  }
+}
