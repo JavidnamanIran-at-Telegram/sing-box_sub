@@ -123,8 +123,15 @@
       "outbounds": [
         "JNIR",
         "front",
+        "px-1",
+        "px-2",
+        "px-3",
+        "px-4",
+        "px-5",
+        "px-6",
         "🎯 Direct"
-      ]
+      ],
+      "default": "JNIR"
     }
   ],
   "route": {
