@@ -106,7 +106,7 @@
 
     "server": "104.219.236.83",
 
-    "server_port": 443
+    "server_port": 8443
 
   },
 
