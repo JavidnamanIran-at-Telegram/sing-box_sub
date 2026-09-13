@@ -1,0 +1,303 @@
+{
+  "log": {
+    "disabled": false,
+    "level": "debug",
+    "timestamp": false
+  },
+  "experimental": {
+    "clash_api": {
+      "external_controller": "127.0.0.1:20123",
+      "external_ui_download_detour": "🎯 Direct",
+      "secret": "b49673122775a7b5e5e24fb20bfcf49dcdf6b4de3eb35a5a0635524f65fd05d",
+      "default_mode": "rule",
+      "access_control_allow_origin": [
+        "*"
+      ],
+      "access_control_allow_private_network": false
+    },
+    "cache_file": {
+      "enabled": true,
+      "path": "cache.db",
+      "cache_id": "ID_l00ggamo",
+      "store_fakeip": true,
+      "store_dns": true
+    }
+  },
+  "inbounds": [
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "127.0.0.1",
+      "listen_port": 20122
+    },
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "interface_name": "singtun0",
+      "address": [
+        "172.19.0.1/30"
+      ],
+      "mtu": 9000,
+      "auto_route": true,
+      "strict_route": false,
+      "stack": "mixed",
+      "dns_address": [
+        "172.19.0.2"
+      ]
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "direct",
+      "tag": "🎯 Direct"
+    },
+    {
+      "type": "http",
+      "tag": "px-1",
+      "server": "37.32.10.239",
+      "server_port": 10808
+    },
+    {
+      "type": "http",
+      "tag": "px-2",
+      "server": "94.139.180.216",
+      "server_port": 10808
+    },
+    {
+      "type": "http",
+      "tag": "px-3",
+      "server": "37.32.14.152",
+      "server_port": 8889
+    },
+    {
+      "type": "http",
+      "tag": "px-4",
+      "server": "185.208.79.252",
+      "server_port": 8080
+    },
+    {
+      "type": "http",
+      "tag": "px-5",
+      "server": "62.60.211.224",
+      "server_port": 8119
+    },
+    {
+      "type": "http",
+      "tag": "px-6",
+      "server": "185.130.50.208",
+      "server_port": 80
+    },
+    {
+      "type": "urltest",
+      "tag": "front",
+      "url": "http://connectivitycheck.gstatic.com/generate_204",
+      "interval": "1m",
+      "tolerance": 100,
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "px-1",
+        "px-2",
+        "px-3",
+        "px-4",
+        "px-5",
+        "px-6"
+      ]
+    },
+    {
+      "type": "anytls",
+      "tag": "JNIR",
+      "server": "solaris.bamak.xyz",
+      "server_port": 2083,
+      "password": "8Mut/m5H1OXcvYVPuAbF4854O+vBP+xx",
+      "tls": {
+        "enabled": true,
+        "server_name": "solaris.bamak.xyz"
+      },
+      "idle_session_check_interval": "30s",
+      "detour": "front"
+    },
+    {
+      "type": "selector",
+      "tag": "vpn",
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "JNIR",
+        "front",
+        "🎯 Direct"
+      ]
+    }
+  ],
+  "route": {
+    "auto_detect_interface": true,
+    "final": "vpn",
+    "default_domain_resolver": "dns-direct",
+    "rules": [
+      {
+        "action": "sniff",
+        "inbound": [
+          "tun-in"
+        ]
+      },
+      {
+        "action": "resolve",
+        "inbound": [
+          "tun-in"
+        ],
+        "strategy": "ipv4_only"
+      },
+      {
+        "action": "hijack-dns",
+        "port": [
+          53
+        ]
+      },
+      {
+        "action": "hijack-dns",
+        "protocol": [
+          "dns"
+        ]
+      },
+      {
+        "inbound": [
+          "tun-in"
+        ],
+        "ip_cidr": [
+          "1.1.1.1/32"
+        ],
+        "network": [
+          "tcp"
+        ],
+        "outbound": "🎯 Direct",
+        "port": [
+          53
+        ]
+      },
+      {
+        "inbound": [
+          "tun-in"
+        ],
+        "ip_cidr": [
+          "1.1.1.1/32",
+          "1.0.0.1/32",
+          "8.8.8.8/32",
+          "8.8.4.4/32",
+          "9.9.9.9/32",
+          "149.112.112.112/32",
+          "94.140.14.14/32",
+          "94.140.15.15/32",
+          "1.12.12.12/32",
+          "120.53.53.53/32"
+        ],
+        "network": [
+          "udp"
+        ],
+        "outbound": "vpn",
+        "port": [
+          53
+        ]
+      },
+      {
+        "domain": [
+          "dns.google",
+          "dns.quad9.net",
+          "dns9.quad9.net",
+          "cloudflare-dns.com",
+          "security.cloudflare-dns.com",
+          "family.cloudflare-dns.com",
+          "doh.pub",
+          "dns.adguard-dns.com"
+        ],
+        "inbound": [
+          "tun-in"
+        ],
+        "network": [
+          "tcp",
+          "udp"
+        ],
+        "outbound": "vpn",
+        "port": [
+          443,
+          853
+        ],
+        "protocol": [
+          "tls",
+          "quic"
+        ]
+      },
+      {
+        "outbound": "🎯 Direct",
+        "protocol": [
+          "bittorrent"
+        ]
+      },
+      {
+        "ip_is_private": true,
+        "outbound": "🎯 Direct"
+      },
+      {
+        "action": "reject",
+        "ip_cidr": [
+          "224.0.0.0/3",
+          "ff00::/8"
+        ],
+        "source_ip_cidr": [
+          "224.0.0.0/3",
+          "ff00::/8"
+        ]
+      }
+    ],
+    "rule_set": []
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "dns-local",
+        "type": "local"
+      },
+      {
+        "tag": "dns-direct",
+        "type": "tcp",
+        "server": "1.1.1.1",
+        "server_port": 53
+      },
+      {
+        "tag": "dns-remote",
+        "type": "https",
+        "server": "1.1.1.1",
+        "server_port": 443,
+        "detour": "vpn"
+      },
+      {
+        "tag": "dns-fake",
+        "type": "fakeip",
+        "inet4_range": "198.18.0.0/15",
+        "inet6_range": "fc00::/18"
+      }
+    ],
+    "rules": [
+      {
+        "domain": [
+          "api.ip2location.io"
+        ],
+        "inbound": [
+          "tun-in"
+        ],
+        "server": "dns-remote"
+      },
+      {
+        "disable_cache": true,
+        "inbound": [
+          "tun-in"
+        ],
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "server": "dns-fake"
+      }
+    ],
+    "final": "dns-remote",
+    "strategy": "ipv4_only",
+    "timeout": "10s"
+  }
+}
