@@ -740,8 +740,8 @@
         {
             "type": "http",
             "tag": "px-1",
-            "server": "37.32.10.239",
-            "server_port": 10808
+            "server": "172.67.255.253",
+            "server_port": 80
         },
         {
             "type": "http",
