@@ -104,7 +104,7 @@
 
     "tag": "🌐 HTTP Proxy",
 
-    "server": "172.67.255.241",
+    "server": "104.19.64.122",
 
     "server_port": 80
 
