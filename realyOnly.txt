@@ -1,0 +1,73 @@
+{
+  "log": {
+    "level": "info",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "remote",
+        "type": "https",
+        "server": "1.1.1.1",
+        "detour": "ts-net"
+      },
+      {
+        "tag": "local",
+        "type": "udp",
+        "server": "8.8.8.8"
+      }
+    ],
+    "final": "remote",
+    "strategy": "prefer_ipv4"
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "address": [
+        "172.19.0.1/30"
+      ],
+      "mtu": 1400,
+      "auto_route": true,
+      "strict_route": false,
+      "stack": "system"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "action": "sniff"
+      },
+      {
+        "protocol": [
+          "dns"
+        ],
+        "action": "hijack-dns"
+      },
+      {
+        "ip_is_private": true,
+        "outbound": "direct"
+      }
+    ],
+    "final": "ts-net",
+    "default_domain_resolver": "local",
+    "auto_detect_interface": true
+  },
+  "endpoints": [
+    {
+      "type": "tailscale",
+      "tag": "ts-net",
+      "auth_key": "tskey-auth-kaPU5Cd7KK11CNTRL-un4V3iNb2SEn3FjMNqTeREuyar7SDN59",
+      "hostname": "singbox-app-relay-test",
+      "ephemeral": true,
+      "exit_node": "100.107.184.12",
+      "accept_routes": true
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "direct",
+      "tag": "direct"
+    }
+  ]
+}
