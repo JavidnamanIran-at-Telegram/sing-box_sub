@@ -70,8 +70,8 @@
       "server": "151.240.205.179",
       "server_port": 443,
       "network": "tcp",
-      "username": "B8EwbytrkP",
-      "password": "ij24A4aqb8",
+      "username": "rused3V8KT",
+      "password": "A4TvJGfQAY",
       "auth_retry": "none",
       "tls": {
         "server_name": "",
@@ -113,8 +113,8 @@
       "server": "151.240.205.252",
       "server_port": 443,
       "network": "tcp",
-      "username": "B8EwbytrkP",
-      "password": "ij24A4aqb8",
+      "username": "rused3V8KT",
+      "password": "A4TvJGfQAY",
       "auth_retry": "none",
       "tls": {
         "server_name": "",
@@ -156,8 +156,8 @@
       "server": "154.16.105.10",
       "server_port": 443,
       "network": "tcp",
-      "username": "B8EwbytrkP",
-      "password": "ij24A4aqb8",
+      "username": "rused3V8KT",
+      "password": "A4TvJGfQAY",
       "auth_retry": "none",
       "tls": {
         "server_name": "",

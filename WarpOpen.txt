@@ -63,8 +63,8 @@
       "server": "91.148.246.148",
       "server_port": 443,
       "network": "tcp",
-      "username": "pvqugjyh792086",
-      "password": "Peweza@5183",
+      "username": "rused3V8KT",
+      "password": "A4TvJGfQAY",
       "auth_retry": "none",
       "tls": {
         "server_name": "",
@@ -112,7 +112,11 @@
             "0.0.0.0/0",
             "::/0"
           ],
-          "reserved": [0, 0, 0]
+          "reserved": [
+            0,
+            0,
+            0
+          ]
         }
       ]
     }

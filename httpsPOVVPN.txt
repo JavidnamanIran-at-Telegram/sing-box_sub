@@ -55,70 +55,56 @@
       "dns_mode": "hijack"
     }
   ],
-"endpoints": [
- {
-  "type": "openvpn-client",
-  "tag": "openvpn",
-  "mode": "tls",
-  "server": "91.148.246.148",
-  "server_port": 443,
-  "network": "tcp",
-    "username": "pvqugjyh792086",
-    "password": "Peweza@5183",
-    "auth_retry": "none",
-  "tls": {
-    "server_name": "",
+  "endpoints": [
+    {
+      "type": "openvpn-client",
+      "tag": "openvpn",
+      "mode": "tls",
+      "server": "91.148.246.148",
+      "server_port": 443,
+      "network": "tcp",
+      "username": "rused3V8KT",
+      "password": "A4TvJGfQAY",
+      "auth_retry": "none",
+      "tls": {
+        "server_name": "",
         "server_name_type": "name",
-      "certificate": [
-        "-----BEGIN CERTIFICATE-----\nMIIFKDCCAxCgAwIBAgIJAMtrmqZxIV/OMA0GCSqGSIb3DQEBDQUAMBIxEDAOBgNV\nBAMMB1ByaXZhZG8wHhcNMjAwMTA4MjEyODQ1WhcNMzUwMTA5MjEyODQ1WjASMRAw\nDgYDVQQDDAdQcml2YWRvMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA\nxPwOgiwNJzZTnKIXwAB0TSu/Lu2qt2U2I8obtQjwhi/7OrfmbmYykSdro70al2XP\nhnwAGGdCxW6LDnp0UN/IOhD11mgBPo14f5CLkBQjSJ6VN5miPbvK746LsNZl9H8r\nQGvDuPo4CG9BfPZMiDRGlsMxij/jztzgT1gmuxQ7WHfFRcNzBas1dHa9hV/d3TU6\n/t47x4SE/ljdcCtJiu7Zn6ODKQoys3mB7Luz2ngqUJWvkqsg+E4+3eJ0M8Hlbn5T\nPaRJBID7DAdYo6Vs6xGCYr981ThFcmoIQ10js10yANrrfGAzd03b3TnLAgko0uQM\nHjliMZL6L8sWOPHxyxJI0us88SFh4UgcFyRHKHPKux7w24SxAlZUYoUcTHp9VjG5\nXvDKYxzgV2RdM4ulBGbQRQ3y3/CyddsyQYMvA55Ets0LfPaBvDIcct70iXijGsdv\nlX1du3ArGpG7Vaje/RU4nbbGT6HYRdt5YyZfof288ukMOSj20nVcmS+c/4tqsxSe\nrRb1aq5LOi1IemSkTMeC5gCbexk+L1vl7NT/58sxjGmu5bXwnvev/lIItfi2AlIT\nrfUSEv19iDMKkeshwn/+sFJBMWYyluP+yJ56yR+MWoXvLlSWphLDTqq19yx3BZn0\nP1tgbXoR0g8PTdJFcz8z3RIb7myVLYulV1oGG/3rka0CAwEAAaOBgDB+MB0GA1Ud\nDgQWBBTFtJkZCVDuDAD6k5bJzefjJdO3DTBCBgNVHSMEOzA5gBTFtJkZCVDuDAD6\nk5bJzefjJdO3DaEWpBQwEjEQMA4GA1UEAwwHUHJpdmFkb4IJAMtrmqZxIV/OMAwG\nA1UdEwQFMAMBAf8wCwYDVR0PBAQDAgEGMA0GCSqGSIb3DQEBDQUAA4ICAQB7MUSX\nMeBb9wlSv4sUaT1JHEwE26nlBw+TKmezfuPU5pBlY0LYr6qQZY95DHqsRJ7ByUzG\nUrGo17dNGXlcuNc6TAaQQEDRPo6y+LVh2TWMk15TUMI+MkqryJtCret7xGvDigKY\nMJgBy58HN3RAVr1B7cL9youwzLgc2Y/NcFKvnQJKeiIYAJ7g0CcnJiQvgZTS7xdw\nkEBXfsngmUCIG320DLPEL+Ze0HiUrxwWljMRya6i40AeH3Zu2i532xX1wV5+cjA4\nRJWIKg6ri/Q54iFGtZrA9/nc6y9uoQHkmz8cGyVUmJxFzMrrIICVqUtVRxLhkTMe\n4UzwRWTBeGgtW4tS0yq1QonAKfOyjgRw/CeY55D2UGvnAFZdTadtYXS4Alu2P9zd\nwoEk3fzHiVmDjqfJVr5wz9383aABUFrPI3nz6ed/Z6LZflKh1k+DUDEp8NxU4klU\nULWsSOKoa5zGX51G8cdHxwQLImXvtGuN5eSR8jCTgxFZhdps/xes4KkyfIz9FMYG\n748M+uOTgKITf4zdJ9BAyiQaOufVQZ8WjhWzWk9YHec9VqPkzpWNGkVjiRI5ewuX\nwZzZ164tMv2hikBXSuUCnFz37/ZNwGlDi0oBdDszCk2GxccdFHHaCSmpjU5MrdJ+\n5IhtTKGeTx+US2hTIVHQFIO99DmacxSYvLNcSQ==\n-----END CERTIFICATE-----"
+        "certificate": [
+          "-----BEGIN CERTIFICATE-----\nMIIFKDCCAxCgAwIBAgIJAMtrmqZxIV/OMA0GCSqGSIb3DQEBDQUAMBIxEDAOBgNV\nBAMMB1ByaXZhZG8wHhcNMjAwMTA4MjEyODQ1WhcNMzUwMTA5MjEyODQ1WjASMRAw\nDgYDVQQDDAdQcml2YWRvMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA\nxPwOgiwNJzZTnKIXwAB0TSu/Lu2qt2U2I8obtQjwhi/7OrfmbmYykSdro70al2XP\nhnwAGGdCxW6LDnp0UN/IOhD11mgBPo14f5CLkBQjSJ6VN5miPbvK746LsNZl9H8r\nQGvDuPo4CG9BfPZMiDRGlsMxij/jztzgT1gmuxQ7WHfFRcNzBas1dHa9hV/d3TU6\n/t47x4SE/ljdcCtJiu7Zn6ODKQoys3mB7Luz2ngqUJWvkqsg+E4+3eJ0M8Hlbn5T\nPaRJBID7DAdYo6Vs6xGCYr981ThFcmoIQ10js10yANrrfGAzd03b3TnLAgko0uQM\nHjliMZL6L8sWOPHxyxJI0us88SFh4UgcFyRHKHPKux7w24SxAlZUYoUcTHp9VjG5\nXvDKYxzgV2RdM4ulBGbQRQ3y3/CyddsyQYMvA55Ets0LfPaBvDIcct70iXijGsdv\nlX1du3ArGpG7Vaje/RU4nbbGT6HYRdt5YyZfof288ukMOSj20nVcmS+c/4tqsxSe\nrRb1aq5LOi1IemSkTMeC5gCbexk+L1vl7NT/58sxjGmu5bXwnvev/lIItfi2AlIT\nrfUSEv19iDMKkeshwn/+sFJBMWYyluP+yJ56yR+MWoXvLlSWphLDTqq19yx3BZn0\nP1tgbXoR0g8PTdJFcz8z3RIb7myVLYulV1oGG/3rka0CAwEAAaOBgDB+MB0GA1Ud\nDgQWBBTFtJkZCVDuDAD6k5bJzefjJdO3DTBCBgNVHSMEOzA5gBTFtJkZCVDuDAD6\nk5bJzefjJdO3DaEWpBQwEjEQMA4GA1UEAwwHUHJpdmFkb4IJAMtrmqZxIV/OMAwG\nA1UdEwQFMAMBAf8wCwYDVR0PBAQDAgEGMA0GCSqGSIb3DQEBDQUAA4ICAQB7MUSX\nMeBb9wlSv4sUaT1JHEwE26nlBw+TKmezfuPU5pBlY0LYr6qQZY95DHqsRJ7ByUzG\nUrGo17dNGXlcuNc6TAaQQEDRPo6y+LVh2TWMk15TUMI+MkqryJtCret7xGvDigKY\nMJgBy58HN3RAVr1B7cL9youwzLgc2Y/NcFKvnQJKeiIYAJ7g0CcnJiQvgZTS7xdw\nkEBXfsngmUCIG320DLPEL+Ze0HiUrxwWljMRya6i40AeH3Zu2i532xX1wV5+cjA4\nRJWIKg6ri/Q54iFGtZrA9/nc6y9uoQHkmz8cGyVUmJxFzMrrIICVqUtVRxLhkTMe\n4UzwRWTBeGgtW4tS0yq1QonAKfOyjgRw/CeY55D2UGvnAFZdTadtYXS4Alu2P9zd\nwoEk3fzHiVmDjqfJVr5wz9383aABUFrPI3nz6ed/Z6LZflKh1k+DUDEp8NxU4klU\nULWsSOKoa5zGX51G8cdHxwQLImXvtGuN5eSR8jCTgxFZhdps/xes4KkyfIz9FMYG\n748M+uOTgKITf4zdJ9BAyiQaOufVQZ8WjhWzWk9YHec9VqPkzpWNGkVjiRI5ewuX\nwZzZ164tMv2hikBXSuUCnFz37/ZNwGlDi0oBdDszCk2GxccdFHHaCSmpjU5MrdJ+\n5IhtTKGeTx+US2hTIVHQFIO99DmacxSYvLNcSQ==\n-----END CERTIFICATE-----"
+        ],
+        "client_certificate": [],
+        "client_key": [],
+        "remote_certificate_tls": "server",
+        "version_min": "1.2"
+      },
+      "data_ciphers": [
+        "AES-256-CBC"
       ],
-      "client_certificate": [],
-      "client_key": [],
-      "remote_certificate_tls": "server",
-      "version_min": "1.2"
-    },
-
-    "data_ciphers": [
-      "AES-256-CBC"
-    ],
-    "data_ciphers_fallback": "AES-256-CBC",
-    "auth": "SHA256",
-    "redirect_gateway": true,
-    "redirect_gateway_flags": [
-      "def1"
-    ],
-    "block_ipv6": true,
-    "ping_interval": "5s",
-    "tls_timeout": "30s",
-    "system": false,
-    "mtu": 1500,
-    "detour": "🌐 HTTP Proxy"
-  }
-    
-
+      "data_ciphers_fallback": "AES-256-CBC",
+      "auth": "SHA256",
+      "redirect_gateway": true,
+      "redirect_gateway_flags": [
+        "def1"
+      ],
+      "block_ipv6": true,
+      "ping_interval": "5s",
+      "tls_timeout": "30s",
+      "system": false,
+      "mtu": 1500,
+      "detour": "🌐 HTTP Proxy"
+    }
   ],
   "outbounds": [
     {
-
-    "type": "http",
-
-    "tag": "🌐 HTTP Proxy",
-
-    "server": "104.19.64.122",
-
-    "server_port": 80
-
-  },
-
-  {
-
-    "type": "direct",
-
-    "tag": "🎯 Direct"
-
-  }
-
-
+      "type": "http",
+      "tag": "🌐 HTTP Proxy",
+      "server": "104.19.64.122",
+      "server_port": 80
+    },
+    {
+      "type": "direct",
+      "tag": "🎯 Direct"
+    }
   ],
   "route": {
     "auto_detect_interface": true,
@@ -247,10 +233,10 @@
         "tag": "dns-local",
         "type": "local"
       },
-{
-  "tag": "dns-direct",
-  "type": "local"
-},
+      {
+        "tag": "dns-direct",
+        "type": "local"
+      },
       {
         "tag": "dns-remote",
         "type": "https",
