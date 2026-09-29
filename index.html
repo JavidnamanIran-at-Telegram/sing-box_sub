@@ -23,6 +23,7 @@
     .btn { padding:6px 9px; cursor:pointer; border:1px solid var(--border); border-radius:6px; color:var(--muted); background:transparent; font:inherit; font-size:.78rem; transition:.2s; }
     .btn:hover { color:var(--orange); border-color:var(--orange); background:rgba(249,115,22,.12); }
     .btn.surf:hover { color:var(--blue); border-color:var(--blue); background:rgba(56,189,248,.12); }
+    .btn.udp:hover { color:#4ade80; border-color:#4ade80; background:rgba(74,222,128,.12); }
     .modal { display:none; position:fixed; inset:0; z-index:10; align-items:center; justify-content:center; background:rgba(0,0,0,.72); backdrop-filter:blur(6px); }
     .modal-content { position:relative; width:min(320px,90vw); padding:24px; text-align:center; background:#1e293b; border:1px solid var(--orange); border-radius:14px; }
     .close { position:absolute; top:8px; left:14px; border:0; color:var(--muted); background:transparent; font-size:1.5rem; cursor:pointer; }
@@ -55,6 +56,9 @@
 
     // اسم نمایشی نوع دوم کانفیگ. فقط همین یک خط را عوض کن.
     const TYPE_B_LABEL = 'JNIR';
+
+    // اسم نمایشی نوع سوم: همان کانفیگ‌های OpenVPN ولی روی UDP (فایل‌های ...sg.txt). فقط همین یک خط را عوض کن.
+    const TYPE_C_LABEL = 'OpenVPN UDP';
 
     // ==========================================================================
     // لیست کشورها: [نام داخلی (بدون فاصله)، کد کشور، ایموجی پرچم]
@@ -270,6 +274,112 @@
       Vietnam: 'Vietnamssh.txt',
     };
 
+    // ==========================================================================
+    // نام فایل‌های نوع سوم (OpenVPN UDP) — نسخه‌ی sg هر کشور: network روی udp، mtu برابر 1380،
+    // و بدون قانون resolve/ipv4_only. هر کشور یک خط؛ مثل بقیه‌ی جدول‌ها می‌شود رشته یا آرایه گذاشت.
+    // ==========================================================================
+    const SG_FILES = {
+      Albania: 'Albaniasg.txt',
+      Algeria: 'Algeriasg.txt',
+      Andorra: 'Andorrasg.txt',
+      Argentina: 'Argentinasg.txt',
+      Armenia: 'Armeniasg.txt',
+      Australia: 'Australiasg.txt',
+      Austria: 'Austriasg.txt',
+      Bahamas: 'Bahamassg.txt',
+      Bangladesh: 'Bangladeshsg.txt',
+      Belarus: 'Belarussg.txt',
+      Belgium: 'Belgiumsg.txt',
+      Bolivia: 'Boliviasg.txt',
+      Bosnia: 'Bosniasg.txt',
+      Brazil: 'Brazilsg.txt',
+      Bulgaria: 'Bulgariasg.txt',
+      Cambodia: 'Cambodiasg.txt',
+      Canada: 'Canadasg.txt',
+      Chile: 'Chilesg.txt',
+      China: 'Chinasg.txt',
+      Colombia: 'Colombiasg.txt',
+      Costa_Rica: 'Costa_Ricasg.txt',
+      Croatia: 'Croatiasg.txt',
+      Cyprus: 'Cyprussg.txt',
+      Czech: 'Czechsg.txt',
+      Denmark: 'Denmarksg.txt',
+      Dominican_Republic: 'Dominican_Republicsg.txt',
+      Ecuador: 'Ecuadorsg.txt',
+      Egypt: 'Egyptsg.txt',
+      Estonia: 'Estoniasg.txt',
+      Finland: 'Finlandsg.txt',
+      France: 'Francesg.txt',
+      Georgia: 'Georgiasg.txt',
+      Germany: 'Germanysg.txt',
+      Greece: 'Greecesg.txt',
+      Greenland: 'Greenlandsg.txt',
+      Guatemala: 'Guatemalasg.txt',
+      Hong_Kong_Sar_China: 'Hong_Kong_Sar_Chinasg.txt',
+      Hungary: 'Hungarysg.txt',
+      Iceland: 'Icelandsg.txt',
+      India: 'Indiasg.txt',
+      Indonesia: 'Indonesiasg.txt',
+      Iran: 'Iransg.txt',
+      Ireland: 'Irelandsg.txt',
+      Isleofman: 'Isleofmansg.txt',
+      Israel: 'Israelsg.txt',
+      Italy: 'Italysg.txt',
+      Japan: 'Japansg.txt',
+      Kazakhstan: 'Kazakhstansg.txt',
+      Kenya: 'Kenyasg.txt',
+      Laos: 'Laossg.txt',
+      Latvia: 'Latviasg.txt',
+      Liechtenstein: 'Liechtensteinsg.txt',
+      Lithuania: 'Lithuaniasg.txt',
+      Luxembourg: 'Luxembourgsg.txt',
+      Macau_Sar_China: 'Macau_Sar_Chinasg.txt',
+      Macedonia: 'Macedoniasg.txt',
+      Malaysia: 'Malaysiasg.txt',
+      Malta: 'Maltasg.txt',
+      Mexico: 'Mexicosg.txt',
+      Moldova: 'Moldovasg.txt',
+      Monaco: 'Monacosg.txt',
+      Mongolia: 'Mongoliasg.txt',
+      Montenegro: 'Montenegrosg.txt',
+      Morocco: 'Moroccosg.txt',
+      Myanmar_Burma_: 'Myanmar_Burma_sg.txt',
+      Nepal: 'Nepalsg.txt',
+      Netherlands: 'Netherlandssg.txt',
+      New_Zealand: 'New_Zealandsg.txt',
+      Nigeria: 'Nigeriasg.txt',
+      Norway: 'Norwaysg.txt',
+      Pakistan: 'Pakistansg.txt',
+      Panama: 'Panamasg.txt',
+      Peru: 'Perusg.txt',
+      Poland: 'Polandsg.txt',
+      Portugal: 'Portugalsg.txt',
+      Qatar: 'Qatarsg.txt',
+      Romania: 'Romaniasg.txt',
+      Russia: 'Russiasg.txt',
+      Saudi: 'Saudisg.txt',
+      Serbia: 'Serbiasg.txt',
+      Singapore: 'Singaporesg.txt',
+      Slovakia: 'Slovakiasg.txt',
+      Slovenia: 'Sloveniasg.txt',
+      South_Africa: 'South Africasg.txt',
+      South_Korea: 'South_Koreasg.txt',
+      Spain: 'Spainsg.txt',
+      Srilanka: 'Srilankasg.txt',
+      Sweden: 'Swedensg.txt',
+      Switzerland: 'Switzerlandsg.txt',
+      Taiwan: 'Taiwansg.txt',
+      Thailand: 'Thailandsg.txt',
+      Turkey: 'Turkeysg.txt',
+      Uae: 'Uaesg.txt',
+      Uk: 'Uksg.txt',
+      Ukraine: 'Ukrainesg.txt',
+      USA: 'United_Statessg.txt',
+      Uruguay: 'Uruguaysg.txt',
+      Venezuela: 'Venezuelasg.txt',
+      Vietnam: 'Vietnamsg.txt',
+    };
+
     // یک مقدار (رشته یا آرایه یا خالی) را همیشه به آرایه‌ای از اسم فایل‌ها تبدیل می‌کند.
     const toFileList = value => (Array.isArray(value) ? value : value ? [value] : []);
 
@@ -312,10 +422,12 @@
       const countryLabel = displayName(countryKey);
       const openvpnFiles = toFileList(openvpnFileFor(countryKey));
       const typeBFiles = toFileList(TYPE_B_FILES[countryKey]);
+      const sgFiles = toFileList(SG_FILES[countryKey]);
 
       const buttonsHtml = [
         renderConfigTypeButtons('OpenVPN', openvpnFiles, 'openvpn', countryLabel),
         renderConfigTypeButtons(TYPE_B_LABEL, typeBFiles, 'surf', countryLabel),
+        renderConfigTypeButtons(TYPE_C_LABEL, sgFiles, 'udp', countryLabel),
       ].join('');
 
       return `
@@ -360,7 +472,7 @@
     // نام پروفایلی که در سینگ‌باکس ذخیره می‌شود شامل «کشور - نوع کانفیگ» است، مثلا: "Germany - JNIR"
     function showQrModal(fileName, configType, countryLabel) {
       const downloadUrl = urlFor(fileName);
-      const typeLabel = configType === 'surf' ? TYPE_B_LABEL : 'OpenVPN';
+      const typeLabel = configType === 'surf' ? TYPE_B_LABEL : configType === 'udp' ? TYPE_C_LABEL : 'OpenVPN';
       const profileName = `${countryLabel} - ${typeLabel}`;
       const importUrl = `sing-box://import-remote-profile?url=${encodeURIComponent(downloadUrl)}#${encodeURIComponent(profileName)}`;
 
